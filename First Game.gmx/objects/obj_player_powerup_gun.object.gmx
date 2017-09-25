@@ -121,7 +121,7 @@ y += vsp;
 //veriables
 left_click = mouse_check_button_pressed(mb_left);
 
-
+/*
 if left_click
 {
     instance_create(x,y,obj_powerup_gun_crystal)
