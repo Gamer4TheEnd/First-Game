@@ -32,7 +32,7 @@ hsp = 0;
 jumpspeed = 8;
 movespeed = 5
 
-image_speed = 3/60
+image_speed = 6/60
 </string>
           </argument>
         </arguments>
