@@ -12,6 +12,14 @@
         <sprite>sprites\spr_player_left</sprite>
         <sprite>sprites\spr_player_right</sprite>
       </sprites>
+      <sprites name="Power Ups">
+        <sprites name="Gun">
+          <sprites name="Player">
+            <sprite>sprites\spr_player_still_powerup_gun</sprite>
+          </sprites>
+          <sprite>sprites\spr_player_powerup_gun_crystal</sprite>
+        </sprites>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_enemy</sprite>
     <sprite>sprites\spr_flag</sprite>
@@ -20,7 +28,15 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\obj_player</object>
+    <objects name="Players">
+      <object>objects\obj_player</object>
+      <object>objects\obj_player_powerup_gun</object>
+    </objects>
+    <objects name="Power Ups">
+      <objects name="Gun">
+        <object>objects\obj_powerup_gun_crystal</object>
+      </objects>
+    </objects>
     <object>objects\obj_enemy</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_flag</object>
