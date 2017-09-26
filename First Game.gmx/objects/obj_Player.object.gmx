@@ -55,7 +55,7 @@ image_speed = 6/60
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Player Input
+            <string>///Player Input KeyBoard
 right_key = keyboard_check(ord("D"));
 left_key = -keyboard_check(ord("A"));
 space_bar = keyboard_check_pressed(vk_space);
@@ -220,31 +220,6 @@ if (place_meeting(x,y,obj_powerup_gun_crystal))
             <kind>1</kind>
             <string>///Reset Game
 game_restart();
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="5" enumb="70">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Full Screen
-
-
 </string>
           </argument>
         </arguments>
