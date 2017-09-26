@@ -19,7 +19,10 @@
             <sprite>sprites\spr_player_right_powerup_gun</sprite>
             <sprite>sprites\spr_player_left_powerup_gun</sprite>
           </sprites>
-          <sprite>sprites\spr_player_powerup_gun_crystal</sprite>
+          <sprites name="Items">
+            <sprite>sprites\spr_player_powerup_gun_crystal</sprite>
+            <sprite>sprites\spr_powerup_gun_bullet</sprite>
+          </sprites>
         </sprites>
       </sprites>
     </sprites>
@@ -40,6 +43,10 @@
     <objects name="Power Ups">
       <objects name="Gun">
         <object>objects\obj_powerup_gun_crystal</object>
+        <objects name="Bullets">
+          <object>objects\obj_powerup_gun_bullet_right</object>
+          <object>objects\obj_powerup_gun_bullet_left</object>
+        </objects>
       </objects>
     </objects>
     <objects name="Blocks And Room Building">

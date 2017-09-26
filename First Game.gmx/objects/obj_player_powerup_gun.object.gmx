@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>///Creation Defaults
+
+//Character Defaults
 grav = 0.3;
 vsp = 0;
 hsp = 0;
@@ -188,14 +190,18 @@ if (vsp &gt; 0)
           <argument>
             <kind>1</kind>
             <string>///Player Speacials
+left_click = mouse_check_button_pressed(mb_left)
 
-//veriables
-left_click = mouse_check_button_pressed(mb_left);
-
-/*
 if left_click
-{
-    instance_create(x,y,obj_powerup_gun_crystal)
+    {
+    if (hsp &gt; 0)
+    {
+        instance_create(x,y,obj_powerup_gun_bullet_right);
+    }
+    if (hsp &lt; 0)
+    {
+        instance_create(x,y,obj_powerup_gun_bullet_left);
+    }
 }
 </string>
           </argument>
