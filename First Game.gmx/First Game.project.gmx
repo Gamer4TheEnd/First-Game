@@ -16,17 +16,19 @@
         <sprites name="Gun">
           <sprites name="Player">
             <sprite>sprites\spr_player_still_powerup_gun</sprite>
+            <sprite>sprites\spr_player_right_powerup_gun</sprite>
+            <sprite>sprites\spr_player_left_powerup_gun</sprite>
           </sprites>
           <sprite>sprites\spr_player_powerup_gun_crystal</sprite>
         </sprites>
       </sprites>
     </sprites>
-    <sprite>sprites\spr_enemy</sprite>
-    <sprite>sprites\spr_flag</sprite>
     <sprites name="Blocks And Room Building">
       <sprite>sprites\spr_Wall</sprite>
       <sprite>sprites\spr_Brick</sprite>
     </sprites>
+    <sprite>sprites\spr_enemy</sprite>
+    <sprite>sprites\spr_flag</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
