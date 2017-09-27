@@ -32,7 +32,7 @@ hsp = 0;
 jumpspeed = 8;
 movespeed = 5
 
-image_speed = 7/60
+image_speed = 8/60
 </string>
           </argument>
         </arguments>
@@ -123,46 +123,56 @@ if (hsp = 0)
     sprite_index = spr_player_still
 }
 
-//Moving Right
+
+//Moving Right//
 if (hsp &gt; 0)
 {
     if (sprite_index !=spr_player_right) image_index = 0;
     sprite_index = spr_player_right;
 }
 
-//Moving Left
+
+//Moving Left//
 if (hsp &lt; 0)
 {
     if (sprite_index !=spr_player_left) image_index = 0;
     sprite_index = spr_player_left;
 }
-//Jump Movement Left
-if (vsp &lt; 0)
+
+
+//Jump Movment Right//
+if (vsp &lt; 0) &amp;&amp; (hsp &gt; 0)
 {
-    if (sprite_index = spr_player_left)
-    {
-        image_index = 0;
-    }
-//Jump Movement Right
-    else
-    {
-        sprite_index = spr_player_right;
-        image_index = 0;
-    }
+    sprite_index = spr_player_jump;
+    if (sprite_index != spr_player_jump) image_index = 0;
+    if (sprite_index = spr_player_jump) image_index = 0;
 }
-//Jump Movement Left Correction
-if (vsp &gt; 0)
+
+
+//Jump Movement Left//
+if (vsp &lt; 0) &amp;&amp; (hsp &lt; 0)
 {
-    if (sprite_index = spr_player_left)
-    {
-        image_index = 0;
-    }
-//Jump Movement Right Correction
-    else
-    {
-        sprite_index = spr_player_right;
-        image_index = 0;
-    }
+    sprite_index = spr_player_jump;
+    if (sprite_index != spr_player_jump) image_index = 1;
+    if (sprite_index = spr_player_jump) image_index = 1;
+}
+
+
+//Fall Movment Right//
+if (vsp &gt; 0) &amp;&amp; (hsp &gt; 0)
+{
+    sprite_index = spr_player_jump;
+    if (sprite_index != spr_player_jump) image_index = 0;
+    if (sprite_index = spr_player_jump) image_index = 0;
+}
+
+
+//Fall Movement Left//
+if (vsp &gt; 0) &amp;&amp; (hsp &lt; 0)
+{
+    sprite_index = spr_player_jump;
+    if (sprite_index != spr_player_jump) image_index = 1;
+    if (sprite_index = spr_player_jump) image_index = 1;
 }
 </string>
           </argument>

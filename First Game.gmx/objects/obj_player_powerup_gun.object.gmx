@@ -141,33 +141,41 @@ if (hsp &lt; 0)
     if (sprite_index !=spr_player_left_powerup_gun) image_index = 0;
     sprite_index = spr_player_left_powerup_gun;
 }
-//Jump Movement Left
-if (vsp &lt; 0)
+
+
+//Jump Movment Right//
+if (vsp &lt; 0) &amp;&amp; (hsp &gt; 0)
 {
-    if (sprite_index = spr_player_left_powerup_gun)
-    {
-        image_index = 0;
-    }
-//Jump Movement Right
-    else
-    {
-        sprite_index = spr_player_right_powerup_gun;
-        image_index = 0;
-    }
+    sprite_index = spr_player_jump_powerup_gun;
+    if (sprite_index != spr_player_jump_powerup_gun) image_index = 0;
+    if (sprite_index = spr_player_jump_powerup_gun) image_index = 0;
 }
-//Fall Movement Left
-if (vsp &gt; 0)
+
+
+//Jump Movement Left//
+if (vsp &lt; 0) &amp;&amp; (hsp &lt; 0)
 {
-    if (sprite_index = spr_player_left_powerup_gun)
-    {
-        image_index = 0;
-    }
-//Fall Movement Right
-    else
-    {
-        sprite_index = spr_player_right_powerup_gun;
-        image_index = 0;
-    }
+    sprite_index = spr_player_jump_powerup_gun;
+    if (sprite_index != spr_player_jump_powerup_gun) image_index = 1;
+    if (sprite_index = spr_player_jump_powerup_gun) image_index = 1;
+}
+
+
+//Fall Movment Right//
+if (vsp &gt; 0) &amp;&amp; (hsp &gt; 0)
+{
+    sprite_index = spr_player_jump_powerup_gun;
+    if (sprite_index != spr_player_jump_powerup_gun) image_index = 0;
+    if (sprite_index = spr_player_jump_powerup_gun) image_index = 0;
+}
+
+
+//Fall Movement Left//
+if (vsp &gt; 0) &amp;&amp; (hsp &lt; 0)
+{
+    sprite_index = spr_player_jump_powerup_gun;
+    if (sprite_index != spr_player_jump_powerup_gun) image_index = 1;
+    if (sprite_index = spr_player_jump_powerup_gun) image_index = 1;
 }
 </string>
           </argument>
