@@ -11,6 +11,7 @@
         <sprite>sprites\spr_player_still</sprite>
         <sprite>sprites\spr_player_left</sprite>
         <sprite>sprites\spr_player_right</sprite>
+        <sprite>sprites\spr_player_jump</sprite>
       </sprites>
       <sprites name="Power Ups">
         <sprites name="Gun">
@@ -30,7 +31,11 @@
       <sprite>sprites\spr_Wall</sprite>
       <sprite>sprites\spr_Brick</sprite>
     </sprites>
-    <sprite>sprites\spr_enemy</sprite>
+    <sprites name="Enemies">
+      <sprite>sprites\spr_enemy_whitebutt</sprite>
+      <sprite>sprites\spr_enemy_blackbutt</sprite>
+      <sprite>sprites\spr_enemy_asainbutt</sprite>
+    </sprites>
     <sprite>sprites\spr_flag</sprite>
   </sprites>
   <backgrounds name="background"/>
@@ -53,7 +58,11 @@
       <object>objects\obj_wall</object>
       <object>objects\obj_Brick</object>
     </objects>
-    <object>objects\obj_enemy</object>
+    <objects name="Enemies">
+      <object>objects\obj_enemy_whitebutt</object>
+      <object>objects\obj_enemy_blackbutt</object>
+      <object>objects\obj_enemy_asainbutt</object>
+    </objects>
     <object>objects\obj_flag</object>
   </objects>
   <rooms name="rooms">
