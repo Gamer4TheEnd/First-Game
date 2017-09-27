@@ -217,7 +217,7 @@ if (place_meeting(x,y,obj_powerup_gun_crystal))
           <argument>
             <kind>1</kind>
             <string>///Reset Game
-game_restart();
+room_restart();
 </string>
           </argument>
         </arguments>
@@ -241,7 +241,7 @@ game_restart();
           <argument>
             <kind>1</kind>
             <string>///Game Over
-game_restart();
+room_restart();
 </string>
           </argument>
         </arguments>

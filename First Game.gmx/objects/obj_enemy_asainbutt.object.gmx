@@ -63,11 +63,11 @@ if (place_meeting(x,y,obj_player))
 {
     if (obj_player.y &lt; y-16)
     {
-        game_restart();
+        room_restart();
     }
     else
     {
-        game_restart();
+        room_restart();
     }
 }
 </string>
@@ -95,7 +95,7 @@ if (place_meeting(x,y,obj_player))
 //Gun Power Up Collision//
 if (place_meeting(x,y,obj_player_powerup_gun))
 {
-    game_restart();
+    room_restart();
 }
 </string>
           </argument>

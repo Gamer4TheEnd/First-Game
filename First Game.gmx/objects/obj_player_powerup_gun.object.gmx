@@ -230,8 +230,7 @@ if left_click
           <argument>
             <kind>1</kind>
             <string>///Restart Game
-
-game_restart();
+room_restart();
 </string>
           </argument>
         </arguments>
@@ -255,8 +254,7 @@ game_restart();
           <argument>
             <kind>1</kind>
             <string>///Game Over
-
-game_restart();
+room_restart();
 </string>
           </argument>
         </arguments>

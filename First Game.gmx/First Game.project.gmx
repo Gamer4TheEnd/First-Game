@@ -6,6 +6,12 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="Menu">
+      <sprite>sprites\spr_menu</sprite>
+      <sprite>sprites\spr_playbutton</sprite>
+      <sprite>sprites\spr_optionsbutton</sprite>
+      <sprite>sprites\spr_quitbutton</sprite>
+    </sprites>
     <sprites name="Player">
       <sprites name="Movement">
         <sprite>sprites\spr_player_still</sprite>
@@ -45,6 +51,12 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
+    <objects name="Menu">
+      <object>objects\obj_menu</object>
+      <object>objects\obj_playbutton</object>
+      <object>objects\obj_optionsbutton</object>
+      <object>objects\obj_quitbutton</object>
+    </objects>
     <objects name="Players">
       <object>objects\obj_player</object>
       <object>objects\obj_player_powerup_gun</object>
@@ -83,6 +95,7 @@
     <object>objects\obj_flag</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_test_room</room>
   </rooms>
   <help>

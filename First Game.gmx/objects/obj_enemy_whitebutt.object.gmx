@@ -101,7 +101,7 @@ if (place_meeting(x,y,obj_player))
     }
     else
     {
-        game_restart();
+        room_restart();
     }
 }
 </string>
@@ -136,7 +136,7 @@ if (place_meeting(x,y,obj_player_powerup_gun))
     }
     else
     {
-        game_restart();
+        room_restart();
     }
 }
 </string>
