@@ -52,9 +52,9 @@
   </views>
   <instances>
     <instance objName="obj_menu" x="960" y="540" name="inst_E8B40483" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_playbutton" x="960" y="232" name="inst_28C1CD4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_optionsbutton" x="960" y="472" name="inst_35CA5945" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_quitbutton" x="960" y="712" name="inst_865C55EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_playbutton" x="960" y="232" name="inst_88927096" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_quitbutton" x="960" y="712" name="inst_15E0338B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

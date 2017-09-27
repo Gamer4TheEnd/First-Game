@@ -53,9 +53,15 @@
   <objects name="objects">
     <objects name="Menu">
       <object>objects\obj_menu</object>
-      <object>objects\obj_playbutton</object>
+      <objects name="Play Button">
+        <object>objects\obj_playbutton</object>
+        <object>objects\obj_playbutton_click</object>
+      </objects>
       <object>objects\obj_optionsbutton</object>
-      <object>objects\obj_quitbutton</object>
+      <objects name="Quit Button">
+        <object>objects\obj_quitbutton</object>
+        <object>objects\obj_quitbutton_click</object>
+      </objects>
     </objects>
     <objects name="Players">
       <object>objects\obj_player</object>
