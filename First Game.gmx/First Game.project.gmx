@@ -30,6 +30,10 @@
     <sprites name="Blocks And Room Building">
       <sprite>sprites\spr_Wall</sprite>
       <sprite>sprites\spr_Brick</sprite>
+      <sprites name="Water">
+        <sprite>sprites\spr_water_top</sprite>
+        <sprite>sprites\spr_water</sprite>
+      </sprites>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_enemy_whitebutt</sprite>
@@ -57,6 +61,10 @@
     <objects name="Blocks And Room Building">
       <object>objects\obj_wall</object>
       <object>objects\obj_Brick</object>
+      <objects name="Water">
+        <object>objects\obj_water_top</object>
+        <object>objects\obj_water</object>
+      </objects>
     </objects>
     <objects name="Enemies">
       <object>objects\obj_enemy_whitebutt</object>
