@@ -354,6 +354,8 @@
     <instance objName="obj_Brick" x="1216" y="192" name="inst_781E26E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Brick" x="1184" y="192" name="inst_13E507B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Brick" x="1312" y="192" name="inst_A27F75BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_asainbutt_nofall" x="96" y="256" name="inst_30C392A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_asainbutt" x="608" y="160" name="inst_60F29021" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
