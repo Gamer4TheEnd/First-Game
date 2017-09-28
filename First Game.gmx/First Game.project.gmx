@@ -7,10 +7,19 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="Menu">
-      <sprite>sprites\spr_menu</sprite>
-      <sprite>sprites\spr_playbutton</sprite>
-      <sprite>sprites\spr_optionsbutton</sprite>
-      <sprite>sprites\spr_quitbutton</sprite>
+      <sprites name="background">
+        <sprite>sprites\spr_board</sprite>
+        <sprite>sprites\spr_sky</sprite>
+        <sprite>sprites\spr_cloud_big</sprite>
+        <sprite>sprites\spr_cloud_medium</sprite>
+        <sprite>sprites\spr_cloud_small</sprite>
+        <sprite>sprites\spr_buttbashers</sprite>
+      </sprites>
+      <sprites name="Buttons">
+        <sprite>sprites\spr_playbutton</sprite>
+        <sprite>sprites\spr_optionsbutton</sprite>
+        <sprite>sprites\spr_quitbutton</sprite>
+      </sprites>
     </sprites>
     <sprites name="Player">
       <sprites name="Movement">
@@ -44,8 +53,9 @@
         </sprites>
         <sprites name="Bricks">
           <sprite>sprites\spr_brick</sprite>
-          <sprite>sprites\spr_purplebrick</sprite>
           <sprite>sprites\spr_brick_slab</sprite>
+          <sprite>sprites\spr_purplebrick</sprite>
+          <sprite>sprites\spr_purplebrick_slab</sprite>
         </sprites>
         <sprites name="Sand">
           <sprite>sprites\spr_cactus</sprite>
@@ -68,15 +78,24 @@
   <paths name="paths"/>
   <objects name="objects">
     <objects name="Menu">
-      <object>objects\obj_menu</object>
-      <objects name="Play Button">
-        <object>objects\obj_playbutton</object>
-        <object>objects\obj_playbutton_click</object>
+      <objects name="background">
+        <object>objects\obj_board</object>
+        <object>objects\obj_sky</object>
+        <object>objects\obj_cloud_big</object>
+        <object>objects\obj_cloud_medium</object>
+        <object>objects\obj_cloud_small</object>
+        <object>objects\obj_buttbashers</object>
       </objects>
-      <object>objects\obj_optionsbutton</object>
-      <objects name="Quit Button">
-        <object>objects\obj_quitbutton</object>
-        <object>objects\obj_quitbutton_click</object>
+      <objects name="Buttons">
+        <objects name="Play Button">
+          <object>objects\obj_playbutton</object>
+          <object>objects\obj_playbutton_click</object>
+        </objects>
+        <object>objects\obj_optionsbutton</object>
+        <objects name="Quit Button">
+          <object>objects\obj_quitbutton</object>
+          <object>objects\obj_quitbutton_click</object>
+        </objects>
       </objects>
     </objects>
     <objects name="Players">

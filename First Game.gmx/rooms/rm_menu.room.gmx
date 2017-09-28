@@ -51,10 +51,14 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_menu" x="960" y="540" name="inst_E8B40483" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_optionsbutton" x="960" y="472" name="inst_35CA5945" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_playbutton" x="960" y="232" name="inst_88927096" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_quitbutton" x="960" y="712" name="inst_15E0338B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_buttbashers" x="990" y="181" name="inst_4E6F31C9" locked="-1" code="" scaleX="0.839667439460754" scaleY="0.766277134418488" colour="4294967295" rotation="0"/>
+    <instance objName="obj_playbutton" x="960" y="487" name="inst_09288654" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_quitbutton" x="960" y="847" name="inst_40CC1FF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_board" x="960" y="540" name="inst_0908599C" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cloud_big" x="1504" y="256" name="inst_A3BFAD49" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cloud_medium" x="280" y="479" name="inst_B2664402" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cloud_small" x="549" y="307" name="inst_9C023324" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sky" x="960" y="360" name="inst_D537CA91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
