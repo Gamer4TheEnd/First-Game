@@ -37,6 +37,7 @@
     <sprites name="Blocks And Room Building">
       <sprite>sprites\spr_Wall</sprite>
       <sprite>sprites\spr_Brick</sprite>
+      <sprite>sprites\spr_flag</sprite>
       <sprites name="Water">
         <sprite>sprites\spr_water_top</sprite>
         <sprite>sprites\spr_water</sprite>
@@ -47,7 +48,6 @@
       <sprite>sprites\spr_enemy_blackbutt</sprite>
       <sprite>sprites\spr_enemy_asainbutt</sprite>
     </sprites>
-    <sprite>sprites\spr_flag</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -80,6 +80,7 @@
     <objects name="Blocks And Room Building">
       <object>objects\obj_wall</object>
       <object>objects\obj_Brick</object>
+      <object>objects\obj_flag</object>
       <objects name="Water">
         <object>objects\obj_water_top</object>
         <object>objects\obj_water</object>
@@ -99,7 +100,6 @@
         <object>objects\obj_enemy_asainbutt_nofall</object>
       </objects>
     </objects>
-    <object>objects\obj_flag</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
