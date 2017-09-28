@@ -122,7 +122,8 @@
         <objects name="Bricks">
           <object>objects\obj_brick</object>
           <object>objects\obj_brick_slab</object>
-          <object>objects\obj_greybrick</object>
+          <object>objects\obj_purplebrick</object>
+          <object>objects\obj_purplebrick_slab</object>
         </objects>
         <objects name="Sand">
           <object>objects\obj_cactus</object>
