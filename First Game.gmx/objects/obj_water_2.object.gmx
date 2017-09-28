@@ -50,12 +50,29 @@ image_speed = 0/60;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Delete Splash
+            <string>///Do Nothing
+/*
+AWd
+awd
+awd
+awd
+awd
+aw
+d
+awd
+aw
+d
+awd
+awd
+a
+wd
+awd
+awd
+a
+wd
+aw
+d
 
-if (place_meeting(x,y,obj_player))
-{
-    instance_destroy(obj_water_splash);
-}
 </string>
           </argument>
         </arguments>

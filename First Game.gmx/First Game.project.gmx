@@ -35,10 +35,16 @@
       </sprites>
     </sprites>
     <sprites name="Blocks And Room Building">
-      <sprite>sprites\spr_Wall</sprite>
-      <sprite>sprites\spr_Brick</sprite>
+      <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_brick</sprite>
+      <sprite>sprites\spr_brick_slab</sprite>
       <sprite>sprites\spr_flag</sprite>
+      <sprites name="Grass">
+        <sprite>sprites\spr_grass</sprite>
+        <sprite>sprites\spr_dirt</sprite>
+      </sprites>
       <sprites name="Water">
+        <sprite>sprites\spr_water_splash</sprite>
         <sprite>sprites\spr_water_top</sprite>
         <sprite>sprites\spr_water</sprite>
       </sprites>
@@ -79,10 +85,12 @@
     </objects>
     <objects name="Blocks And Room Building">
       <object>objects\obj_wall</object>
-      <object>objects\obj_Brick</object>
+      <object>objects\obj_brick</object>
       <object>objects\obj_flag</object>
       <objects name="Water">
+        <object>objects\obj_water_splash</object>
         <object>objects\obj_water_top</object>
+        <object>objects\obj_water_2</object>
         <object>objects\obj_water</object>
       </objects>
     </objects>
