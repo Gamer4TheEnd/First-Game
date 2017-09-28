@@ -159,7 +159,6 @@
     <instance objName="obj_brick" x="128" y="288" name="inst_318107DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_brick" x="160" y="288" name="inst_7AFEDB52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_brick" x="32" y="224" name="inst_AEBBB72D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_brick" x="32" y="128" name="inst_D457CF5C" locked="0" code="" scaleX="2.03125" scaleY="0.529999971389771" colour="4294967295" rotation="0"/>
     <instance objName="obj_brick" x="512" y="448" name="inst_15D1ABE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_brick" x="480" y="448" name="inst_976B2C28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_brick" x="544" y="448" name="inst_9E55A323" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -333,6 +332,8 @@
     <instance objName="obj_water" x="416" y="672" name="inst_E37F7E53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="448" y="672" name="inst_2FF7286E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="480" y="672" name="inst_7E544D86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_brick_slab" x="62" y="120" name="inst_947AA368" locked="0" code="" scaleX="0.875" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_brick_slab" x="32" y="120" name="inst_869F57EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
