@@ -25,8 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Frames
+            <string>///Frames &amp; ButtBashers Menu Theme Song
 image_speed = 10/60
+
+//Menu Theme Song
+audio_play_sound(sou_menu,100,true);
 </string>
           </argument>
         </arguments>

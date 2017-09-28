@@ -4,7 +4,10 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sou_menu</sound>
+    <sound>sound\sou_fart</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Menu">
       <sprites name="background">
