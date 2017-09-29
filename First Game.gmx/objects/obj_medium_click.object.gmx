@@ -32,7 +32,19 @@ left_click = mouse_check_button_pressed(mb_left);
 //Actions//
 if (left_click)
 {
-    audio_sound_gain(sou_menu,0.0325,0);
+    if vol &gt; 0.0325
+    {
+        vol -= 0.0325;
+        audio_master_gain(vol);
+    }
+    else
+    {
+        if vol &lt; 0.0325
+        {
+            vol += 0.01625;
+            audio_master_gain(vol);
+        }
+    }
 }
 </string>
           </argument>

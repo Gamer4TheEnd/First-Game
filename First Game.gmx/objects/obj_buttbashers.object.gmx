@@ -30,7 +30,7 @@ image_speed = 10/60
 
 //Veriables
 audio_play_sound(sou_menu,100,true)
-audio_sound_gain(sou_menu,0.01625,0);
+audio_sound_gain(sou_menu,0.0325,0);
 </string>
           </argument>
         </arguments>
