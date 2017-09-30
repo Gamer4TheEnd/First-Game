@@ -53,14 +53,14 @@ image_speed = 5/60
 
 if (place_meeting(x,y,obj_player))
 {
-    game_restart();
+    room_goto(rm_mainmenu);
 }
 
 //Power Up Finish
 
 if (place_meeting(x,y,obj_player_powerup_gun))
 {
-    game_restart();
+    room_goto(rm_mainmenu);
 }
 </string>
           </argument>

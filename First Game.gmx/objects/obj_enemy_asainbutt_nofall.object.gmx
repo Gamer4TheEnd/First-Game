@@ -59,14 +59,17 @@ y += vsp;
 //Player Collision//
 if (place_meeting(x,y,obj_player))
 {
-    if (obj_player.y &lt; y-16)
+    if (lives &gt; 0)
+    {
+        lives -= 1
+        instance_destroy(obj_player)
+        instance_create(32,416,obj_player)
+    }
+    if (lives = 0)
     {
         room_restart();
     }
-    else
-    {
-        room_restart();
-    }
+
 }
 </string>
           </argument>
@@ -93,7 +96,17 @@ if (place_meeting(x,y,obj_player))
 //Gun Power Up Collision//
 if (place_meeting(x,y,obj_player_powerup_gun))
 {
-    room_restart();
+    if (lives &gt; 0)
+    {
+        lives -= 1
+        instance_destroy(obj_player_powerup_gun)
+        instance_create(32,416,obj_player)
+    }
+    if (lives = 0)
+    {
+        room_restart();
+    }
+
 }
 </string>
           </argument>

@@ -101,6 +101,11 @@
     <background>background\bac_mainmenu</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <fonts name="Tracking">
+      <font>fonts\fon_lives</font>
+    </fonts>
+  </fonts>
   <objects name="objects">
     <objects name="Menus">
       <objects name="background">
@@ -220,9 +225,12 @@
         <object>objects\obj_enemy_asainbutt_nofall</object>
       </objects>
     </objects>
+    <objects name="Tracking">
+      <object>objects\obj_lives</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_menu</room>
+    <room>rooms\rm_mainmenu</room>
     <room>rooms\rm_test_room</room>
   </rooms>
   <help>

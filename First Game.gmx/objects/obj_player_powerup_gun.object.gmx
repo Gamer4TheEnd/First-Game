@@ -279,8 +279,16 @@ room_restart();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Game Over
-room_restart();
+            <string>///Lives &amp; Game Over
+if (lives &gt; 0)
+{
+    lives -= 1
+    instance_create(32,416,obj_player)
+}
+if (lives = 0)
+{
+    room_restart();
+}
 </string>
           </argument>
         </arguments>
