@@ -66,7 +66,7 @@
     <instance objName="obj_low" x="4807" y="847" name="inst_1F652049" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_medium" x="4807" y="727" name="inst_AC3A388B" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_high" x="4807" y="607" name="inst_AF0B105F" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_volumemenu" x="4800" y="540" name="inst_8D74D4B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_volumemenu" x="4800" y="540" name="inst_AAE938B6" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cloud_big" x="1497" y="256" name="inst_A3BFAD49" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cloud_big" x="3417" y="256" name="inst_74D0B721" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cloud_big" x="5337" y="256" name="inst_C6271B8E" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -74,11 +74,9 @@
     <instance objName="obj_cloud_medium" x="280" y="479" name="inst_B2664402" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cloud_medium" x="2200" y="479" name="inst_DE89CDEC" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cloud_medium" x="4120" y="479" name="inst_90F2E405" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_cloud_medium" x="-1640" y="479" name="inst_7C2FD47E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cloud_small" x="549" y="307" name="inst_9C023324" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cloud_small" x="2469" y="307" name="inst_0EF09C5F" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cloud_small" x="4389" y="307" name="inst_0B5E6EED" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_cloud_small" x="-1371" y="307" name="inst_1E81381E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
