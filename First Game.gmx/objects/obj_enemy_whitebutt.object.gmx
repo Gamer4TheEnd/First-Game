@@ -100,15 +100,18 @@ if (place_meeting(x,y,obj_player))
         audio_play_sound(sou_fart,3,false);
         instance_destroy();
     }
-    if (lives &gt; 0)
+    else
     {
-        lives -= 1
-        instance_destroy(obj_player)
-        instance_create(32,416,obj_player)
-    }
-    if (lives = 0)
-    {
-        game_restart();
+        if (lives &gt; 0)
+        {
+            lives -= 1
+            instance_destroy(obj_player)
+            instance_create(32,416,obj_player)
+        }
+        if (lives = 0)
+        {
+            game_restart();
+        }
     }
 
 }
@@ -143,15 +146,18 @@ if (place_meeting(x,y,obj_player_powerup_gun))
         audio_play_sound(sou_fart,32,false);
         instance_destroy();
     }
-    if (lives &gt; 0)
+    else
     {
-        lives -= 1
-        instance_destroy(obj_player_powerup_gun)
-        instance_create(32,416,obj_player)
-    }
-    if (lives = 0)
-    {
-        game_restart();
+        if (lives &gt; 0)
+        {
+            lives -= 1
+            instance_destroy(obj_player_powerup_gun)
+            instance_create(32,416,obj_player)
+        }
+        if (lives = 0)
+        {
+            game_restart();
+        }
     }
 
 }
