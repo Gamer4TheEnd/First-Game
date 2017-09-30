@@ -101,7 +101,7 @@ instance_destroy();
             <kind>1</kind>
             <string>///Enemy Destroy &amp; Fart Sound
 
-audio_play_sound(sou_fart,35,false);
+audio_play_sound(sou_fart,3,false);
 instance_destroy();
 </string>
           </argument>
