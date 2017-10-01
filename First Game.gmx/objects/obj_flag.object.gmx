@@ -56,9 +56,30 @@ if (place_meeting(x,y,obj_player))
     room_goto(rm_mainmenu);
 }
 
-//Power Up Finish
+//Gun Power Up Finish
 
 if (place_meeting(x,y,obj_player_powerup_gun))
+{
+    room_goto(rm_mainmenu);
+}
+
+//Losing Gun Power Up Finish
+
+if (place_meeting(x,y,obj_player_i_gun))
+{
+    room_goto(rm_mainmenu);
+}
+
+//Super Speed Power Up Finish
+
+if (place_meeting(x,y,obj_player_powerup_superspeed))
+{
+    room_goto(rm_mainmenu);
+}
+
+//Losing Super Speed Power Up Finish
+
+if (place_meeting(x,y,obj_player_i_superspeed))
 {
     room_goto(rm_mainmenu);
 }

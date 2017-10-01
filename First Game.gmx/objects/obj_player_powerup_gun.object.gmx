@@ -31,8 +31,8 @@
 grav = 0.3;
 vsp = 0;
 hsp = 0;
-jumpspeed = 8;
-movespeed = 5
+jumpspeed = 6.5;
+movespeed = 4
 
 image_speed = 7/60
 </string>
@@ -124,7 +124,7 @@ y += vsp;
 if (hsp = 0)
 {
     if (sprite_index !=spr_player_still_powerup_gun) image_index = 0;
-    sprite_index = spr_player_still_powerup_gun
+    sprite_index = spr_player_still_powerup_gun;
 }
 
 

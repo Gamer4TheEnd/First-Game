@@ -47,8 +47,8 @@
     <sprites name="Player">
       <sprites name="Movement">
         <sprite>sprites\spr_player_still</sprite>
-        <sprite>sprites\spr_player_left</sprite>
         <sprite>sprites\spr_player_right</sprite>
+        <sprite>sprites\spr_player_left</sprite>
         <sprite>sprites\spr_player_jump</sprite>
       </sprites>
       <sprites name="Power Ups">
@@ -59,9 +59,36 @@
             <sprite>sprites\spr_player_left_powerup_gun</sprite>
             <sprite>sprites\spr_player_jump_powerup_gun</sprite>
           </sprites>
+          <sprites name="Player Invencibilty">
+            <sprite>sprites\spr_player_still_i_gun</sprite>
+            <sprite>sprites\spr_player_right_i_gun</sprite>
+            <sprite>sprites\spr_player_left_i_gun</sprite>
+            <sprite>sprites\spr_player_jump_right_i_gun</sprite>
+            <sprite>sprites\spr_player_jump_left_i_gun</sprite>
+            <sprite>sprites\spr_player_jump_down_i_gun</sprite>
+          </sprites>
           <sprites name="Items">
             <sprite>sprites\spr_player_powerup_gun_crystal</sprite>
             <sprite>sprites\spr_powerup_gun_bullet</sprite>
+          </sprites>
+        </sprites>
+        <sprites name="Super Speed">
+          <sprites name="Player">
+            <sprite>sprites\spr_player_still_powerup_superspeed</sprite>
+            <sprite>sprites\spr_player_right_powerup_superspeed</sprite>
+            <sprite>sprites\spr_player_left_powerup_superspeed</sprite>
+            <sprite>sprites\spr_player_jump_powerup_superspeed</sprite>
+          </sprites>
+          <sprites name="Player Invencibilty">
+            <sprite>sprites\spr_player_still_i_superspeed</sprite>
+            <sprite>sprites\spr_player_right_i_superspeed</sprite>
+            <sprite>sprites\spr_player_left_i_superspeed</sprite>
+            <sprite>sprites\spr_player_jump_right_i_superspeed</sprite>
+            <sprite>sprites\spr_player_jump_left_i_superspeed</sprite>
+            <sprite>sprites\spr_player_jump_down_i_superspeed</sprite>
+          </sprites>
+          <sprites name="Items">
+            <sprite>sprites\spr_player_powerup_superspeed_crystal</sprite>
           </sprites>
         </sprites>
       </sprites>
@@ -174,7 +201,14 @@
     </objects>
     <objects name="Players">
       <object>objects\obj_player</object>
-      <object>objects\obj_player_powerup_gun</object>
+      <objects name="Gun Power Up">
+        <object>objects\obj_player_powerup_gun</object>
+        <object>objects\obj_player_i_gun</object>
+      </objects>
+      <objects name="Super Speed Power Up">
+        <object>objects\obj_player_powerup_superspeed</object>
+        <object>objects\obj_player_i_superspeed</object>
+      </objects>
     </objects>
     <objects name="Power Ups">
       <objects name="Gun">
@@ -183,6 +217,9 @@
           <object>objects\obj_powerup_gun_bullet_right</object>
           <object>objects\obj_powerup_gun_bullet_left</object>
         </objects>
+      </objects>
+      <objects name="Super Speed">
+        <object>objects\obj_powerup_superspeed_crystal</object>
       </objects>
     </objects>
     <objects name="Blocks And Room Building">
