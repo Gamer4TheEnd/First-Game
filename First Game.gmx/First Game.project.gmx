@@ -123,6 +123,9 @@
       <sprite>sprites\spr_enemy_blackbutt</sprite>
       <sprite>sprites\spr_enemy_asainbutt</sprite>
     </sprites>
+    <sprites name="Tracking">
+      <sprite>sprites\spr_hearts</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bac_mainmenu</background>
@@ -263,7 +266,10 @@
       </objects>
     </objects>
     <objects name="Tracking">
-      <object>objects\obj_lives</object>
+      <objects name="Lives">
+        <object>objects\obj_lives</object>
+        <object>objects\obj_hearts</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
