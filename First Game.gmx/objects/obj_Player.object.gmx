@@ -215,7 +215,7 @@ if (vsp &gt; 0) &amp;&amp; (hsp = 0)
 
 if (place_meeting(x,y,obj_powerup_gun_crystal))
 {
-    instance_destroy(obj_powerup_gun_crystal);
+    instance_destroy(global.guncrystal);
     instance_create(x,y,obj_player_powerup_gun);
     instance_destroy();    
 }

@@ -31,7 +31,7 @@
 grav = 0.3;
 vsp = 0;
 hsp = 0;
-jumpspeed = 5.5;
+jumpspeed = 6.5;
 movespeed = 10
 
 image_speed = 10/60
@@ -195,6 +195,40 @@ if (vsp &gt; 0) &amp;&amp; (hsp = 0)
     if (sprite_index != spr_player_jump_powerup_superspeed) image_index = 2;
     if (sprite_index = spr_player_jump_powerup_superspeed) image_index = 2;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Another Power Up Coin Add
+if (place_meeting(x,y,obj_powerup_superspeed_crystal))
+{
+    global.points += 25
+    instance_destroy(obj_powerup_superspeed_crystal)
+}
+
+//Gun Power Up Crystal
+if (place_meeting(x,y,obj_powerup_gun_crystal))
+{
+    global.points += 25
+    instance_destroy(obj_powerup_gun_crystal)
+}
+
 </string>
           </argument>
         </arguments>
