@@ -254,17 +254,17 @@ if left_click
           <argument>
             <kind>1</kind>
             <string>///Another Power Up Coin Add
-if (place_meeting(x,y,global.guncrystal))
+if (place_meeting(x,y,obj_powerup_gun_crystal))
 {
     global.points += 25
-    instance_destroy(global.guncrystal)
+    instance_destroy(obj_powerup_gun_crystal)
 }
 
 //Super Speed Crystal
-if (place_meeting(x,y,global.guncrystal))
+if (place_meeting(x,y,obj_powerup_gun_crystal))
 {
     global.points += 25
-    instance_destroy(global.guncrystal)
+    instance_destroy(obj_powerup_gun_crystal)
 }
 </string>
           </argument>
