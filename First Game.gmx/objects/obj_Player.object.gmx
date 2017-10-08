@@ -33,6 +33,8 @@ jumpspeed = 8;
 movespeed = 5
 
 image_speed = 8/60
+
+//Score Stringe//
 </string>
           </argument>
         </arguments>
@@ -212,12 +214,10 @@ if (vsp &gt; 0) &amp;&amp; (hsp = 0)
           <argument>
             <kind>1</kind>
             <string>///Player Gun Power Up
-
 if (place_meeting(x,y,obj_powerup_gun_crystal))
 {
-    instance_destroy(obj_powerup_gun_crystal);
     instance_create(x,y,obj_player_powerup_gun);
-    instance_destroy();    
+    instance_destroy();
 }
 </string>
           </argument>
@@ -240,10 +240,8 @@ if (place_meeting(x,y,obj_powerup_gun_crystal))
           <argument>
             <kind>1</kind>
             <string>///Player Super Speed Power Up
-
 if (place_meeting(x,y,obj_powerup_superspeed_crystal))
 {
-    instance_destroy(obj_powerup_superspeed_crystal);
     instance_create(x,y,obj_player_powerup_superspeed);
     instance_destroy();    
 }

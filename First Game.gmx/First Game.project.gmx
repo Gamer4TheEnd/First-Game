@@ -134,7 +134,7 @@
   <paths name="paths"/>
   <fonts name="fonts">
     <fonts name="Tracking">
-      <font>fonts\fon_lives</font>
+      <font>fonts\fon_coins</font>
     </fonts>
   </fonts>
   <objects name="objects">
@@ -267,13 +267,20 @@
       </objects>
     </objects>
     <objects name="Tracking">
-      <object>objects\obj_hearts</object>
-      <object>objects\obj_coins</object>
+      <objects name="Hearts">
+        <object>objects\obj_hearts_counter</object>
+        <object>objects\obj_hearts_board</object>
+      </objects>
+      <objects name="Coins">
+        <object>objects\obj_coins_counter</object>
+        <object>objects\obj_coins_board</object>
+        <object>objects\obj_coins</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_test_room</room>
     <room>rooms\rm_mainmenu</room>
+    <room>rooms\rm_test_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -216,17 +216,16 @@ if (vsp &gt; 0) &amp;&amp; (hsp = 0)
           <argument>
             <kind>1</kind>
             <string>///Another Power Up Coin Add
+//Super Speed Crystal
 if (place_meeting(x,y,obj_powerup_superspeed_crystal))
 {
     global.points += 25
-    instance_destroy(obj_powerup_superspeed_crystal)
 }
 
 //Gun Power Up Crystal
 if (place_meeting(x,y,obj_powerup_gun_crystal))
 {
     global.points += 25
-    instance_destroy(obj_powerup_gun_crystal)
 }
 
 </string>
