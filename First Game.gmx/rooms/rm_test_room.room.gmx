@@ -53,7 +53,7 @@
   <instances>
     <instance objName="obj_flag" x="901" y="166" name="inst_71837F18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_coins_counter" x="168" y="-32" name="inst_92ECFB78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_coins_board" x="171" y="25" name="inst_79E2F520" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_coins_board" x="173" y="26" name="inst_79E2F520" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hearts_counter" x="56" y="-32" name="inst_D9783CFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hearts_board" x="71" y="25" name="inst_BA594823" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_whitebutt" x="613" y="198" name="inst_B368664C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
