@@ -213,9 +213,10 @@ if (vsp &gt; 0) &amp;&amp; (hsp = 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Player Gun Power Up
+            <string>///Player Gun Power Up &amp; Bullets Add
 if (place_meeting(x,y,obj_powerup_gun_crystal))
 {
+    global.bullets += 10
     instance_create(x,y,obj_player_powerup_gun);
     instance_destroy();
 }
@@ -242,8 +243,8 @@ if (place_meeting(x,y,obj_powerup_gun_crystal))
             <string>///Player Super Speed Power Up
 if (place_meeting(x,y,obj_powerup_superspeed_crystal))
 {
-    instance_create(x,y,obj_player_powerup_superspeed);
-    instance_destroy();    
+    instance_create(x,y,obj_player_powerup_superspeed_limit);
+    instance_destroy();
 }
 </string>
           </argument>

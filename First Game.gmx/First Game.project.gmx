@@ -127,6 +127,7 @@
       <sprite>sprites\spr_hearts_board</sprite>
       <sprite>sprites\spr_coins_board</sprite>
       <sprite>sprites\spr_coins</sprite>
+      <sprite>sprites\spr_bullets_board</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -136,6 +137,7 @@
   <fonts name="fonts">
     <fonts name="Tracking">
       <font>fonts\fon_coins</font>
+      <font>fonts\fon_bullets</font>
     </fonts>
   </fonts>
   <objects name="objects">
@@ -210,7 +212,11 @@
         <object>objects\obj_player_powerup_gun</object>
         <object>objects\obj_player_i_gun</object>
       </objects>
-      <objects name="Super Speed Power Up">
+      <objects name="Super Speed Power Up Limit">
+        <object>objects\obj_player_powerup_superspeed_limit</object>
+        <object>objects\obj_player_i_superspeed_limit</object>
+      </objects>
+      <objects name="Super Speed Power Up No Limit">
         <object>objects\obj_player_powerup_superspeed</object>
         <object>objects\obj_player_i_superspeed</object>
       </objects>
@@ -276,6 +282,10 @@
         <object>objects\obj_coins_counter</object>
         <object>objects\obj_coins_board</object>
         <object>objects\obj_coins</object>
+      </objects>
+      <objects name="Bullet">
+        <object>objects\obj_bullets_counter</object>
+        <object>objects\obj_bullets_board</object>
       </objects>
     </objects>
   </objects>

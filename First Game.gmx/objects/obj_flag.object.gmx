@@ -83,6 +83,20 @@ if (place_meeting(x,y,obj_player_i_superspeed))
 {
     room_goto(rm_mainmenu);
 }
+
+//Super Speed Limit Power Up Finish
+
+if (place_meeting(x,y,obj_player_powerup_superspeed_limit))
+{
+    room_goto(rm_mainmenu);
+}
+
+//Losing Super Speed Limit Power Up Finish
+
+if (place_meeting(x,y,obj_player_i_superspeed_limit))
+{
+    room_goto(rm_mainmenu);
+}
 </string>
           </argument>
         </arguments>

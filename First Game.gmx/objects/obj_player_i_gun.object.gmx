@@ -29,7 +29,7 @@
 grav = 0.3;
 vsp = 0;
 hsp = 0;
-jumpspeed = 8;
+jumpspeed = 6.5;
 movespeed = 5
 
 image_speed = 8/60
@@ -252,12 +252,12 @@ if (vsp &gt; 0) &amp;&amp; (hsp = 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Player Gun Power Up
-
+            <string>///Player Gun Power Up &amp; Bullets Add
 if (place_meeting(x,y,obj_powerup_gun_crystal))
 {
+    global.bullets += 10
     instance_create(x,y,obj_player_powerup_gun);
-    instance_destroy();    
+    instance_destroy();
 }
 </string>
           </argument>

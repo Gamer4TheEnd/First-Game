@@ -49,7 +49,7 @@ image_speed = 5/60;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Player Coins
+            <string>///Player Coins &amp; Lives Limit
 
 //Player//
 if (place_meeting(x,y,obj_player))
@@ -58,35 +58,132 @@ if (place_meeting(x,y,obj_player))
     instance_destroy();
 }
 
-//Player Gun Power Up//
+//Lives Limit//
+if (global.points = 100) &amp;&amp; (lives != 12)
+{
+    lives += 1
+    global.points = 0
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Player Gun Power Up
 if (place_meeting(x,y,obj_player_powerup_gun))
 {
     global.points += 1
     instance_destroy();
 }
 
-//Player Gun Power Up Invenciblity//
+//Player Gun Power Up Invenciblity
 if (place_meeting(x,y,obj_player_i_gun))
 {
     global.points += 1
     instance_destroy();
 }
-
-//Player Super Speed Power Up//
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Player Super Speed Power Up
 if (place_meeting(x,y,obj_player_powerup_superspeed))
 {
     global.points += 1
     instance_destroy();
 }
 
-//Player Super Speed Power Up Invenciblity//
+//Player Super Speed Power Up Invenciblity
 if (place_meeting(x,y,obj_player_i_superspeed))
 {
     global.points += 1
     instance_destroy();
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Player Super Speed Limit Power Up
+if (place_meeting(x,y,obj_player_powerup_superspeed_limit))
+{
+    global.points += 1
+    instance_destroy();
+}
 
-//Lives Limit//
+//Player Super Speed Limit Power Up Invenciblity
+if (place_meeting(x,y,obj_player_i_superspeed_limit))
+{
+    global.points += 1
+    instance_destroy();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Lives Limit 2
 if (global.points = 100) &amp;&amp; (lives != 12)
 {
     lives += 1
