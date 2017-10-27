@@ -5,8 +5,8 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\sou_menu</sound>
-    <sound>sound\sou_fart</sound>
+    <sound>sound\snd_menu</sound>
+    <sound>sound\snd_fart</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Menus">
@@ -142,66 +142,68 @@
   </fonts>
   <objects name="objects">
     <objects name="Menus">
-      <objects name="background">
-        <object>objects\obj_board</object>
-        <object>objects\obj_sky</object>
-        <object>objects\obj_cloud_big</object>
-        <object>objects\obj_cloud_medium</object>
-        <object>objects\obj_cloud_small</object>
-        <object>objects\obj_buttbashers</object>
-      </objects>
-      <objects name="Main Menu">
-        <objects name="Buttons">
-          <objects name="Play Button">
-            <object>objects\obj_playbutton</object>
-            <object>objects\obj_playbutton_click</object>
-          </objects>
-          <objects name="Options Button">
-            <object>objects\obj_optionsbutton</object>
-            <object>objects\obj_optionsbutton_click</object>
-          </objects>
-          <objects name="Quit Button">
-            <object>objects\obj_quitbutton</object>
-            <object>objects\obj_quitbutton_click</object>
+      <objects name="Start Menu">
+        <objects name="background">
+          <object>objects\obj_board</object>
+          <object>objects\obj_sky</object>
+          <object>objects\obj_cloud_big</object>
+          <object>objects\obj_cloud_medium</object>
+          <object>objects\obj_cloud_small</object>
+          <object>objects\obj_buttbashers</object>
+        </objects>
+        <objects name="Main Menu">
+          <objects name="Buttons">
+            <objects name="Play Button">
+              <object>objects\obj_playbutton</object>
+              <object>objects\obj_playbutton_click</object>
+            </objects>
+            <objects name="Options Button">
+              <object>objects\obj_optionsbutton</object>
+              <object>objects\obj_optionsbutton_click</object>
+            </objects>
+            <objects name="Quit Button">
+              <object>objects\obj_quitbutton</object>
+              <object>objects\obj_quitbutton_click</object>
+            </objects>
           </objects>
         </objects>
-      </objects>
-      <objects name="Options Menu">
-        <object>objects\obj_optionsmenu</object>
-        <objects name="Buttons">
-          <objects name="Full Screen">
-            <object>objects\obj_fullscreen</object>
-            <object>objects\obj_fullscreen_click</object>
-            <object>objects\obj_fullscreen_click2</object>
-          </objects>
-          <objects name="Volume Button">
-            <object>objects\obj_volume</object>
-            <object>objects\obj_volume_click</object>
-          </objects>
-          <objects name="Back Button">
-            <object>objects\obj_back</object>
-            <object>objects\obj_back_click</object>
+        <objects name="Options Menu">
+          <object>objects\obj_optionsmenu</object>
+          <objects name="Buttons">
+            <objects name="Full Screen">
+              <object>objects\obj_fullscreen</object>
+              <object>objects\obj_fullscreen_click</object>
+              <object>objects\obj_fullscreen_click2</object>
+            </objects>
+            <objects name="Volume Button">
+              <object>objects\obj_volume</object>
+              <object>objects\obj_volume_click</object>
+            </objects>
+            <objects name="Back Button">
+              <object>objects\obj_back</object>
+              <object>objects\obj_back_click</object>
+            </objects>
           </objects>
         </objects>
-      </objects>
-      <objects name="Volume Menu">
-        <object>objects\obj_volumemenu</object>
-        <objects name="Buttons">
-          <objects name="Low Volume">
-            <object>objects\obj_low</object>
-            <object>objects\obj_low_click</object>
-          </objects>
-          <objects name="Medium Volume">
-            <object>objects\obj_medium</object>
-            <object>objects\obj_medium_click</object>
-          </objects>
-          <objects name="High Volume">
-            <object>objects\obj_high</object>
-            <object>objects\obj_high_click</object>
-          </objects>
-          <objects name="Back Button">
-            <object>objects\obj_back_optionsmenu</object>
-            <object>objects\obj_back_optionsmenu_click</object>
+        <objects name="Volume Menu">
+          <object>objects\obj_volumemenu</object>
+          <objects name="Buttons">
+            <objects name="Low Volume">
+              <object>objects\obj_low</object>
+              <object>objects\obj_low_click</object>
+            </objects>
+            <objects name="Medium Volume">
+              <object>objects\obj_medium</object>
+              <object>objects\obj_medium_click</object>
+            </objects>
+            <objects name="High Volume">
+              <object>objects\obj_high</object>
+              <object>objects\obj_high_click</object>
+            </objects>
+            <objects name="Back Button">
+              <object>objects\obj_back_optionsmenu</object>
+              <object>objects\obj_back_optionsmenu_click</object>
+            </objects>
           </objects>
         </objects>
       </objects>

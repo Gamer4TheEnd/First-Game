@@ -97,7 +97,7 @@ if (place_meeting(x,y,obj_player))
     if (obj_player.y &lt; y-17)
     {
         with (obj_player) vsp = -jumpspeed;
-        audio_play_sound(sou_fart,3,false);
+        audio_play_sound(snd_fart,8,false);
         global.points += 5
         instance_destroy();
     }
@@ -142,7 +142,7 @@ if (place_meeting(x,y,obj_player_powerup_gun))
     if (obj_player_powerup_gun.y &lt; y-17)
     {
         with (obj_player_powerup_gun) vsp = -jumpspeed;
-        audio_play_sound(sou_fart,32,false);
+        audio_play_sound(snd_fart,8,false);
         global.points += 5
         instance_destroy();
     }
@@ -179,7 +179,7 @@ if (place_meeting(x,y,obj_player_powerup_superspeed))
     if (obj_player_powerup_superspeed.y &lt; y-17)
     {
         with (obj_player_powerup_superspeed) vsp = -jumpspeed;
-        audio_play_sound(sou_fart,32,false);
+        audio_play_sound(snd_fart,8,false);
         global.points += 5
         instance_destroy();
     }
@@ -216,7 +216,7 @@ if (place_meeting(x,y,obj_player_powerup_superspeed_limit))
     if (obj_player_powerup_superspeed_limit.y &lt; y-17)
     {
         with (obj_player_powerup_superspeed_limit) vsp = -jumpspeed;
-        audio_play_sound(sou_fart,32,false);
+        audio_play_sound(snd_fart,8,false);
         global.points += 5
         instance_destroy();
     }

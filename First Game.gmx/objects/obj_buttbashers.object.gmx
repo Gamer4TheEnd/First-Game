@@ -29,8 +29,8 @@
 image_speed = 10/60
 
 //Veriables
-audio_play_sound(sou_menu,10,true)
-audio_sound_gain(sou_menu,0.066,0)
+audio_play_sound(snd_menu,10,true)
+audio_sound_gain(snd_menu,0.066,0)
 global.vol = 0.6;
 </string>
           </argument>

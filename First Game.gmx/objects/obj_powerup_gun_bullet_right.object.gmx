@@ -100,7 +100,7 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>///Enemy Destroy &amp; Fart Sound &amp; Points
-audio_play_sound(sou_fart,3,false);
+audio_play_sound(snd_fart,8,false);
 global.points += 5
 instance_destroy();
 </string>

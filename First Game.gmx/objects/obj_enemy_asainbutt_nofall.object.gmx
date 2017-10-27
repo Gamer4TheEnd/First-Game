@@ -96,7 +96,7 @@ if (place_meeting(x,y,obj_player_powerup_gun))
 {
     instance_create(obj_player_powerup_gun.x,obj_player_powerup_gun.y,obj_player_i_gun)
     instance_destroy(obj_player_powerup_gun)
-    with (obj_player_i_gun) vsp = -jumpspeed * 2;
+    with (obj_player_i_gun) vsp = -jumpspeed * 1.4;
 }
 </string>
           </argument>
@@ -123,7 +123,7 @@ if (place_meeting(x,y,obj_player_powerup_superspeed))
 {
     instance_create(obj_player_powerup_superspeed.x,obj_player_powerup_superspeed.y,obj_player_i_superspeed)
     instance_destroy(obj_player_powerup_superspeed)
-    with (obj_player_i_superspeed) vsp = -jumpspeed * 2;
+    with (obj_player_i_superspeed) vsp = -jumpspeed * 1.4;
 }
 </string>
           </argument>
