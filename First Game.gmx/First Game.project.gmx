@@ -98,6 +98,7 @@
       <sprite>sprites\spr_wall</sprite>
       <sprites name="Blocks">
         <sprites name="Grass">
+          <sprite>sprites\grass_2_left</sprite>
           <sprite>sprites\spr_grass</sprite>
           <sprite>sprites\spr_dirt</sprite>
         </sprites>
@@ -129,9 +130,16 @@
       <sprite>sprites\spr_coins</sprite>
       <sprite>sprites\spr_bullets_board</sprite>
     </sprites>
+    <sprite>sprites\grass_2_right</sprite>
+    <sprite>sprites\grass_2_bothsides</sprite>
+    <sprite>sprites\grass_2</sprite>
+    <sprite>sprites\transparent</sprite>
+    <sprite>sprites\dirt_left</sprite>
+    <sprite>sprites\dirt_right</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bac_mainmenu</background>
+    <background>background\grassland</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -238,10 +246,17 @@
     <objects name="Blocks And Room Building">
       <object>objects\obj_flag</object>
       <object>objects\obj_wall</object>
+      <object>objects\barrier</object>
       <objects name="Blocks">
         <objects name="Grass">
           <object>objects\obj_grass</object>
           <object>objects\obj_dirt</object>
+          <object>objects\grass_2_left_block</object>
+          <object>objects\grass_2_right_block</object>
+          <object>objects\grass_2_bothsides_block</object>
+          <object>objects\grass_2_block</object>
+          <object>objects\dirt_left_corner</object>
+          <object>objects\dirt_right_corner</object>
         </objects>
         <objects name="Bricks">
           <object>objects\obj_brick</object>
