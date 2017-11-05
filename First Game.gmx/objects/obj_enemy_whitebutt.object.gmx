@@ -107,7 +107,7 @@ if (place_meeting(x,y,obj_player))
         {
             lives -= 1
             instance_destroy(obj_player)
-            instance_create(32,416,obj_player)
+            instance_create(obj_checkpoint.x,obj_checkpoint.y,obj_player)
         }
         if (lives = 0)
         {

@@ -290,6 +290,210 @@ if (place_meeting(x,y,obj_powerup_superspeed_crystal))
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Checkpoints
+//Veriables//
+checkpoint1 = instance_find(obj_checkpoint_position,0)
+checkpoint2 = instance_find(obj_checkpoint_position,1)
+checkpoint3 = instance_find(obj_checkpoint_position,2)
+checkpoint4 = instance_find(obj_checkpoint_position,3)
+checkpoint5 = instance_find(obj_checkpoint_position,4)
+checkpoint6 = instance_find(obj_checkpoint_position,5)
+checkpoint7 = instance_find(obj_checkpoint_position,6)
+checkpoint8 = instance_find(obj_checkpoint_position,7)
+checkpoint9 = instance_find(obj_checkpoint_position,8)
+checkpoint10 = instance_find(obj_checkpoint_position,9)
+checkpoint11 = instance_find(obj_checkpoint_position,10)
+checkpoint12 = instance_find(obj_checkpoint_position,11)
+checkpoint13 = instance_find(obj_checkpoint_position,12)
+checkpoint14 = instance_find(obj_checkpoint_position,13)
+checkpoint15 = instance_find(obj_checkpoint_position,14)
+checkpoint16 = instance_find(obj_checkpoint_position,15)
+checkpoint17 = instance_find(obj_checkpoint_position,16)
+checkpoint18 = instance_find(obj_checkpoint_position,17)
+checkpoint19 = instance_find(obj_checkpoint_position,18)
+checkpoint20 = instance_find(obj_checkpoint_position,19)
+
+//Actions//
+
+//Checkpoint 1//
+if (place_meeting(x,y,checkpoint1)) &amp;&amp; checkpoints &lt; 1
+{
+    obj_checkpoint.x = checkpoint1.x
+    obj_checkpoint.y = checkpoint1.y
+    checkpoints = 1
+}
+
+//Checkpoint 2//
+if (place_meeting(x,y,checkpoint2)) &amp;&amp; checkpoints &lt; 2
+{
+    obj_checkpoint.x = checkpoint2.x
+    obj_checkpoint.y = checkpoint2.y
+    checkpoints = 2
+}
+
+//Checkpoint 3//
+if (place_meeting(x,y,checkpoint3)) &amp;&amp; checkpoints &lt; 3
+{
+    obj_checkpoint.x = checkpoint3.x
+    obj_checkpoint.y = checkpoint3.y
+    checkpoints = 3
+}
+
+//Checkpoint 4//
+if (place_meeting(x,y,checkpoint4)) &amp;&amp; checkpoints &lt; 4
+{
+    obj_checkpoint.x = checkpoint4.x
+    obj_checkpoint.y = checkpoint4.y
+    checkpoints = 4
+}
+
+//Checkpoint 5//
+if (place_meeting(x,y,checkpoint5)) &amp;&amp; checkpoints &lt; 5
+{
+    obj_checkpoint.x = checkpoint5.x
+    obj_checkpoint.y = checkpoint5.y
+    checkpoints = 5
+}
+
+//Checkpoint 6//
+if (place_meeting(x,y,checkpoint6)) &amp;&amp; checkpoints &lt; 6
+{
+    obj_checkpoint.x = checkpoint6.x
+    obj_checkpoint.y = checkpoint6.y
+    checkpoints = 6
+}
+
+//Checkpoint 7//
+if (place_meeting(x,y,checkpoint7)) &amp;&amp; checkpoints &lt; 7
+{
+    obj_checkpoint.x = checkpoint1.x
+    obj_checkpoint.y = checkpoint1.y
+    checkpoints = 7
+}
+
+//Checkpoint 8//
+if (place_meeting(x,y,checkpoint8)) &amp;&amp; checkpoints &lt; 8
+{
+    obj_checkpoint.x = checkpoint8.x
+    obj_checkpoint.y = checkpoint8.y
+    checkpoints = 8
+}
+
+//Checkpoint 9//
+if (place_meeting(x,y,checkpoint9)) &amp;&amp; checkpoints &lt; 9
+{
+    obj_checkpoint.x = checkpoint9.x
+    obj_checkpoint.y = checkpoint9.y
+    checkpoints = 9
+}
+
+//Checkpoint 10//
+if (place_meeting(x,y,checkpoint10)) &amp;&amp; checkpoints &lt; 10
+{
+    obj_checkpoint.x = checkpoint10.x
+    obj_checkpoint.y = checkpoint10.y
+    checkpoints = 10
+}
+
+//Checkpoint 11//
+if (place_meeting(x,y,checkpoint11)) &amp;&amp; checkpoints &lt; 11
+{
+    obj_checkpoint.x = checkpoint11.x
+    obj_checkpoint.y = checkpoint11.y
+    checkpoints = 11
+}
+
+//Checkpoint 12//
+if (place_meeting(x,y,checkpoint12)) &amp;&amp; checkpoints &lt; 12
+{
+    obj_checkpoint.x = checkpoint12.x
+    obj_checkpoint.y = checkpoint12.y
+    checkpoints = 12
+}
+
+//Checkpoint 13//
+if (place_meeting(x,y,checkpoint13)) &amp;&amp; checkpoints &lt; 13
+{
+    obj_checkpoint.x = checkpoint13.x
+    obj_checkpoint.y = checkpoint13.y
+    checkpoints = 13
+}
+
+//Checkpoint 14//
+if (place_meeting(x,y,checkpoint14)) &amp;&amp; checkpoints &lt; 14
+{
+    obj_checkpoint.x = checkpoint14.x
+    obj_checkpoint.y = checkpoint14.y
+    checkpoints = 14
+}
+
+//Checkpoint 15//
+if (place_meeting(x,y,checkpoint15)) &amp;&amp; checkpoints &lt; 15
+{
+    obj_checkpoint.x = checkpoint15.x
+    obj_checkpoint.y = checkpoint15.y
+    checkpoints = 15
+}
+
+//Checkpoint 16//
+if (place_meeting(x,y,checkpoint16)) &amp;&amp; checkpoints &lt; 16
+{
+    obj_checkpoint.x = checkpoint16.x
+    obj_checkpoint.y = checkpoint16.y
+    checkpoints = 16
+}
+
+//Checkpoint 17//
+if (place_meeting(x,y,checkpoint17)) &amp;&amp; checkpoints &lt; 17
+{
+    obj_checkpoint.x = checkpoint17.x
+    obj_checkpoint.y = checkpoint17.y
+    checkpoints = 17
+}
+
+//Checkpoint 18//
+if (place_meeting(x,y,checkpoint18)) &amp;&amp; checkpoints &lt; 18
+{
+    obj_checkpoint.x = checkpoint18.x
+    obj_checkpoint.y = checkpoint18.y
+    checkpoints = 18
+}
+
+//Checkpoint 19//
+if (place_meeting(x,y,checkpoint19)) &amp;&amp; checkpoints &lt; 19
+{
+    obj_checkpoint.x = checkpoint19.x
+    obj_checkpoint.y = checkpoint19.y
+    checkpoints = 19
+}
+
+//Checkpoint 20//
+if (place_meeting(x,y,checkpoint20)) &amp;&amp; checkpoints &lt; 20
+{
+    obj_checkpoint.x = checkpoint20.x
+    obj_checkpoint.y = checkpoint20.y
+    checkpoints = 20
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="7" enumb="0">
       <action>
@@ -312,7 +516,7 @@ if (place_meeting(x,y,obj_powerup_superspeed_crystal))
 if (lives &gt; 0)
 {
     lives -= 1
-    instance_create(32,416,obj_player)
+    instance_create(obj_checkpoint.x,obj_checkpoint.y,obj_player)
     instance_destroy();
 }
 if (lives = 0)

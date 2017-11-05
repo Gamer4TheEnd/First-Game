@@ -89,7 +89,7 @@ if (global.points &gt; 100) &amp;&amp; (lives != 12)
             <string>///Draw Score
 draw_set_font(fon_coins);
 draw_set_colour(c_white);
-draw_text(x + 41.5,y + 34,"x " + string(global.points))
+draw_text(x + 35.5,y + 34,"x " + string(global.points))
 </string>
           </argument>
         </arguments>

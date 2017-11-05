@@ -93,25 +93,30 @@
         </sprites>
       </sprites>
     </sprites>
-    <sprites name="Blocks And Room Building">
-      <sprite>sprites\spr_flag</sprite>
+    <sprites name="Blocks">
       <sprite>sprites\spr_wall</sprite>
-      <sprites name="Blocks">
-        <sprites name="Grass">
-          <sprite>sprites\grass_2_left</sprite>
-          <sprite>sprites\spr_grass</sprite>
-          <sprite>sprites\spr_dirt</sprite>
-        </sprites>
-        <sprites name="Bricks">
-          <sprite>sprites\spr_brick</sprite>
-          <sprite>sprites\spr_brick_slab</sprite>
-          <sprite>sprites\spr_purplebrick</sprite>
-          <sprite>sprites\spr_purplebrick_slab</sprite>
-        </sprites>
-        <sprites name="Sand">
-          <sprite>sprites\spr_cactus</sprite>
-          <sprite>sprites\spr_sand</sprite>
-        </sprites>
+      <sprite>sprites\spr_barrier</sprite>
+      <sprite>sprites\spr_checkpoint</sprite>
+      <sprite>sprites\spr_checkpoint_position</sprite>
+      <sprite>sprites\spr_door</sprite>
+      <sprites name="Grass">
+        <sprite>sprites\spr_grass</sprite>
+        <sprite>sprites\spr_grass_leftcornor</sprite>
+        <sprite>sprites\spr_grass_rightcornor</sprite>
+        <sprite>sprites\spr_grass_topcornor</sprite>
+        <sprite>sprites\spr_dirt</sprite>
+        <sprite>sprites\spr_dirt_rightcornor</sprite>
+        <sprite>sprites\spr_dirt_leftcornor</sprite>
+      </sprites>
+      <sprites name="Bricks">
+        <sprite>sprites\spr_brick</sprite>
+        <sprite>sprites\spr_brick_slab</sprite>
+        <sprite>sprites\spr_purplebrick</sprite>
+        <sprite>sprites\spr_purplebrick_slab</sprite>
+      </sprites>
+      <sprites name="Sand">
+        <sprite>sprites\spr_cactus</sprite>
+        <sprite>sprites\spr_sand</sprite>
       </sprites>
       <sprites name="Water">
         <sprite>sprites\spr_water_splash</sprite>
@@ -130,16 +135,14 @@
       <sprite>sprites\spr_coins</sprite>
       <sprite>sprites\spr_bullets_board</sprite>
     </sprites>
-    <sprite>sprites\grass_2_right</sprite>
-    <sprite>sprites\grass_2_bothsides</sprite>
-    <sprite>sprites\grass_2</sprite>
-    <sprite>sprites\transparent</sprite>
-    <sprite>sprites\dirt_left</sprite>
-    <sprite>sprites\dirt_right</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\bac_mainmenu</background>
-    <background>background\grassland</background>
+    <backgrounds name="Main Menu">
+      <background>background\bac_mainmenu</background>
+    </backgrounds>
+    <backgrounds name="First Level">
+      <background>background\grassland</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -216,7 +219,7 @@
         </objects>
       </objects>
     </objects>
-    <objects name="Players">
+    <objects name="Player">
       <object>objects\obj_player</object>
       <objects name="Gun Power Up">
         <object>objects\obj_player_powerup_gun</object>
@@ -243,31 +246,30 @@
         <object>objects\obj_powerup_superspeed_crystal</object>
       </objects>
     </objects>
-    <objects name="Blocks And Room Building">
-      <object>objects\obj_flag</object>
+    <objects name="Blocks">
       <object>objects\obj_wall</object>
-      <object>objects\barrier</object>
-      <objects name="Blocks">
-        <objects name="Grass">
-          <object>objects\obj_grass</object>
-          <object>objects\obj_dirt</object>
-          <object>objects\grass_2_left_block</object>
-          <object>objects\grass_2_right_block</object>
-          <object>objects\grass_2_bothsides_block</object>
-          <object>objects\grass_2_block</object>
-          <object>objects\dirt_left_corner</object>
-          <object>objects\dirt_right_corner</object>
-        </objects>
-        <objects name="Bricks">
-          <object>objects\obj_brick</object>
-          <object>objects\obj_brick_slab</object>
-          <object>objects\obj_purplebrick</object>
-          <object>objects\obj_purplebrick_slab</object>
-        </objects>
-        <objects name="Sand">
-          <object>objects\obj_cactus</object>
-          <object>objects\obj_sand</object>
-        </objects>
+      <object>objects\obj_barrier</object>
+      <object>objects\obj_checkpoint</object>
+      <object>objects\obj_checkpoint_position</object>
+      <object>objects\obj_door</object>
+      <objects name="Grass">
+        <object>objects\obj_grass</object>
+        <object>objects\obj_grass_leftcornor</object>
+        <object>objects\obj_grass_rightcornor</object>
+        <object>objects\obj_grass_topcornor</object>
+        <object>objects\obj_dirt</object>
+        <object>objects\obj_dirt_rightcornor</object>
+        <object>objects\obj_dirt_leftcornor</object>
+      </objects>
+      <objects name="Bricks">
+        <object>objects\obj_brick</object>
+        <object>objects\obj_brick_slab</object>
+        <object>objects\obj_purplebrick</object>
+        <object>objects\obj_purplebrick_slab</object>
+      </objects>
+      <objects name="Sand">
+        <object>objects\obj_cactus</object>
+        <object>objects\obj_sand</object>
       </objects>
       <objects name="Water">
         <object>objects\obj_water_splash</object>
