@@ -139,6 +139,12 @@
       <sprite>sprites\spr_coins</sprite>
       <sprite>sprites\spr_bullets_board</sprite>
     </sprites>
+    <sprite>sprites\dirt_underisland</sprite>
+    <sprite>sprites\dirt_underisland_right</sprite>
+    <sprite>sprites\dirt_underisland_left</sprite>
+    <sprite>sprites\grass_plant</sprite>
+    <sprite>sprites\plant_1</sprite>
+    <sprite>sprites\plant_2</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
@@ -256,6 +262,11 @@
       </objects>
     </objects>
     <objects name="Blocks">
+      <objects name="Plants">
+        <object>objects\obj_grass_plant</object>
+        <object>objects\obj_plant_1</object>
+        <object>objects\obj_plant_2</object>
+      </objects>
       <object>objects\obj_wall</object>
       <object>objects\obj_barrier</object>
       <object>objects\obj_checkpoint</object>
@@ -269,6 +280,9 @@
         <object>objects\obj_dirt</object>
         <object>objects\obj_dirt_rightcornor</object>
         <object>objects\obj_dirt_leftcornor</object>
+        <object>objects\obj_dirt_underisland</object>
+        <object>objects\obj_dirt_underisland_right</object>
+        <object>objects\obj_dirt_underisland_left</object>
       </objects>
       <objects name="Bricks">
         <object>objects\obj_brick</object>
