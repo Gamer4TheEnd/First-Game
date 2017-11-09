@@ -123,6 +123,10 @@
         <sprite>sprites\spr_water_top</sprite>
         <sprite>sprites\spr_water</sprite>
       </sprites>
+      <sprites name="Lava">
+        <sprite>sprites\spr_lava</sprite>
+        <sprite>sprites\spr_lava_bottom</sprite>
+      </sprites>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_enemy_whitebutt</sprite>
@@ -152,6 +156,11 @@
     </fonts>
   </fonts>
   <objects name="objects">
+    <objects name="Music">
+      <objects name="Menus">
+        <object>objects\obj_music_mainmenu</object>
+      </objects>
+    </objects>
     <objects name="Menus">
       <objects name="Start Menu">
         <objects name="background">
@@ -276,6 +285,10 @@
         <object>objects\obj_water_top</object>
         <object>objects\obj_water_2</object>
         <object>objects\obj_water</object>
+      </objects>
+      <objects name="Lava">
+        <object>objects\obj_lava</object>
+        <object>objects\obj_lava_bottom</object>
       </objects>
     </objects>
     <objects name="Enemies">
