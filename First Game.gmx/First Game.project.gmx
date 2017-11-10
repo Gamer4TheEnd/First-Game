@@ -149,6 +149,8 @@
     <sprite>sprites\tree_1</sprite>
     <sprite>sprites\rock_1</sprite>
     <sprite>sprites\rock_2</sprite>
+    <sprite>sprites\rope</sprite>
+    <sprite>sprites\bulletboard_2</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
@@ -284,11 +286,11 @@
         <object>objects\obj_grass_rightcornor</object>
         <object>objects\obj_grass_topcornor</object>
         <object>objects\obj_dirt</object>
-        <object>objects\obj_dirt_rightcornor</object>
-        <object>objects\obj_dirt_leftcornor</object>
-        <object>objects\obj_dirt_underisland</object>
-        <object>objects\obj_dirt_underisland_right</object>
-        <object>objects\obj_dirt_underisland_left</object>
+        <object>objects\obj_dirt_rightcorner</object>
+        <object>objects\obj_dirt_leftcorner</object>
+        <object>objects\obj_dirt_bottom</object>
+        <object>objects\obj_dirt_bottom_right</object>
+        <object>objects\obj_dirt_bottom_left</object>
       </objects>
       <objects name="Bricks">
         <object>objects\obj_brick</object>
@@ -314,6 +316,8 @@
         <object>objects\obj_rock_1</object>
         <object>objects\obj_rock_2</object>
       </objects>
+      <object>objects\obj_rope</object>
+      <object>objects\obj_bulletboard_2</object>
     </objects>
     <objects name="Enemies">
       <objects name="White Butt">
