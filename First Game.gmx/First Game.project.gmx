@@ -145,6 +145,10 @@
     <sprite>sprites\grass_plant</sprite>
     <sprite>sprites\plant_1</sprite>
     <sprite>sprites\plant_2</sprite>
+    <sprite>sprites\bush_1</sprite>
+    <sprite>sprites\tree_1</sprite>
+    <sprite>sprites\rock_1</sprite>
+    <sprite>sprites\rock_2</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
@@ -266,6 +270,8 @@
         <object>objects\obj_grass_plant</object>
         <object>objects\obj_plant_1</object>
         <object>objects\obj_plant_2</object>
+        <object>objects\obj_bush_1</object>
+        <object>objects\obj_tree_1</object>
       </objects>
       <object>objects\obj_wall</object>
       <object>objects\obj_barrier</object>
@@ -303,6 +309,10 @@
       <objects name="Lava">
         <object>objects\obj_lava</object>
         <object>objects\obj_lava_bottom</object>
+      </objects>
+      <objects name="Rocks">
+        <object>objects\obj_rock_1</object>
+        <object>objects\obj_rock_2</object>
       </objects>
     </objects>
     <objects name="Enemies">
