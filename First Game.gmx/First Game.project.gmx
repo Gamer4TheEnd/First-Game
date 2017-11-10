@@ -146,6 +146,7 @@
       <sprite>sprites\spr_enemy_whitebutt</sprite>
       <sprite>sprites\spr_enemy_blackbutt</sprite>
       <sprite>sprites\spr_enemy_asainbutt</sprite>
+      <sprite>sprites\spr_enemy_arabbutt</sprite>
     </sprites>
     <sprites name="Tracking">
       <sprite>sprites\spr_hearts_board</sprite>
@@ -332,6 +333,10 @@
       <objects name="Asain Butt">
         <object>objects\obj_enemy_asainbutt</object>
         <object>objects\obj_enemy_asainbutt_nofall</object>
+      </objects>
+      <objects name="Arab Butt">
+        <object>objects\obj_enemy_arabbutt</object>
+        <object>objects\obj_enemy_arabbutt_nofall</object>
       </objects>
     </objects>
     <objects name="Tracking">
