@@ -99,14 +99,28 @@
       <sprite>sprites\spr_checkpoint</sprite>
       <sprite>sprites\spr_checkpoint_position</sprite>
       <sprite>sprites\spr_door</sprite>
+      <sprites name="Decorations">
+        <sprites name="Grass">
+          <sprite>sprites\spr_grass_plant</sprite>
+          <sprite>sprites\spr_grass_plant_roses</sprite>
+          <sprite>sprites\spr_grass_plant_bush</sprite>
+          <sprite>sprites\spr_grass_bush</sprite>
+          <sprite>sprites\spr_grass_tree</sprite>
+          <sprite>sprites\spr_grass_rock_small</sprite>
+          <sprite>sprites\spr_grass_rock_medium</sprite>
+        </sprites>
+      </sprites>
       <sprites name="Grass">
         <sprite>sprites\spr_grass</sprite>
         <sprite>sprites\spr_grass_leftcornor</sprite>
         <sprite>sprites\spr_grass_rightcornor</sprite>
         <sprite>sprites\spr_grass_topcornor</sprite>
         <sprite>sprites\spr_dirt</sprite>
-        <sprite>sprites\spr_dirt_rightcornor</sprite>
-        <sprite>sprites\spr_dirt_leftcornor</sprite>
+        <sprite>sprites\spr_dirt_top_rightcornor</sprite>
+        <sprite>sprites\spr_dirt_top_leftcornor</sprite>
+        <sprite>sprites\spr_dirt_bottom</sprite>
+        <sprite>sprites\spr_dirt_bottom_right</sprite>
+        <sprite>sprites\spr_dirt_bottom_left</sprite>
       </sprites>
       <sprites name="Bricks">
         <sprite>sprites\spr_brick</sprite>
@@ -137,20 +151,9 @@
       <sprite>sprites\spr_hearts_board</sprite>
       <sprite>sprites\spr_coins_board</sprite>
       <sprite>sprites\spr_coins</sprite>
+      <sprite>sprites\spr_boards_rope</sprite>
       <sprite>sprites\spr_bullets_board</sprite>
     </sprites>
-    <sprite>sprites\dirt_underisland</sprite>
-    <sprite>sprites\dirt_underisland_right</sprite>
-    <sprite>sprites\dirt_underisland_left</sprite>
-    <sprite>sprites\grass_plant</sprite>
-    <sprite>sprites\plant_1</sprite>
-    <sprite>sprites\plant_2</sprite>
-    <sprite>sprites\bush_1</sprite>
-    <sprite>sprites\tree_1</sprite>
-    <sprite>sprites\rock_1</sprite>
-    <sprite>sprites\rock_2</sprite>
-    <sprite>sprites\rope</sprite>
-    <sprite>sprites\bulletboard_2</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
@@ -268,26 +271,30 @@
       </objects>
     </objects>
     <objects name="Blocks">
-      <objects name="Plants">
-        <object>objects\obj_grass_plant</object>
-        <object>objects\obj_plant_1</object>
-        <object>objects\obj_plant_2</object>
-        <object>objects\obj_bush_1</object>
-        <object>objects\obj_tree_1</object>
-      </objects>
       <object>objects\obj_wall</object>
       <object>objects\obj_barrier</object>
       <object>objects\obj_checkpoint</object>
       <object>objects\obj_checkpoint_position</object>
       <object>objects\obj_door</object>
+      <objects name="Decorations">
+        <objects name="Grass">
+          <object>objects\obj_grass_plant</object>
+          <object>objects\obj_grass_plant_roses</object>
+          <object>objects\obj_grass_plant_bush</object>
+          <object>objects\obj_grass_bush</object>
+          <object>objects\obj_grass_tree</object>
+          <object>objects\obj_grass_rock_small</object>
+          <object>objects\obj_grass_rock_medium</object>
+        </objects>
+      </objects>
       <objects name="Grass">
         <object>objects\obj_grass</object>
         <object>objects\obj_grass_leftcornor</object>
         <object>objects\obj_grass_rightcornor</object>
         <object>objects\obj_grass_topcornor</object>
         <object>objects\obj_dirt</object>
-        <object>objects\obj_dirt_rightcorner</object>
-        <object>objects\obj_dirt_leftcorner</object>
+        <object>objects\obj_dirt_top_rightcorner</object>
+        <object>objects\obj_dirt_top_leftcorner</object>
         <object>objects\obj_dirt_bottom</object>
         <object>objects\obj_dirt_bottom_right</object>
         <object>objects\obj_dirt_bottom_left</object>
@@ -312,12 +319,6 @@
         <object>objects\obj_lava</object>
         <object>objects\obj_lava_bottom</object>
       </objects>
-      <objects name="Rocks">
-        <object>objects\obj_rock_1</object>
-        <object>objects\obj_rock_2</object>
-      </objects>
-      <object>objects\obj_rope</object>
-      <object>objects\obj_bulletboard_2</object>
     </objects>
     <objects name="Enemies">
       <objects name="White Butt">
@@ -334,6 +335,7 @@
       </objects>
     </objects>
     <objects name="Tracking">
+      <object>objects\obj_boards_rope</object>
       <objects name="Hearts">
         <object>objects\obj_hearts_counter</object>
         <object>objects\obj_hearts_board</object>
@@ -350,8 +352,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_mainmenu</room>
     <room>rooms\rm_test_room</room>
+    <room>rooms\rm_mainmenu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
