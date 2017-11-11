@@ -5,8 +5,17 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\snd_menu</sound>
-    <sound>sound\snd_fart</sound>
+    <sounds name="Menus">
+      <sound>sound\snd_mainmenu_themesong</sound>
+      <sound>sound\snd_mainmenu_click</sound>
+    </sounds>
+    <sounds name="Player">
+      <sound>sound\snd_player_powerup_gun_shoot</sound>
+      <sound>sound\snd_player_jump</sound>
+    </sounds>
+    <sounds name="Enemies">
+      <sound>sound\snd_fart</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Menus">
@@ -182,7 +191,7 @@
       </objects>
     </objects>
     <objects name="Menus">
-      <objects name="Start Menu">
+      <objects name="Main Menu">
         <objects name="background">
           <object>objects\obj_board</object>
           <object>objects\obj_sky</object>
@@ -344,19 +353,21 @@
       </objects>
     </objects>
     <objects name="Tracking">
-      <object>objects\obj_boards_rope</object>
-      <objects name="Hearts">
-        <object>objects\obj_hearts_counter</object>
-        <object>objects\obj_hearts_board</object>
-      </objects>
-      <objects name="Coins">
-        <object>objects\obj_coins_counter</object>
-        <object>objects\obj_coins_board</object>
-        <object>objects\obj_coins</object>
-      </objects>
-      <objects name="Bullet">
-        <object>objects\obj_bullets_counter</object>
-        <object>objects\obj_bullets_board</object>
+      <objects name="In Game">
+        <object>objects\obj_boards_rope</object>
+        <objects name="Hearts">
+          <object>objects\obj_hearts_counter</object>
+          <object>objects\obj_hearts_board</object>
+        </objects>
+        <objects name="Coins">
+          <object>objects\obj_coins_counter</object>
+          <object>objects\obj_coins_board</object>
+          <object>objects\obj_coins</object>
+        </objects>
+        <objects name="Bullet">
+          <object>objects\obj_bullets_counter</object>
+          <object>objects\obj_bullets_board</object>
+        </objects>
       </objects>
     </objects>
   </objects>

@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///Veriables
 speed = 12;
+audio_play_sound(snd_player_powerup_gun_shoot,10,false)
 </string>
           </argument>
         </arguments>

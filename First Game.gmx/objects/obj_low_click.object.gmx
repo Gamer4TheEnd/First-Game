@@ -30,6 +30,7 @@ if global.vol &gt; 0.25
 {
     global.vol = 0.25
     audio_master_gain(global.vol)
+    audio_play_sound(snd_mainmenu_click,9,false)
 }
 </string>
           </argument>

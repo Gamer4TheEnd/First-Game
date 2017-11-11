@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Frames
-image_speed = 0.0000000001/60
+image_speed = 0/60
 //Image Index
 if (sprite_index != spr_fullscreen) image_index = 1;
 if (sprite_index = spr_fullscreen) image_index = 1;
@@ -59,6 +59,7 @@ left_click = mouse_check_button_pressed(mb_left);
 //Actions//
 if (left_click) &amp;&amp; (obj_fullscreen.sprite_index = spr_fullscreen)
 {
+    audio_play_sound(snd_mainmenu_click,9,false)
     window_set_fullscreen(true);
     obj_fullscreen.sprite_index = spr_checkmark;
 }

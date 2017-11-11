@@ -72,6 +72,12 @@ if (place_meeting(x,y+1,obj_wall))
     vsp += space_bar * -jumpspeed
 }
 
+//Jump Sound Effect//
+if(place_meeting(x,y+1,obj_wall)) &amp;&amp; (space_bar = 1)
+{
+    audio_play_sound(snd_player_jump,15,false);
+}
+
 //Horizontal Collision//
 if (place_meeting(x+hsp,y,obj_wall))
 {

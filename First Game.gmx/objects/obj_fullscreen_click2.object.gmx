@@ -46,6 +46,7 @@ left_click = mouse_check_button_pressed(mb_left);
 //Actions//
 if (left_click) &amp;&amp; (obj_fullscreen.sprite_index = spr_checkmark)
 {
+    audio_play_sound(snd_mainmenu_click,9,false)
     window_set_fullscreen(false);
     obj_fullscreen.sprite_index = spr_fullscreen;
     instance_destroy();

@@ -32,8 +32,9 @@ left_click = mouse_check_button_pressed(mb_left);
 //Action//
 if (left_click)
 {
+    audio_play_sound(snd_mainmenu_click,9,false)
+    audio_stop_all();
     room_goto(rm_test_room);
-    audio_stop_sound(snd_menu);
 }
 </string>
           </argument>

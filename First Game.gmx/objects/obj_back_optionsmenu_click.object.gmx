@@ -32,6 +32,7 @@ left_click = mouse_check_button_pressed(mb_left);
 //Actions//
 if (left_click)
 {
+    audio_play_sound(snd_mainmenu_click,9,false)
     view_visible[2] = false
 }
 </string>
