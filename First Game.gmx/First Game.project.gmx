@@ -168,6 +168,15 @@
       <sprite>sprites\spr_boards_rope</sprite>
       <sprite>sprites\spr_bullets_board</sprite>
     </sprites>
+    <sprites name="Shit that gamer needs to add">
+      <sprite>sprites\new_gun_orb_sprite</sprite>
+      <sprite>sprites\gun_right</sprite>
+      <sprite>sprites\gun_running_right</sprite>
+      <sprite>sprites\gun_jump_right</sprite>
+      <sprite>sprites\gun_left</sprite>
+      <sprite>sprites\gun_running_left</sprite>
+      <sprite>sprites\gun_jump_left</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
