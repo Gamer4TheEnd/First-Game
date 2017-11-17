@@ -59,18 +59,30 @@
         <sprite>sprites\spr_player_still_left</sprite>
         <sprite>sprites\spr_player_running_right</sprite>
         <sprite>sprites\spr_player_running_left</sprite>
-        <sprite>sprites\spr_player_jumping_still_right</sprite>
-        <sprite>sprites\spr_player_jumping_still_left</sprite>
-        <sprite>sprites\spr_player_falling_still_right</sprite>
-        <sprite>sprites\spr_player_falling_still_left</sprite>
+        <sprites name="Jumping">
+          <sprite>sprites\spr_player_jumping_still_right</sprite>
+          <sprite>sprites\spr_player_jumping_still_left</sprite>
+        </sprites>
+        <sprites name="Falling">
+          <sprite>sprites\spr_player_falling_still_right</sprite>
+          <sprite>sprites\spr_player_falling_still_left</sprite>
+        </sprites>
       </sprites>
       <sprites name="Power Ups">
         <sprites name="Gun">
           <sprites name="Player">
-            <sprite>sprites\spr_player_still_powerup_gun</sprite>
-            <sprite>sprites\spr_player_right_powerup_gun</sprite>
-            <sprite>sprites\spr_player_left_powerup_gun</sprite>
-            <sprite>sprites\spr_player_jump_powerup_gun</sprite>
+            <sprite>sprites\spr_player_still_right_powerup_gun</sprite>
+            <sprite>sprites\spr_player_still_left_powerup_gun</sprite>
+            <sprite>sprites\spr_player_running_right_powerup_gun</sprite>
+            <sprite>sprites\spr_player_running_left_powerup_gun</sprite>
+            <sprites name="Jumping">
+              <sprite>sprites\spr_player_jumping_still_right_powerup_gun</sprite>
+              <sprite>sprites\spr_player_jumping_still_left_powerup_gun</sprite>
+            </sprites>
+            <sprites name="Falling">
+              <sprite>sprites\spr_player_falling_still_right_powerup_gun</sprite>
+              <sprite>sprites\spr_player_falling_still_left_powerup_gun</sprite>
+            </sprites>
           </sprites>
           <sprites name="Player Invencibilty">
             <sprite>sprites\spr_player_still_i_gun</sprite>
@@ -82,7 +94,8 @@
           </sprites>
           <sprites name="Items">
             <sprite>sprites\spr_player_powerup_gun_crystal</sprite>
-            <sprite>sprites\spr_powerup_gun_bullet</sprite>
+            <sprite>sprites\spr_powerup_gun_bullet_right</sprite>
+            <sprite>sprites\spr_powerup_gun_bullet_left</sprite>
           </sprites>
         </sprites>
         <sprites name="Super Speed">
@@ -167,15 +180,6 @@
       <sprite>sprites\spr_coins</sprite>
       <sprite>sprites\spr_boards_rope</sprite>
       <sprite>sprites\spr_bullets_board</sprite>
-    </sprites>
-    <sprites name="Shit that gamer needs to add">
-      <sprite>sprites\new_gun_orb_sprite</sprite>
-      <sprite>sprites\gun_right</sprite>
-      <sprite>sprites\gun_running_right</sprite>
-      <sprite>sprites\gun_jump_right</sprite>
-      <sprite>sprites\gun_left</sprite>
-      <sprite>sprites\gun_running_left</sprite>
-      <sprite>sprites\gun_jump_left</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">

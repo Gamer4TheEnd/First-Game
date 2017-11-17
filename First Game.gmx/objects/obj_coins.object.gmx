@@ -49,20 +49,13 @@ image_speed = 5/60;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Player Coins &amp; Lives Limit
+            <string>///Player Coins
 
 //Player//
 if (place_meeting(x,y,obj_player))
 {
     global.points += 1
     instance_destroy();
-}
-
-//Lives Limit//
-if (global.points = 100) &amp;&amp; (lives != 12)
-{
-    lives += 1
-    global.points = 0
 }
 </string>
           </argument>
@@ -167,6 +160,8 @@ if (place_meeting(x,y,obj_player_i_superspeed_limit))
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="4" ename="obj_powerup_gun_bullet_right">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -183,12 +178,8 @@ if (place_meeting(x,y,obj_player_i_superspeed_limit))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Lives Limit 2
-if (global.points = 100) &amp;&amp; (lives != 12)
-{
-    lives += 1
-    global.points = 0
-}
+            <string>///Bullet Effects
+instance_destroy();
 </string>
           </argument>
         </arguments>
