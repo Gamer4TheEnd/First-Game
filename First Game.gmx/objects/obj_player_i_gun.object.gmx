@@ -31,6 +31,8 @@ vsp = 0;
 hsp = 0;
 jumpspeed = 6.5;
 movespeed = 5
+globalvar player_i_gun_dir;
+player_i_gun_dir = player_gun_dir;
 
 image_speed = 8/60
 </string>
@@ -169,74 +171,74 @@ y += vsp;
             <kind>1</kind>
             <string>///Player Animation
 
-//Standing Still
-if (hsp = 0)
+//Running Right//
+if (x &gt; xprevious)
 {
-    if (sprite_index !=spr_player_still_i_gun) image_index = 0;
-    sprite_index = spr_player_still_i_gun;
+    if(sprite_index != spr_player_running_right_i_gun)
+    {
+        sprite_index = spr_player_running_right_i_gun
+    }
+    player_i_gun_dir = 1
 }
 
-
-//Moving Right//
-if (hsp &gt; 0)
+//Running Left//
+else if (x &lt; xprevious)
 {
-    if (sprite_index !=spr_player_right_i_gun) image_index = 0;
-    sprite_index = spr_player_right_i_gun;
+    if(sprite_index != spr_player_running_left_i_gun)
+    {
+        sprite_index = spr_player_running_left_i_gun
+    }
+    player_i_gun_dir = -1
 }
 
-
-//Moving Left//
-if (hsp &lt; 0)
+//Jumping Still Right//
+else if (y &lt; yprevious) &amp;&amp; (player_i_gun_dir = 1)
 {
-    if (sprite_index !=spr_player_left_i_gun) image_index = 0;
-    sprite_index = spr_player_left_i_gun;
+    if(sprite_index != spr_player_jumping_still_right_i_gun)
+    {
+        sprite_index = spr_player_jumping_still_right_i_gun
+    }
 }
 
-
-//Jump Movment Right//
-if (vsp &lt; 0) &amp;&amp; (hsp &gt; 0)
+//Jumping Still Left//
+else if (y &lt; yprevious) &amp;&amp; (player_i_gun_dir = -1)
 {
-    if (sprite_index != spr_player_jump_right_i_gun) image_index = 0;
-    sprite_index = spr_player_jump_right_i_gun;
+    if(sprite_index != spr_player_jumping_still_left_i_gun)
+    {
+        sprite_index = spr_player_jumping_still_left_i_gun
+    }
 }
 
-
-//Jump Movement Left//
-if (vsp &lt; 0) &amp;&amp; (hsp &lt; 0)
+//Falling Still Right//
+else if (y &gt; yprevious) &amp;&amp; (player_i_gun_dir = 1)
 {
-    if (sprite_index != spr_player_jump_left_i_gun) image_index = 0;
-    sprite_index = spr_player_jump_left_i_gun;
+    if(sprite_index != spr_player_falling_still_right_i_gun)
+    {
+        sprite_index = spr_player_falling_still_right_i_gun
+    }
+}
+//Falling Still Left//
+else if (y &gt; yprevious) &amp;&amp; (player_i_gun_dir = -1)
+{
+    if(sprite_index != spr_player_falling_still_left_i_gun)
+    {
+        sprite_index = spr_player_falling_still_left_i_gun
+    }
 }
 
-
-//Jump Movement Down//
-if (vsp &lt; 0) &amp;&amp; (hsp = 0)
+//Standing Still Left &amp; Right//
+else
 {
-    if (sprite_index != spr_player_jump_down_i_gun) image_index = 0;
-    sprite_index = spr_player_jump_down_i_gun;
-}
-
-//Fall Movment Right//
-if (vsp &gt; 0) &amp;&amp; (hsp &gt; 0)
-{
-    if (sprite_index != spr_player_jump_right_i_gun) image_index = 0;
-    sprite_index = spr_player_jump_right_i_gun;
-}
-
-
-//Fall Movement Left//
-if (vsp &gt; 0) &amp;&amp; (hsp &lt; 0)
-{
-    if (sprite_index != spr_player_jump_left_i_gun) image_index = 0;
-    sprite_index = spr_player_jump_left_i_gun;
-}
-
-
-//Fall Movement Down//
-if (vsp &gt; 0) &amp;&amp; (hsp = 0)
-{
-    if (sprite_index != spr_player_jump_down_i_gun) image_index = 0;
-        sprite_index = spr_player_jump_down_i_gun;
+    //Right//
+    if (player_i_gun_dir = 1)
+    {
+        sprite_index = spr_player_still_right_i_gun
+    }
+    //Left//
+    if (player_i_gun_dir = -1)
+    {
+        sprite_index = spr_player_still_left_i_gun
+    }
 }
 </string>
           </argument>

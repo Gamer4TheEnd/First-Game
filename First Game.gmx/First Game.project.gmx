@@ -85,12 +85,18 @@
             </sprites>
           </sprites>
           <sprites name="Player Invencibilty">
-            <sprite>sprites\spr_player_still_i_gun</sprite>
-            <sprite>sprites\spr_player_right_i_gun</sprite>
-            <sprite>sprites\spr_player_left_i_gun</sprite>
-            <sprite>sprites\spr_player_jump_right_i_gun</sprite>
-            <sprite>sprites\spr_player_jump_left_i_gun</sprite>
-            <sprite>sprites\spr_player_jump_down_i_gun</sprite>
+            <sprite>sprites\spr_player_still_right_i_gun</sprite>
+            <sprite>sprites\spr_player_still_left_i_gun</sprite>
+            <sprite>sprites\spr_player_running_right_i_gun</sprite>
+            <sprite>sprites\spr_player_running_left_i_gun</sprite>
+            <sprites name="Jumping">
+              <sprite>sprites\spr_player_jumping_still_right_i_gun</sprite>
+              <sprite>sprites\spr_player_jumping_still_left_i_gun</sprite>
+            </sprites>
+            <sprites name="Falling">
+              <sprite>sprites\spr_player_falling_still_right_i_gun</sprite>
+              <sprite>sprites\spr_player_falling_still_left_i_gun</sprite>
+            </sprites>
           </sprites>
           <sprites name="Items">
             <sprite>sprites\spr_player_powerup_gun_crystal</sprite>
@@ -100,18 +106,32 @@
         </sprites>
         <sprites name="Super Speed">
           <sprites name="Player">
-            <sprite>sprites\spr_player_still_powerup_superspeed</sprite>
-            <sprite>sprites\spr_player_right_powerup_superspeed</sprite>
-            <sprite>sprites\spr_player_left_powerup_superspeed</sprite>
-            <sprite>sprites\spr_player_jump_powerup_superspeed</sprite>
+            <sprite>sprites\spr_player_still_right_powerup_superspeed</sprite>
+            <sprite>sprites\spr_player_still_left_powerup_superspeed</sprite>
+            <sprite>sprites\spr_player_running_right_powerup_superspeed</sprite>
+            <sprite>sprites\spr_player_running_left_powerup_superspeed</sprite>
+            <sprites name="Jumping">
+              <sprite>sprites\spr_player_jumping_still_right_powerup_superspeed</sprite>
+              <sprite>sprites\spr_player_jumping_still_left_powerup_superspeed</sprite>
+            </sprites>
+            <sprites name="Falling">
+              <sprite>sprites\spr_player_falling_still_right_powerup_superspeed</sprite>
+              <sprite>sprites\spr_player_falling_still_left_powerup_superspeed</sprite>
+            </sprites>
           </sprites>
           <sprites name="Player Invencibilty">
-            <sprite>sprites\spr_player_still_i_superspeed</sprite>
-            <sprite>sprites\spr_player_right_i_superspeed</sprite>
-            <sprite>sprites\spr_player_left_i_superspeed</sprite>
-            <sprite>sprites\spr_player_jump_right_i_superspeed</sprite>
-            <sprite>sprites\spr_player_jump_left_i_superspeed</sprite>
-            <sprite>sprites\spr_player_jump_down_i_superspeed</sprite>
+            <sprite>sprites\spr_player_still_right_i_superspeed</sprite>
+            <sprite>sprites\spr_player_still_left_i_superspeed</sprite>
+            <sprite>sprites\spr_player_running_right_i_superspeed</sprite>
+            <sprite>sprites\spr_player_running_left_i_superspeed</sprite>
+            <sprites name="Jumping">
+              <sprite>sprites\spr_player_jumping_still_right_i_superspeed</sprite>
+              <sprite>sprites\spr_player_jumping_still_left_i_superspeed</sprite>
+            </sprites>
+            <sprites name="Falling">
+              <sprite>sprites\spr_player_falling_still_right_i_superspeed</sprite>
+              <sprite>sprites\spr_player_falling_still_left_i_superspeed</sprite>
+            </sprites>
           </sprites>
           <sprites name="Items">
             <sprite>sprites\spr_player_powerup_superspeed_crystal</sprite>

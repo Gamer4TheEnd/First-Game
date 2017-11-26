@@ -31,7 +31,7 @@
 grav = 0.3;
 vsp = 0;
 hsp = 0;
-jumpspeed = 6.5;
+jumpspeed = 6.8;
 movespeed = 4.1
 globalvar player_gun_dir;
 player_gun_dir = player_dir;
