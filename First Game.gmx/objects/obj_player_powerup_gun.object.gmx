@@ -257,6 +257,11 @@ if (place_meeting(x,y,obj_powerup_superspeed_crystal))
 {
     global.points += 25
 }
+//Super Jump Power Up Crystal
+if (place_meeting(x,y,obj_powerup_superjump_crystal))
+{
+    global.points += 25
+}
 </string>
           </argument>
         </arguments>

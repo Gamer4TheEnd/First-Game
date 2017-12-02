@@ -33,6 +33,7 @@ jumpspeed = 8;
 movespeed = 5;
 globalvar player_i_superspeed_limit_dir;
 player_i_superspeed_limit_dir = player_superspeed_limit_dir;
+obj_player_i_superspeed_limit.vsp = obj_player_powerup_superspeed_limit.vsp
 
 image_speed = 8/60
 </string>
@@ -81,6 +82,7 @@ alarm[0] = 180;
             <kind>1</kind>
             <string>///Remove Inviecibilty
 instance_create(x,y,obj_player)
+player_dir = player_i_superspeed_limit_dir
 instance_destroy();
 </string>
           </argument>
@@ -265,6 +267,8 @@ else
 if (place_meeting(x,y,obj_powerup_gun_crystal))
 {
     instance_create(x,y,obj_player_powerup_gun);
+    obj_player_powerup_gun.vsp = obj_player_i_superspeed_limit.vsp
+    global.bullets += 10
     instance_destroy();    
 }
 </string>
@@ -291,8 +295,37 @@ if (place_meeting(x,y,obj_powerup_gun_crystal))
 
 if (place_meeting(x,y,obj_powerup_superspeed_crystal))
 {
-    instance_create(x,y,obj_player_powerup_superspeed);
+    instance_create(x,y,obj_player_powerup_superspeed_limit);
+    obj_player_powerup_superspeed_limit.vsp = obj_player_i_superspeed_limit.vsp
     instance_destroy();    
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Player Super Jump Power Up
+
+if (place_meeting(x,y,obj_powerup_superjump_crystal))
+{
+    instance_create(x,y,obj_player_powerup_superjump_limit);
+    obj_player_powerup_superjump_limit.vsp = obj_player_i_superspeed_limit.vsp
+    instance_destroy();  
 }
 </string>
           </argument>

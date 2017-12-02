@@ -181,15 +181,15 @@ else if (y &gt; yprevious) &amp;&amp; (player_dir = -1)
     }
 }
 
-//Standing Still Left &amp; Right//
+//Standing Still Left &amp; Right Normal//
 else
 {
-    //Right//
+        //Right//
     if (player_dir = 1)
     {
         sprite_index = spr_player_still_right
     }
-    //Left//
+        //Left//
     if (player_dir = -1)
     {
         sprite_index = spr_player_still_left
@@ -220,6 +220,7 @@ if (place_meeting(x,y,obj_powerup_gun_crystal))
 {
     global.bullets += 10
     instance_create(x,y,obj_player_powerup_gun);
+    obj_player_powerup_gun.vsp = obj_player.vsp
     instance_destroy();
 }
 </string>
@@ -246,6 +247,34 @@ if (place_meeting(x,y,obj_powerup_gun_crystal))
 if (place_meeting(x,y,obj_powerup_superspeed_crystal))
 {
     instance_create(x,y,obj_player_powerup_superspeed_limit);
+    obj_player_powerup_superspeed_limit.vsp = obj_player.vsp
+    instance_destroy();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Player Super Jump Power Up
+if (place_meeting(x,y,obj_powerup_superjump_crystal))
+{
+    instance_create(x,y,obj_player_powerup_superjump_limit);
+    obj_player_powerup_superjump_limit.vsp = obj_player.vsp
     instance_destroy();
 }
 </string>

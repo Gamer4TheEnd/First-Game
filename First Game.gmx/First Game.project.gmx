@@ -137,6 +137,21 @@
             <sprite>sprites\spr_player_powerup_superspeed_crystal</sprite>
           </sprites>
         </sprites>
+        <sprites name="Super Jump">
+          <sprites name="Player">
+            <sprite>sprites\spr_player_still_right_powerup_superjump</sprite>
+            <sprite>sprites\spr_player_running_right_powerup_superjump</sprite>
+            <sprites name="Jumping">
+              <sprite>sprites\spr_player_jumping_still_right_powerup_superjump</sprite>
+            </sprites>
+            <sprites name="Falling">
+              <sprite>sprites\spr_player_falling_still_right_powerup_superjump</sprite>
+            </sprites>
+          </sprites>
+          <sprites name="Items">
+            <sprite>sprites\spr_player_powerup_superjump_crystal</sprite>
+          </sprites>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Blocks">
@@ -296,13 +311,25 @@
         <object>objects\obj_player_powerup_gun</object>
         <object>objects\obj_player_i_gun</object>
       </objects>
-      <objects name="Super Speed Power Up Limit">
-        <object>objects\obj_player_powerup_superspeed_limit</object>
-        <object>objects\obj_player_i_superspeed_limit</object>
+      <objects name="Super Speed Power Up">
+        <objects name="Super Speed Power Up Limit">
+          <object>objects\obj_player_powerup_superspeed_limit</object>
+          <object>objects\obj_player_i_superspeed_limit</object>
+        </objects>
+        <objects name="Super Speed Power Up No Limit">
+          <object>objects\obj_player_powerup_superspeed</object>
+          <object>objects\obj_player_i_superspeed</object>
+        </objects>
       </objects>
-      <objects name="Super Speed Power Up No Limit">
-        <object>objects\obj_player_powerup_superspeed</object>
-        <object>objects\obj_player_i_superspeed</object>
+      <objects name="Super Jump Power Up">
+        <objects name="Super Jump Power Up Limit">
+          <object>objects\obj_player_powerup_superjump_limit</object>
+          <object>objects\obj_player_i_superjump_limit</object>
+        </objects>
+        <objects name="Super Jump Power Up No Limit">
+          <object>objects\obj_player_powerup_superjump</object>
+          <object>objects\obj_player_i_superjump</object>
+        </objects>
       </objects>
     </objects>
     <objects name="Power Ups">
@@ -315,6 +342,9 @@
       </objects>
       <objects name="Super Speed">
         <object>objects\obj_powerup_superspeed_crystal</object>
+      </objects>
+      <objects name="Super Jump">
+        <object>objects\obj_powerup_superjump_crystal</object>
       </objects>
     </objects>
     <objects name="Blocks">

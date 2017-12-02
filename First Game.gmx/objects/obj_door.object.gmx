@@ -39,7 +39,7 @@ if (place_meeting(x,y,obj_player_powerup_gun))
     room_goto(rm_mainmenu);
 }
 
-//Losing Gun Power Up Finish
+//Invinciblity Gun Power Up Finish
 
 if (place_meeting(x,y,obj_player_i_gun))
 {
@@ -53,7 +53,7 @@ if (place_meeting(x,y,obj_player_powerup_superspeed))
     room_goto(rm_mainmenu);
 }
 
-//Losing Super Speed Power Up Finish
+//Invinciblity Super Speed Power Up Finish
 
 if (place_meeting(x,y,obj_player_i_superspeed))
 {
@@ -67,9 +67,37 @@ if (place_meeting(x,y,obj_player_powerup_superspeed_limit))
     room_goto(rm_mainmenu);
 }
 
-//Losing Super Speed Limit Power Up Finish
+//Invinciblity Super Speed Limit Power Up Finish
 
 if (place_meeting(x,y,obj_player_i_superspeed_limit))
+{
+    room_goto(rm_mainmenu);
+}
+
+//Super Jump Power Up Finish
+
+if (place_meeting(x,y,obj_player_powerup_superjump))
+{
+    room_goto(rm_mainmenu);
+}
+
+//Invinciblity Super Speed Power Up Finish
+
+if (place_meeting(x,y,obj_player_i_superjump))
+{
+    room_goto(rm_mainmenu);
+}
+
+//Super Speed Limit Power Up Finish
+
+if (place_meeting(x,y,obj_player_powerup_superjump_limit))
+{
+    room_goto(rm_mainmenu);
+}
+
+//Invinciblity Super Speed Limit Power Up Finish
+
+if (place_meeting(x,y,obj_player_i_superjump_limit))
 {
     room_goto(rm_mainmenu);
 }
