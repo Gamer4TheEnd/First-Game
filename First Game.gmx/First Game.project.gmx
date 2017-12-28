@@ -221,11 +221,17 @@
     <backgrounds name="Main Menu">
       <background>background\bac_mainmenu</background>
     </backgrounds>
-    <backgrounds name="First Level">
-      <background>background\grassland</background>
+    <backgrounds name="GrassLand">
+      <background>background\bac_grassland_sky</background>
+      <background>background\bac_grassland_clouds</background>
+      <background>background\bac_grassland_mountain</background>
+      <background>background\bac_grassland_grass</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\display_write_specs.gml</script>
+  </scripts>
   <fonts name="fonts">
     <fonts name="Tracking">
       <font>fonts\fon_coins</font>
@@ -416,6 +422,7 @@
       </objects>
     </objects>
     <objects name="Tracking">
+      <object>objects\obj_boards</object>
       <objects name="In Game">
         <object>objects\obj_boards_rope</object>
         <objects name="Hearts">
