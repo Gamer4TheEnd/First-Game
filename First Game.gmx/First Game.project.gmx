@@ -229,9 +229,6 @@
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts">
-    <script>scripts\display_write_specs.gml</script>
-  </scripts>
   <fonts name="fonts">
     <fonts name="Tracking">
       <font>fonts\fon_coins</font>
@@ -423,6 +420,7 @@
     </objects>
     <objects name="Tracking">
       <object>objects\obj_boards</object>
+      <object>objects\obj_backgrounds</object>
       <objects name="In Game">
         <object>objects\obj_boards_rope</object>
         <objects name="Hearts">
