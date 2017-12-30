@@ -140,12 +140,30 @@
         <sprites name="Super Jump">
           <sprites name="Player">
             <sprite>sprites\spr_player_still_right_powerup_superjump</sprite>
+            <sprite>sprites\spr_player_still_left_powerup_superjump</sprite>
             <sprite>sprites\spr_player_running_right_powerup_superjump</sprite>
+            <sprite>sprites\spr_player_running_left_powerup_superjump</sprite>
             <sprites name="Jumping">
               <sprite>sprites\spr_player_jumping_still_right_powerup_superjump</sprite>
+              <sprite>sprites\spr_player_jumping_still_left_powerup_superjump</sprite>
             </sprites>
             <sprites name="Falling">
               <sprite>sprites\spr_player_falling_still_right_powerup_superjump</sprite>
+              <sprite>sprites\spr_player_falling_still_left_powerup_superjump</sprite>
+            </sprites>
+          </sprites>
+          <sprites name="Player Invencibily ">
+            <sprite>sprites\spr_player_still_right_i_superjump</sprite>
+            <sprite>sprites\spr_player_still_left_i_superjump</sprite>
+            <sprite>sprites\spr_player_running_right_i_superjump</sprite>
+            <sprite>sprites\spr_player_running_left_i_superjump</sprite>
+            <sprites name="Jumping">
+              <sprite>sprites\spr_player_jumping_still_right_i_superjump</sprite>
+              <sprite>sprites\spr_player_jumping_still_left_i_superjump</sprite>
+            </sprites>
+            <sprites name="Falling">
+              <sprite>sprites\spr_player_falling_still_right_i_superjump</sprite>
+              <sprite>sprites\spr_player_falling_still_left_i_superjump</sprite>
             </sprites>
           </sprites>
           <sprites name="Items">

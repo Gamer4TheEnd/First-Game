@@ -108,6 +108,7 @@ if (place_meeting(x,y,obj_player))
             lives -= 1
             instance_destroy(obj_player)
             instance_create(obj_checkpoint.x,obj_checkpoint.y,obj_player)
+            instance_destroy()
         }
         if (lives = 0)
         {
@@ -151,6 +152,7 @@ if (place_meeting(x,y,obj_player_powerup_gun))
         instance_create(obj_player_powerup_gun.x,obj_player_powerup_gun.y,obj_player_i_gun)
         instance_destroy(obj_player_powerup_gun)
         with (obj_player_i_gun) vsp = -jumpspeed * 1.4;
+        instance_destroy()
     }
 }
 </string>
@@ -188,6 +190,7 @@ if (place_meeting(x,y,obj_player_powerup_superspeed))
         instance_create(obj_player_powerup_superspeed.x,obj_player_powerup_superspeed.y,obj_player_i_superspeed)
         instance_destroy(obj_player_powerup_superspeed)
         with (obj_player_i_superspeed) vsp = -jumpspeed * 1.4;
+        instance_destroy()
     }
 }
 </string>
@@ -225,6 +228,7 @@ if (place_meeting(x,y,obj_player_powerup_superspeed_limit))
         instance_create(obj_player_powerup_superspeed_limit.x,obj_player_powerup_superspeed_limit.y,obj_player_i_superspeed_limit)
         instance_destroy(obj_player_powerup_superspeed_limit)
         with (obj_player_i_superspeed_limit) vsp = -jumpspeed * 1.4;
+        instance_destroy()
     }
 }
 </string>
@@ -247,7 +251,7 @@ if (place_meeting(x,y,obj_player_powerup_superspeed_limit))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Super Speed Power Up Collision
+            <string>///Super Jump Power Up Collision
 if (place_meeting(x,y,obj_player_powerup_superjump))
 {
     if (obj_player_powerup_superjump.y &lt; y-17)
@@ -262,6 +266,7 @@ if (place_meeting(x,y,obj_player_powerup_superjump))
         instance_create(obj_player_powerup_superjump.x,obj_player_powerup_superjump.y,obj_player_i_superjump)
         instance_destroy(obj_player_powerup_superjump)
         with (obj_player_i_superjump) vsp = -jumpspeed * 1.4;
+        instance_destroy()
     }
 }
 </string>
@@ -284,7 +289,7 @@ if (place_meeting(x,y,obj_player_powerup_superjump))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Super Speed Power Up Limit Collision
+            <string>///Super Jump Power Up Limit Collision
 if (place_meeting(x,y,obj_player_powerup_superjump_limit))
 {
     if (obj_player_powerup_superjump_limit.y &lt; y-17)
@@ -299,6 +304,7 @@ if (place_meeting(x,y,obj_player_powerup_superjump_limit))
         instance_create(obj_player_powerup_superjump_limit.x,obj_player_powerup_superjump_limit.y,obj_player_i_superjump_limit)
         instance_destroy(obj_player_powerup_superjump_limit)
         with (obj_player_i_superjump_limit) vsp = -jumpspeed * 1.4;
+        instance_destroy()
     }
 }
 </string>
