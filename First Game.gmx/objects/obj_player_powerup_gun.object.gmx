@@ -92,8 +92,10 @@ space_bar = keyboard_check_pressed(vk_space);
 move = left_key + right_key;
 hsp = move * movespeed;
 
-//Jumping//
+//Gravity//
 if (vsp &lt; 10) vsp += grav;
+
+//Jumping//
 
 if(place_meeting(x,y+1,obj_wall))
 {
@@ -130,8 +132,6 @@ if (place_meeting(x,y+vsp,obj_wall))
 }
 
 y += vsp;
-
-
 </string>
           </argument>
         </arguments>

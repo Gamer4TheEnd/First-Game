@@ -59,7 +59,7 @@ checkpoints = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Player Input KeyBoard
+            <string>///Player Input
 right_key = keyboard_check(ord("D"));
 left_key = -keyboard_check(ord("A"));
 space_bar = keyboard_check_pressed(vk_space);
@@ -69,8 +69,10 @@ space_bar = keyboard_check_pressed(vk_space);
 move = left_key + right_key;
 hsp = move * movespeed;
 
-//Jumping//
+//Gravity//
 if (vsp &lt; 10) vsp += grav;
+
+//Jumping//
 
 if(place_meeting(x,y+1,obj_wall))
 {
