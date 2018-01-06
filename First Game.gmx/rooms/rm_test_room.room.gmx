@@ -3,8 +3,8 @@
   <caption></caption>
   <width>3840</width>
   <height>2160</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -1255,7 +1255,7 @@
     <instance objName="obj_grass_topcornor" x="2784" y="1024" name="inst_B1810DB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_topcornor" x="2624" y="1056" name="inst_3502A945" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_topcornor" x="2496" y="1088" name="inst_D5C5E28C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object98" x="3264" y="1184" name="inst_B80E1693" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sign_fuckingidiot" x="3296" y="1200" name="inst_B80E1693" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="3328" y="1248" name="inst_DBF20733" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="3296" y="1248" name="inst_52957C77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="3264" y="1248" name="inst_1A125436" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

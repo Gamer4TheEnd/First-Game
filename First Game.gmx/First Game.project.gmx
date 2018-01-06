@@ -227,6 +227,9 @@
       <sprite>sprites\spr_enemy_asainbutt</sprite>
       <sprite>sprites\spr_enemy_arabbutt</sprite>
     </sprites>
+    <sprites name="Signs">
+      <sprite>sprites\spr_sign_fuckingidiot</sprite>
+    </sprites>
     <sprites name="Tracking">
       <sprite>sprites\spr_hearts_board</sprite>
       <sprite>sprites\spr_coins_board</sprite>
@@ -234,7 +237,6 @@
       <sprite>sprites\spr_boards_rope</sprite>
       <sprite>sprites\spr_bullets_board</sprite>
     </sprites>
-    <sprite>sprites\sprite122</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
@@ -418,7 +420,6 @@
         <object>objects\obj_lava</object>
         <object>objects\obj_lava_bottom</object>
       </objects>
-      <object>objects\object98</object>
     </objects>
     <objects name="Enemies">
       <objects name="White Butt">
@@ -437,6 +438,9 @@
         <object>objects\obj_enemy_arabbutt</object>
         <object>objects\obj_enemy_arabbutt_nofall</object>
       </objects>
+    </objects>
+    <objects name="Signs">
+      <object>objects\obj_sign_fuckingidiot</object>
     </objects>
     <objects name="Tracking">
       <object>objects\obj_boards</object>
