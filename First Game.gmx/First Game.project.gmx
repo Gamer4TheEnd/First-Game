@@ -16,6 +16,9 @@
     <sounds name="Enemies">
       <sound>sound\snd_fart</sound>
     </sounds>
+    <sounds name="Background Songs">
+      <sound>sound\grassland_music</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Menus">
@@ -228,7 +231,7 @@
       <sprite>sprites\spr_enemy_arabbutt</sprite>
     </sprites>
     <sprites name="Signs">
-      <sprite>sprites\spr_sign_fuckingidiot</sprite>
+      <sprite>sprites\spr_sign_blank</sprite>
     </sprites>
     <sprites name="Tracking">
       <sprite>sprites\spr_hearts_board</sprite>
@@ -261,6 +264,7 @@
       <objects name="Menus">
         <object>objects\obj_music_mainmenu</object>
       </objects>
+      <object>objects\obj_background_music</object>
     </objects>
     <objects name="Menus">
       <objects name="Main Menu">
@@ -420,6 +424,7 @@
         <object>objects\obj_lava</object>
         <object>objects\obj_lava_bottom</object>
       </objects>
+      <object>objects\obj_arrowkeys_controls</object>
     </objects>
     <objects name="Enemies">
       <objects name="White Butt">
@@ -440,7 +445,7 @@
       </objects>
     </objects>
     <objects name="Signs">
-      <object>objects\obj_sign_fuckingidiot</object>
+      <object>objects\obj_sign_blank</object>
     </objects>
     <objects name="Tracking">
       <object>objects\obj_boards</object>

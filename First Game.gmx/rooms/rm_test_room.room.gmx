@@ -1255,7 +1255,6 @@
     <instance objName="obj_grass_topcornor" x="2784" y="1024" name="inst_B1810DB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_topcornor" x="2624" y="1056" name="inst_3502A945" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_topcornor" x="2496" y="1088" name="inst_D5C5E28C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign_fuckingidiot" x="3296" y="1200" name="inst_B80E1693" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="3328" y="1248" name="inst_DBF20733" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="3296" y="1248" name="inst_52957C77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="3264" y="1248" name="inst_1A125436" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1381,6 +1380,8 @@
     <instance objName="obj_grass_tree" x="3552" y="1056" name="inst_57032F6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_tree" x="3808" y="704" name="inst_59929BDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint_position" x="2496" y="1056" name="inst_18C93DD1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_background_music" x="0" y="0" name="inst_B694D20C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_arrowkeys_controls" x="16" y="0" name="inst_CAC94FB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
