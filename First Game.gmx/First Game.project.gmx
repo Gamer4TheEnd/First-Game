@@ -16,8 +16,8 @@
     <sounds name="Enemies">
       <sound>sound\snd_fart</sound>
     </sounds>
-    <sounds name="Background Songs">
-      <sound>sound\grassland_music</sound>
+    <sounds name="Grassland">
+      <sound>sound\snd_grassland_bgm_1</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -264,7 +264,9 @@
       <objects name="Menus">
         <object>objects\obj_music_mainmenu</object>
       </objects>
-      <object>objects\obj_background_music</object>
+      <objects name="grassland">
+        <object>objects\obj_music_grassland_bgm_1</object>
+      </objects>
     </objects>
     <objects name="Menus">
       <objects name="Main Menu">
@@ -424,7 +426,6 @@
         <object>objects\obj_lava</object>
         <object>objects\obj_lava_bottom</object>
       </objects>
-      <object>objects\obj_arrowkeys_controls</object>
     </objects>
     <objects name="Enemies">
       <objects name="White Butt">

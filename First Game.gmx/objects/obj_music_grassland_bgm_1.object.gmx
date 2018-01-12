@@ -25,13 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Butt Bashers Theme Song
-if (!audio_is_playing(snd_mainmenu_themesong))
+            <string>///Grassland BGM 1
+if (!audio_is_playing(snd_grassland_bgm_1))
 {
-    audio_play_sound(snd_mainmenu_themesong,20,true)
-    audio_sound_gain(snd_mainmenu_themesong,0.35,0)
+    audio_play_sound(snd_grassland_bgm_1,45,true)
 }
-global.vol = 0.6;
 </string>
           </argument>
         </arguments>
