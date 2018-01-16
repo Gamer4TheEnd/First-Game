@@ -264,7 +264,7 @@
       <objects name="Menus">
         <object>objects\obj_music_mainmenu</object>
       </objects>
-      <objects name="grassland">
+      <objects name="GrassLand">
         <object>objects\obj_music_grassland_bgm_1</object>
       </objects>
     </objects>

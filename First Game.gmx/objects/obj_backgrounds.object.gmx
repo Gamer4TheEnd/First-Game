@@ -545,10 +545,25 @@ if (instance_exists(obj_player_i_gun))
           <argument>
             <kind>1</kind>
             <string>///Parallax View 3
-/*
           //Backgrounds//
+if (instance_exists(obj_player))
+{
         //Standing Still//
-    if (view_hspeed[3] = 0)
+    if (view_xview[3] = 0) &amp;&amp; (obj_player.x = obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[3] &gt; 0) &amp;&amp; (obj_player.x = obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[3] &lt; 0) &amp;&amp; (obj_player.x = obj_player.xprevious)
     {
         background_hspeed[0] = 0
         background_hspeed[1] = -0.05
@@ -557,24 +572,80 @@ if (instance_exists(obj_player_i_gun))
     }
 
         //Moving Left//
-    if (view_hspeed[3] &lt; 0)
+    if (view_xview[3] &lt; 0) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[3] = 0) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[3] &gt; 0) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
     {
         background_hspeed[0] = -0
         background_hspeed[1] = -4.5
         background_hspeed[2] = -4
         background_hspeed[3] = -3.5
     }
+    if (obj_player.x + 500 &gt; room_width) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
 
         //Moving Right//
-    if (view_hspeed[3] &gt; 0)
+    if (view_xview[3] &lt; 0) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[3] = 0) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[3] &gt; 0) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
     {
         background_hspeed[0] = 0
         background_hspeed[1] = 4.5
         background_hspeed[2] = 4
         background_hspeed[3] = 3.5
     }
+    if (obj_player.x + 500 &gt; room_width) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
         //Jumping//
-    if (view_vspeed[3] &lt; 0)
+    if (view_yview[3] &gt; 0) &amp;&amp; (obj_player.y &lt; obj_player.yprevious)
+    {
+        background_vspeed[0] = -0
+        background_vspeed[1] = -0
+        background_vspeed[2] = -0.02
+        background_vspeed[3] = -0.1
+    }
+    if (view_yview[3] &lt; 0) &amp;&amp; (obj_player.y &lt; obj_player.yprevious)
+    {
+        background_vspeed[0] = -0
+        background_vspeed[1] = -0
+        background_vspeed[2] = -0.02
+        background_vspeed[3] = -0.1
+    }
+    if (view_yview[3] = 0) &amp;&amp; (obj_player.y &lt; obj_player.yprevious)
     {
         background_vspeed[0] = -0
         background_vspeed[1] = -0
@@ -582,7 +653,21 @@ if (instance_exists(obj_player_i_gun))
         background_vspeed[3] = -0.1
     }
         //Falling//
-    if (view_vspeed[3] &gt; 0)
+    if (view_yview[3] &gt; 0) &amp;&amp; (obj_player.y &gt; obj_player.yprevious)
+    {
+        background_vspeed[0] = 0
+        background_vspeed[1] = 0
+        background_vspeed[2] = 0.02
+        background_vspeed[3] = 0.1
+    }
+    if (view_yview[3] &lt; 0) &amp;&amp; (obj_player.y &gt; obj_player.yprevious)
+    {
+        background_vspeed[0] = 0
+        background_vspeed[1] = 0
+        background_vspeed[2] = 0.02
+        background_vspeed[3] = 0.1
+    }
+    if (view_yview[3] = 0) &amp;&amp; (obj_player.y &gt; obj_player.yprevious)
     {
         background_vspeed[0] = 0
         background_vspeed[1] = 0
@@ -590,13 +675,28 @@ if (instance_exists(obj_player_i_gun))
         background_vspeed[3] = 0.1
     }
         //Standing Still//
-    if (view_vspeed[3] = 0)
+    if (view_yview[3] &gt; 0) &amp;&amp; (obj_player.y = obj_player.yprevious)
     {
         background_vspeed[0] = 0
         background_vspeed[1] = 0
         background_vspeed[2] = 0
         background_vspeed[3] = 0
     }
+    if (view_yview[3] &lt; 0) &amp;&amp; (obj_player.y = obj_player.yprevious)
+    {
+        background_vspeed[0] = 0
+        background_vspeed[1] = 0
+        background_vspeed[2] = 0
+        background_vspeed[3] = 0
+    }
+    if (view_yview[3] = 0) &amp;&amp; (obj_player.y = obj_player.yprevious)
+    {
+        background_vspeed[0] = 0
+        background_vspeed[1] = 0
+        background_vspeed[2] = 0
+        background_vspeed[3] = 0
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -618,10 +718,25 @@ if (instance_exists(obj_player_i_gun))
           <argument>
             <kind>1</kind>
             <string>///Parallax View 4
-/*
           //Backgrounds//
+if (instance_exists(obj_player))
+{
         //Standing Still//
-    if (view_hspeed[4] = 0)
+    if (view_xview[4] = 0) &amp;&amp; (obj_player.x = obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[4] &gt; 0) &amp;&amp; (obj_player.x = obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[4] &lt; 0) &amp;&amp; (obj_player.x = obj_player.xprevious)
     {
         background_hspeed[0] = 0
         background_hspeed[1] = -0.05
@@ -630,24 +745,80 @@ if (instance_exists(obj_player_i_gun))
     }
 
         //Moving Left//
-    if (view_hspeed[4] &lt; 0)
+    if (view_xview[4] &lt; 0) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[4] = 0) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[4] &gt; 0) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
     {
         background_hspeed[0] = -0
         background_hspeed[1] = -4.5
         background_hspeed[2] = -4
         background_hspeed[3] = -3.5
     }
+    if (obj_player.x + 500 &gt; room_width) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
 
         //Moving Right//
-    if (view_hspeed[4] &gt; 0)
+    if (view_xview[4] &lt; 0) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[4] = 0) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[4] &gt; 0) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
     {
         background_hspeed[0] = 0
         background_hspeed[1] = 4.5
         background_hspeed[2] = 4
         background_hspeed[3] = 3.5
     }
+    if (obj_player.x + 500 &gt; room_width) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
         //Jumping//
-    if (view_vspeed[4] &lt; 0)
+    if (view_yview[4] &gt; 0) &amp;&amp; (obj_player.y &lt; obj_player.yprevious)
+    {
+        background_vspeed[0] = -0
+        background_vspeed[1] = -0
+        background_vspeed[2] = -0.02
+        background_vspeed[3] = -0.1
+    }
+    if (view_yview[4] &lt; 0) &amp;&amp; (obj_player.y &lt; obj_player.yprevious)
+    {
+        background_vspeed[0] = -0
+        background_vspeed[1] = -0
+        background_vspeed[2] = -0.02
+        background_vspeed[3] = -0.1
+    }
+    if (view_yview[4] = 0) &amp;&amp; (obj_player.y &lt; obj_player.yprevious)
     {
         background_vspeed[0] = -0
         background_vspeed[1] = -0
@@ -655,7 +826,21 @@ if (instance_exists(obj_player_i_gun))
         background_vspeed[3] = -0.1
     }
         //Falling//
-    if (view_vspeed[4] &gt; 0)
+    if (view_yview[4] &gt; 0) &amp;&amp; (obj_player.y &gt; obj_player.yprevious)
+    {
+        background_vspeed[0] = 0
+        background_vspeed[1] = 0
+        background_vspeed[2] = 0.02
+        background_vspeed[3] = 0.1
+    }
+    if (view_yview[4] &lt; 0) &amp;&amp; (obj_player.y &gt; obj_player.yprevious)
+    {
+        background_vspeed[0] = 0
+        background_vspeed[1] = 0
+        background_vspeed[2] = 0.02
+        background_vspeed[3] = 0.1
+    }
+    if (view_yview[4] = 0) &amp;&amp; (obj_player.y &gt; obj_player.yprevious)
     {
         background_vspeed[0] = 0
         background_vspeed[1] = 0
@@ -663,13 +848,28 @@ if (instance_exists(obj_player_i_gun))
         background_vspeed[3] = 0.1
     }
         //Standing Still//
-    if (view_vspeed[4] = 0)
+    if (view_yview[4] &gt; 0) &amp;&amp; (obj_player.y = obj_player.yprevious)
     {
         background_vspeed[0] = 0
         background_vspeed[1] = 0
         background_vspeed[2] = 0
         background_vspeed[3] = 0
     }
+    if (view_yview[4] &lt; 0) &amp;&amp; (obj_player.y = obj_player.yprevious)
+    {
+        background_vspeed[0] = 0
+        background_vspeed[1] = 0
+        background_vspeed[2] = 0
+        background_vspeed[3] = 0
+    }
+    if (view_yview[4] = 0) &amp;&amp; (obj_player.y = obj_player.yprevious)
+    {
+        background_vspeed[0] = 0
+        background_vspeed[1] = 0
+        background_vspeed[2] = 0
+        background_vspeed[3] = 0
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -691,10 +891,25 @@ if (instance_exists(obj_player_i_gun))
           <argument>
             <kind>1</kind>
             <string>///Parallax View 5
-/*
           //Backgrounds//
+if (instance_exists(obj_player))
+{
         //Standing Still//
-    if (view_hspeed[5] = 0)
+    if (view_xview[5] = 0) &amp;&amp; (obj_player.x = obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[5] &gt; 0) &amp;&amp; (obj_player.x = obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[5] &lt; 0) &amp;&amp; (obj_player.x = obj_player.xprevious)
     {
         background_hspeed[0] = 0
         background_hspeed[1] = -0.05
@@ -703,24 +918,80 @@ if (instance_exists(obj_player_i_gun))
     }
 
         //Moving Left//
-    if (view_hspeed[5] &lt; 0)
+    if (view_xview[5] &lt; 0) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[5] = 0) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[5] &gt; 0) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
     {
         background_hspeed[0] = -0
         background_hspeed[1] = -4.5
         background_hspeed[2] = -4
         background_hspeed[3] = -3.5
     }
+    if (obj_player.x + 500 &gt; room_width) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
 
         //Moving Right//
-    if (view_hspeed[5] &gt; 0)
+    if (view_xview[5] &lt; 0) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[5] = 0) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[5] &gt; 0) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
     {
         background_hspeed[0] = 0
         background_hspeed[1] = 4.5
         background_hspeed[2] = 4
         background_hspeed[3] = 3.5
     }
+    if (obj_player.x + 500 &gt; room_width) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
         //Jumping//
-    if (view_vspeed[5] &lt; 0)
+    if (view_yview[5] &gt; 0) &amp;&amp; (obj_player.y &lt; obj_player.yprevious)
+    {
+        background_vspeed[0] = -0
+        background_vspeed[1] = -0
+        background_vspeed[2] = -0.02
+        background_vspeed[3] = -0.1
+    }
+    if (view_yview[5] &lt; 0) &amp;&amp; (obj_player.y &lt; obj_player.yprevious)
+    {
+        background_vspeed[0] = -0
+        background_vspeed[1] = -0
+        background_vspeed[2] = -0.02
+        background_vspeed[3] = -0.1
+    }
+    if (view_yview[5] = 0) &amp;&amp; (obj_player.y &lt; obj_player.yprevious)
     {
         background_vspeed[0] = -0
         background_vspeed[1] = -0
@@ -728,7 +999,21 @@ if (instance_exists(obj_player_i_gun))
         background_vspeed[3] = -0.1
     }
         //Falling//
-    if (view_vspeed[5] &gt; 0)
+    if (view_yview[5] &gt; 0) &amp;&amp; (obj_player.y &gt; obj_player.yprevious)
+    {
+        background_vspeed[0] = 0
+        background_vspeed[1] = 0
+        background_vspeed[2] = 0.02
+        background_vspeed[3] = 0.1
+    }
+    if (view_yview[5] &lt; 0) &amp;&amp; (obj_player.y &gt; obj_player.yprevious)
+    {
+        background_vspeed[0] = 0
+        background_vspeed[1] = 0
+        background_vspeed[2] = 0.02
+        background_vspeed[3] = 0.1
+    }
+    if (view_yview[5] = 0) &amp;&amp; (obj_player.y &gt; obj_player.yprevious)
     {
         background_vspeed[0] = 0
         background_vspeed[1] = 0
@@ -736,13 +1021,28 @@ if (instance_exists(obj_player_i_gun))
         background_vspeed[3] = 0.1
     }
         //Standing Still//
-    if (view_vspeed[5] = 0)
+    if (view_yview[5] &gt; 0) &amp;&amp; (obj_player.y = obj_player.yprevious)
     {
         background_vspeed[0] = 0
         background_vspeed[1] = 0
         background_vspeed[2] = 0
         background_vspeed[3] = 0
     }
+    if (view_yview[5] &lt; 0) &amp;&amp; (obj_player.y = obj_player.yprevious)
+    {
+        background_vspeed[0] = 0
+        background_vspeed[1] = 0
+        background_vspeed[2] = 0
+        background_vspeed[3] = 0
+    }
+    if (view_yview[5] = 0) &amp;&amp; (obj_player.y = obj_player.yprevious)
+    {
+        background_vspeed[0] = 0
+        background_vspeed[1] = 0
+        background_vspeed[2] = 0
+        background_vspeed[3] = 0
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -764,10 +1064,25 @@ if (instance_exists(obj_player_i_gun))
           <argument>
             <kind>1</kind>
             <string>///Parallax View 6
-/*
           //Backgrounds//
+if (instance_exists(obj_player))
+{
         //Standing Still//
-    if (view_hspeed[6] = 0)
+    if (view_xview[6] = 0) &amp;&amp; (obj_player.x = obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[6] &gt; 0) &amp;&amp; (obj_player.x = obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[6] &lt; 0) &amp;&amp; (obj_player.x = obj_player.xprevious)
     {
         background_hspeed[0] = 0
         background_hspeed[1] = -0.05
@@ -776,24 +1091,80 @@ if (instance_exists(obj_player_i_gun))
     }
 
         //Moving Left//
-    if (view_hspeed[6] &lt; 0)
+    if (view_xview[6] &lt; 0) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[6] = 0) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[6] &gt; 0) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
     {
         background_hspeed[0] = -0
         background_hspeed[1] = -4.5
         background_hspeed[2] = -4
         background_hspeed[3] = -3.5
     }
+    if (obj_player.x + 500 &gt; room_width) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
 
         //Moving Right//
-    if (view_hspeed[6] &gt; 0)
+    if (view_xview[6] &lt; 0) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[6] = 0) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[6] &gt; 0) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
     {
         background_hspeed[0] = 0
         background_hspeed[1] = 4.5
         background_hspeed[2] = 4
         background_hspeed[3] = 3.5
     }
+    if (obj_player.x + 500 &gt; room_width) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
         //Jumping//
-    if (view_vspeed[6] &lt; 0)
+    if (view_yview[6] &gt; 0) &amp;&amp; (obj_player.y &lt; obj_player.yprevious)
+    {
+        background_vspeed[0] = -0
+        background_vspeed[1] = -0
+        background_vspeed[2] = -0.02
+        background_vspeed[3] = -0.1
+    }
+    if (view_yview[6] &lt; 0) &amp;&amp; (obj_player.y &lt; obj_player.yprevious)
+    {
+        background_vspeed[0] = -0
+        background_vspeed[1] = -0
+        background_vspeed[2] = -0.02
+        background_vspeed[3] = -0.1
+    }
+    if (view_yview[6] = 0) &amp;&amp; (obj_player.y &lt; obj_player.yprevious)
     {
         background_vspeed[0] = -0
         background_vspeed[1] = -0
@@ -801,7 +1172,21 @@ if (instance_exists(obj_player_i_gun))
         background_vspeed[3] = -0.1
     }
         //Falling//
-    if (view_vspeed[6] &gt; 0)
+    if (view_yview[6] &gt; 0) &amp;&amp; (obj_player.y &gt; obj_player.yprevious)
+    {
+        background_vspeed[0] = 0
+        background_vspeed[1] = 0
+        background_vspeed[2] = 0.02
+        background_vspeed[3] = 0.1
+    }
+    if (view_yview[6] &lt; 0) &amp;&amp; (obj_player.y &gt; obj_player.yprevious)
+    {
+        background_vspeed[0] = 0
+        background_vspeed[1] = 0
+        background_vspeed[2] = 0.02
+        background_vspeed[3] = 0.1
+    }
+    if (view_yview[6] = 0) &amp;&amp; (obj_player.y &gt; obj_player.yprevious)
     {
         background_vspeed[0] = 0
         background_vspeed[1] = 0
@@ -809,13 +1194,28 @@ if (instance_exists(obj_player_i_gun))
         background_vspeed[3] = 0.1
     }
         //Standing Still//
-    if (view_vspeed[6] = 0)
+    if (view_yview[6] &gt; 0) &amp;&amp; (obj_player.y = obj_player.yprevious)
     {
         background_vspeed[0] = 0
         background_vspeed[1] = 0
         background_vspeed[2] = 0
         background_vspeed[3] = 0
     }
+    if (view_yview[6] &lt; 0) &amp;&amp; (obj_player.y = obj_player.yprevious)
+    {
+        background_vspeed[0] = 0
+        background_vspeed[1] = 0
+        background_vspeed[2] = 0
+        background_vspeed[3] = 0
+    }
+    if (view_yview[6] = 0) &amp;&amp; (obj_player.y = obj_player.yprevious)
+    {
+        background_vspeed[0] = 0
+        background_vspeed[1] = 0
+        background_vspeed[2] = 0
+        background_vspeed[3] = 0
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -837,10 +1237,25 @@ if (instance_exists(obj_player_i_gun))
           <argument>
             <kind>1</kind>
             <string>///Parallax View 7
-/*
           //Backgrounds//
+if (instance_exists(obj_player))
+{
         //Standing Still//
-    if (view_hspeed[7] = 0)
+    if (view_xview[7] = 0) &amp;&amp; (obj_player.x = obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[7] &gt; 0) &amp;&amp; (obj_player.x = obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[7] &lt; 0) &amp;&amp; (obj_player.x = obj_player.xprevious)
     {
         background_hspeed[0] = 0
         background_hspeed[1] = -0.05
@@ -849,24 +1264,80 @@ if (instance_exists(obj_player_i_gun))
     }
 
         //Moving Left//
-    if (view_hspeed[7] &lt; 0)
+    if (view_xview[7] &lt; 0) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[7] = 0) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[7] &gt; 0) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
     {
         background_hspeed[0] = -0
         background_hspeed[1] = -4.5
         background_hspeed[2] = -4
         background_hspeed[3] = -3.5
     }
+    if (obj_player.x + 500 &gt; room_width) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
 
         //Moving Right//
-    if (view_hspeed[7] &gt; 0)
+    if (view_xview[7] &lt; 0) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[7] = 0) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[7] &gt; 0) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
     {
         background_hspeed[0] = 0
         background_hspeed[1] = 4.5
         background_hspeed[2] = 4
         background_hspeed[3] = 3.5
     }
+    if (obj_player.x + 500 &gt; room_width) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
         //Jumping//
-    if (view_vspeed[7] &lt; 0)
+    if (view_yview[7] &gt; 0) &amp;&amp; (obj_player.y &lt; obj_player.yprevious)
+    {
+        background_vspeed[0] = -0
+        background_vspeed[1] = -0
+        background_vspeed[2] = -0.02
+        background_vspeed[3] = -0.1
+    }
+    if (view_yview[7] &lt; 0) &amp;&amp; (obj_player.y &lt; obj_player.yprevious)
+    {
+        background_vspeed[0] = -0
+        background_vspeed[1] = -0
+        background_vspeed[2] = -0.02
+        background_vspeed[3] = -0.1
+    }
+    if (view_yview[7] = 0) &amp;&amp; (obj_player.y &lt; obj_player.yprevious)
     {
         background_vspeed[0] = -0
         background_vspeed[1] = -0
@@ -874,7 +1345,21 @@ if (instance_exists(obj_player_i_gun))
         background_vspeed[3] = -0.1
     }
         //Falling//
-    if (view_vspeed[7] &gt; 0)
+    if (view_yview[7] &gt; 0) &amp;&amp; (obj_player.y &gt; obj_player.yprevious)
+    {
+        background_vspeed[0] = 0
+        background_vspeed[1] = 0
+        background_vspeed[2] = 0.02
+        background_vspeed[3] = 0.1
+    }
+    if (view_yview[7] &lt; 0) &amp;&amp; (obj_player.y &gt; obj_player.yprevious)
+    {
+        background_vspeed[0] = 0
+        background_vspeed[1] = 0
+        background_vspeed[2] = 0.02
+        background_vspeed[3] = 0.1
+    }
+    if (view_yview[7] = 0) &amp;&amp; (obj_player.y &gt; obj_player.yprevious)
     {
         background_vspeed[0] = 0
         background_vspeed[1] = 0
@@ -882,13 +1367,28 @@ if (instance_exists(obj_player_i_gun))
         background_vspeed[3] = 0.1
     }
         //Standing Still//
-    if (view_vspeed[7] = 0)
+    if (view_yview[7] &gt; 0) &amp;&amp; (obj_player.y = obj_player.yprevious)
     {
         background_vspeed[0] = 0
         background_vspeed[1] = 0
         background_vspeed[2] = 0
         background_vspeed[3] = 0
     }
+    if (view_yview[7] &lt; 0) &amp;&amp; (obj_player.y = obj_player.yprevious)
+    {
+        background_vspeed[0] = 0
+        background_vspeed[1] = 0
+        background_vspeed[2] = 0
+        background_vspeed[3] = 0
+    }
+    if (view_yview[7] = 0) &amp;&amp; (obj_player.y = obj_player.yprevious)
+    {
+        background_vspeed[0] = 0
+        background_vspeed[1] = 0
+        background_vspeed[2] = 0
+        background_vspeed[3] = 0
+    }
+}
 </string>
           </argument>
         </arguments>
