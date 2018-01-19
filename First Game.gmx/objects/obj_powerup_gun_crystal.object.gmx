@@ -27,7 +27,6 @@
             <kind>1</kind>
             <string>///Frames And Veriables
 image_speed = 5/60;
-//global.guncrystal = id
 </string>
           </argument>
         </arguments>

@@ -175,6 +175,9 @@
         </sprites>
       </sprites>
     </sprites>
+    <sprites name="Boosts">
+      <sprite>sprites\spr_heartboost</sprite>
+    </sprites>
     <sprites name="Blocks">
       <sprite>sprites\spr_wall</sprite>
       <sprite>sprites\spr_barrier</sprite>
@@ -361,6 +364,9 @@
           <object>objects\obj_player_i_superjump</object>
         </objects>
       </objects>
+    </objects>
+    <objects name="Boosts">
+      <object>objects\obj_heartboost</object>
     </objects>
     <objects name="Power Ups">
       <objects name="Gun">
