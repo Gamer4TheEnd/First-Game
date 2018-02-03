@@ -111,6 +111,52 @@ if (instance_exists(obj_player))
         background_hspeed[2] = 0
         background_hspeed[3] = 0
     }
+    
+        //Friction//
+        //Right//
+    if (view_xview[0] &lt; 0) &amp;&amp; (obj_player.x &gt; obj_player.xprevious) &amp;&amp; (obj_player.hsp != 5)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[0] = 0) &amp;&amp; (obj_player.x &gt; obj_player.xprevious) &amp;&amp; (obj_player.hsp != 5)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[0] &gt; 0) &amp;&amp; (obj_player.x &gt; obj_player.xprevious) &amp;&amp; (obj_player.hsp != 5)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+        //Left//
+    if (view_xview[0] &lt; 0) &amp;&amp; (obj_player.x &lt; obj_player.xprevious) &amp;&amp; (obj_player.hsp != -5)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[0] = 0) &amp;&amp; (obj_player.x &lt; obj_player.xprevious) &amp;&amp; (obj_player.hsp != -5)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
+    if (view_xview[0] &gt; 0) &amp;&amp; (obj_player.x &lt; obj_player.xprevious) &amp;&amp; (obj_player.hsp != -5)
+    {
+        background_hspeed[0] = 0
+        background_hspeed[1] = -0.05
+        background_hspeed[2] = 0
+        background_hspeed[3] = 0
+    }
         //Jumping//
     if (view_yview[0] &gt; 0) &amp;&amp; (obj_player.y &lt; obj_player.yprevious)
     {
