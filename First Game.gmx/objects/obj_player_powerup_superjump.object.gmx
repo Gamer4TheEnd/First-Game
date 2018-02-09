@@ -33,7 +33,6 @@ vsp = 0;
 hsp = 0;
 jumpspeed = 11;
 movespeed = 4.1;
-friction = 0.4166666666666667
 globalvar player_superjump_dir;
 player_superjump_dir = player_dir;
 
@@ -65,51 +64,9 @@ right_key = keyboard_check(ord("D")) or keyboard_check(vk_right)
 left_key = -(keyboard_check(ord("A")) or keyboard_check(vk_left))
 space_bar = keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_up)
 
-//Reactions//
-//Momentom//\\None\\
-if (keyboard_check_released(ord("D"))) &amp;&amp; (left_key = 0)
-{
-    if (hsp &gt; 0) hsp -= 0.4166666666666667;
-}
-
-//Momentom//\\None\\
-if (keyboard_check_released(ord("A"))) &amp;&amp; (right_key = 0)
-{
-    if (hsp &lt; 0) hsp += 0.4166666666666667;
-}
-
-//Movement//
-//Right//
-if (right_key = 1)
-{
-    hsp = right_key * movespeed
-}
-
-//Left//
-if (left_key = -1)
-{
-    hsp = left_key * movespeed
-}
-
-//Both//
-if (right_key = 1) &amp;&amp; (left_key = -1)
-{
-    hsp = 0
-}
-
-//Friction//
-
-//Right//
-if (hsp &gt; 0) &amp;&amp; (right_key = 0)
-{
-    hsp -= friction
-}
-
-//Left//
-if (hsp &lt; 0) &amp;&amp; (left_key = 0)
-{
-    hsp += friction
-}
+//Reactions////Movement//
+move = right_key + left_key
+hsp = move * movespeed
 
 //Gravity//
 if (vsp &lt; 10) vsp += grav;

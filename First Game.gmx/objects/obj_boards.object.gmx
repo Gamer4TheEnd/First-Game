@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Boards Creation
+
 instance_create(view_xview[0]+32,view_yview[0],obj_hearts_counter)
 instance_create(view_xview[0]+132,view_yview[0],obj_coins_counter)
 instance_create(view_xview[0]+224,view_yview[0],obj_bullets_counter)
@@ -73,17 +74,6 @@ obj_bullets_board.y = view_yview[0]+53
 //Fix For Snap//
 
 //Right//
-if (obj_player.hsp = 5) &amp;&amp; (view_xview[0] &gt; 0) &amp;&amp; (obj_player.x + 500 &lt; room_width)
-{
-obj_hearts_counter.x = view_xview[0]+32+5
-obj_coins_counter.x = view_xview[0]+132+5
-obj_bullets_counter.x = view_xview[0]+224+5
-obj_hearts_board.x = view_xview[0]+82+5
-obj_coins_board.x = view_xview[0]+178+5
-obj_bullets_board.x = view_xview[0]+270+5
-}
-
-//Left//
 if (obj_player.hsp = -5) &amp;&amp; (view_xview[0] &gt; 0) &amp;&amp; (obj_player.x + 500 &lt; room_width)
 {
 obj_hearts_counter.x = view_xview[0]+32-5
@@ -92,6 +82,17 @@ obj_bullets_counter.x = view_xview[0]+224-5
 obj_hearts_board.x = view_xview[0]+82-5
 obj_coins_board.x = view_xview[0]+178-5
 obj_bullets_board.x = view_xview[0]+270-5
+}
+
+//Left//
+if (obj_player.hsp = 5) &amp;&amp; (view_xview[0] &gt; 0) &amp;&amp; (obj_player.x + 500 &lt; room_width)
+{
+obj_hearts_counter.x = view_xview[0]+32+5
+obj_coins_counter.x = view_xview[0]+132+5
+obj_bullets_counter.x = view_xview[0]+224+5
+obj_hearts_board.x = view_xview[0]+82+5
+obj_coins_board.x = view_xview[0]+178+5
+obj_bullets_board.x = view_xview[0]+270+5
 }
 
 //Right Momentom 5//
@@ -116,6 +117,28 @@ obj_coins_board.x = view_xview[0]+178-5
 obj_bullets_board.x = view_xview[0]+270-5
 }
 
+//Right Momentom 4.5//
+if (obj_player.hsp &lt; 5) &amp;&amp; (obj_player.hsp &gt; 4) &amp;&amp; (view_xview[0] &gt; 0) &amp;&amp; (obj_player.x + 500 &lt; room_width)
+{
+obj_hearts_counter.x = view_xview[0]+32+(5-friction)
+obj_coins_counter.x = view_xview[0]+132+(5-friction)
+obj_bullets_counter.x = view_xview[0]+224+(5-friction)
+obj_hearts_board.x = view_xview[0]+82+(5-friction)
+obj_coins_board.x = view_xview[0]+178+(5-friction)
+obj_bullets_board.x = view_xview[0]+270+(5-friction)
+}
+
+//Left Momentom 4.5//
+if (obj_player.hsp &gt; -5) &amp;&amp; (obj_player.hsp &lt; -4) &amp;&amp; (view_xview[0] &gt; 0) &amp;&amp; (obj_player.x + 500 &lt; room_width)
+{
+obj_hearts_counter.x = view_xview[0]+32-(5-friction)
+obj_coins_counter.x = view_xview[0]+132-(5-friction)
+obj_bullets_counter.x = view_xview[0]+224-(5-friction)
+obj_hearts_board.x = view_xview[0]+82-(5-friction)
+obj_coins_board.x = view_xview[0]+178-(5-friction)
+obj_bullets_board.x = view_xview[0]+270-(5-friction)
+}
+
 //Right Momentom 4//
 if (obj_player.hsp &lt; 4) &amp;&amp; (obj_player.hsp &gt; 0) &amp;&amp; (view_xview[0] &gt; 0) &amp;&amp; (obj_player.x + 500 &lt; room_width)
 {
@@ -136,6 +159,28 @@ obj_bullets_counter.x = view_xview[0]+224-4
 obj_hearts_board.x = view_xview[0]+82-4
 obj_coins_board.x = view_xview[0]+178-4
 obj_bullets_board.x = view_xview[0]+270-4
+}
+
+//Right Momentom 3.5//
+if (obj_player.hsp &lt; 4) &amp;&amp; (obj_player.hsp &gt; 3) &amp;&amp; (view_xview[0] &gt; 0) &amp;&amp; (obj_player.x + 500 &lt; room_width)
+{
+obj_hearts_counter.x = view_xview[0]+32+(4-friction)
+obj_coins_counter.x = view_xview[0]+132+(4-friction)
+obj_bullets_counter.x = view_xview[0]+224+(4-friction)
+obj_hearts_board.x = view_xview[0]+82+(4-friction)
+obj_coins_board.x = view_xview[0]+178+(4-friction)
+obj_bullets_board.x = view_xview[0]+270+(4-friction)
+}
+
+//Left Momentom 3.5//
+if (obj_player.hsp &gt; -4) &amp;&amp; (obj_player.hsp &lt; -3) &amp;&amp; (view_xview[0] &gt; 0) &amp;&amp; (obj_player.x + 500 &lt; room_width)
+{
+obj_hearts_counter.x = view_xview[0]+32-(4-friction)
+obj_coins_counter.x = view_xview[0]+132-(4-friction)
+obj_bullets_counter.x = view_xview[0]+224-(4-friction)
+obj_hearts_board.x = view_xview[0]+82-(4-friction)
+obj_coins_board.x = view_xview[0]+178-(4-friction)
+obj_bullets_board.x = view_xview[0]+270-(4-friction)
 }
 
 //Right Momentom 3//
@@ -160,6 +205,28 @@ obj_coins_board.x = view_xview[0]+178-3
 obj_bullets_board.x = view_xview[0]+270-3
 }
 
+//Right Momentom 2.5//
+if (obj_player.hsp &lt; 3) &amp;&amp; (obj_player.hsp &gt; 2) &amp;&amp; (view_xview[0] &gt; 0) &amp;&amp; (obj_player.x + 500 &lt; room_width)
+{
+obj_hearts_counter.x = view_xview[0]+32+(3-friction)
+obj_coins_counter.x = view_xview[0]+132+(3-friction)
+obj_bullets_counter.x = view_xview[0]+224+(3-friction)
+obj_hearts_board.x = view_xview[0]+82+(3-friction)
+obj_coins_board.x = view_xview[0]+178+(3-friction)
+obj_bullets_board.x = view_xview[0]+270+(3-friction)
+}
+
+//Left Momentom 2.5//
+if (obj_player.hsp &gt; -3) &amp;&amp; (obj_player.hsp &lt; -2) &amp;&amp; (view_xview[0] &gt; 0) &amp;&amp; (obj_player.x + 500 &lt; room_width)
+{
+obj_hearts_counter.x = view_xview[0]+32-(3-friction)
+obj_coins_counter.x = view_xview[0]+132-(3-friction)
+obj_bullets_counter.x = view_xview[0]+224-(3-friction)
+obj_hearts_board.x = view_xview[0]+82-(3-friction)
+obj_coins_board.x = view_xview[0]+178-(3-friction)
+obj_bullets_board.x = view_xview[0]+270-(3-friction)
+}
+
 //Right Momentom 2//
 if (obj_player.hsp &lt; 2) &amp;&amp; (obj_player.hsp &gt; 0) &amp;&amp; (view_xview[0] &gt; 0) &amp;&amp; (obj_player.x + 500 &lt; room_width)
 {
@@ -182,6 +249,28 @@ obj_coins_board.x = view_xview[0]+178-2
 obj_bullets_board.x = view_xview[0]+270-2
 }
 
+//Right Momentom 1.5//
+if (obj_player.hsp &lt; 2) &amp;&amp; (obj_player.hsp &gt; 1) &amp;&amp; (view_xview[0] &gt; 0) &amp;&amp; (obj_player.x + 500 &lt; room_width)
+{
+obj_hearts_counter.x = view_xview[0]+32+(2-friction)
+obj_coins_counter.x = view_xview[0]+132+(2-friction)
+obj_bullets_counter.x = view_xview[0]+224+(2-friction)
+obj_hearts_board.x = view_xview[0]+82+(2-friction)
+obj_coins_board.x = view_xview[0]+178+(2-friction)
+obj_bullets_board.x = view_xview[0]+270+(2-friction)
+}
+
+//Left Momentom 1.5//
+if (obj_player.hsp &gt; -2) &amp;&amp; (obj_player.hsp &lt; -1) &amp;&amp; (view_xview[0] &gt; 0) &amp;&amp; (obj_player.x + 500 &lt; room_width)
+{
+obj_hearts_counter.x = view_xview[0]+32-(2-friction)
+obj_coins_counter.x = view_xview[0]+132-(2-friction)
+obj_bullets_counter.x = view_xview[0]+224-(2-friction)
+obj_hearts_board.x = view_xview[0]+82-(2-friction)
+obj_coins_board.x = view_xview[0]+178-(2-friction)
+obj_bullets_board.x = view_xview[0]+270-(2-friction)
+}
+
 //Right Momentom 1//
 if (obj_player.hsp &lt; 1) &amp;&amp; (obj_player.hsp &gt; 0) &amp;&amp; (view_xview[0] &gt; 0) &amp;&amp; (obj_player.x + 500 &lt; room_width)
 {
@@ -202,6 +291,28 @@ obj_bullets_counter.x = view_xview[0]+224-1
 obj_hearts_board.x = view_xview[0]+82-1
 obj_coins_board.x = view_xview[0]+178-1
 obj_bullets_board.x = view_xview[0]+270-1
+}
+
+//Right Momentom 0.5//
+if (obj_player.hsp &lt; 1) &amp;&amp; (obj_player.hsp &gt; 0.5) &amp;&amp; (view_xview[0] &gt; 0) &amp;&amp; (obj_player.x + 500 &lt; room_width)
+{
+obj_hearts_counter.x = view_xview[0]+32+(1-friction)
+obj_coins_counter.x = view_xview[0]+132+(1-friction)
+obj_bullets_counter.x = view_xview[0]+224+(1-friction)
+obj_hearts_board.x = view_xview[0]+82+(1-friction)
+obj_coins_board.x = view_xview[0]+178+(1-friction)
+obj_bullets_board.x = view_xview[0]+270+(1-friction)
+}
+
+//Left Momentom 1//
+if (obj_player.hsp &gt; -1) &amp;&amp; (obj_player.hsp &lt; -0.5) &amp;&amp; (view_xview[0] &gt; 0) &amp;&amp; (obj_player.x + 500 &lt; room_width)
+{
+obj_hearts_counter.x = view_xview[0]+32-(1-friction)
+obj_coins_counter.x = view_xview[0]+132-(1-friction)
+obj_bullets_counter.x = view_xview[0]+224-(1-friction)
+obj_hearts_board.x = view_xview[0]+82-(1-friction)
+obj_coins_board.x = view_xview[0]+178-(1-friction)
+obj_bullets_board.x = view_xview[0]+270-(1-friction)
 }
 </string>
           </argument>
