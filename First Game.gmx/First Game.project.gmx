@@ -16,8 +16,13 @@
     <sounds name="Enemies">
       <sound>sound\snd_fart</sound>
     </sounds>
-    <sounds name="Grassland">
-      <sound>sound\snd_grassland_bgm_1</sound>
+    <sounds name="Background Music">
+      <sounds name="Desert">
+        <sound>sound\snd_desert_bgm_1</sound>
+      </sounds>
+      <sounds name="Grassland">
+        <sound>sound\snd_grassland_bgm_1</sound>
+      </sounds>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -275,6 +280,9 @@
       </objects>
       <objects name="GrassLand">
         <object>objects\obj_music_grassland_bgm_1</object>
+      </objects>
+      <objects name="Desert">
+        <object>objects\obj_music_desert_bgm_1</object>
       </objects>
     </objects>
     <objects name="Menus">

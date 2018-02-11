@@ -138,6 +138,7 @@
     <instance objName="obj_sand" x="1312" y="1133" name="inst_B0546C3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_boards" x="0" y="754" name="inst_DA6AE6F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_backgrounds" x="16" y="754" name="inst_5FB41DC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_music_desert_bgm_1" x="32" y="756" name="inst_A5EF6962" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
