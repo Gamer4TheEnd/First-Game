@@ -243,6 +243,8 @@
       <sprite>sprites\spr_boards_rope</sprite>
       <sprite>sprites\spr_bullets_board</sprite>
     </sprites>
+    <sprite>sprites\Desert_sprite</sprite>
+    <sprite>sprites\sprite125</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
@@ -253,6 +255,10 @@
       <background>background\bac_grassland_clouds</background>
       <background>background\bac_grassland_mountain</background>
       <background>background\bac_grassland_grass</background>
+    </backgrounds>
+    <backgrounds name="Desert">
+      <background>background\Desert_Background</background>
+      <background>background\background6</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -432,6 +438,7 @@
         <object>objects\obj_lava</object>
         <object>objects\obj_lava_bottom</object>
       </objects>
+      <object>objects\GO_TO_SAND_LEVEL</object>
     </objects>
     <objects name="Enemies">
       <objects name="White Butt">
@@ -478,6 +485,7 @@
   <rooms name="rooms">
     <room>rooms\rm_test_room</room>
     <room>rooms\rm_mainmenu</room>
+    <room>rooms\room2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
