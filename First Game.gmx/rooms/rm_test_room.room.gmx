@@ -1740,7 +1740,6 @@
     <instance objName="obj_barrier" x="3856" y="704" name="inst_16EAE3AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrier" x="3856" y="736" name="inst_B9CFBA11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrier" x="3856" y="640" name="inst_65BA0DBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="GO_TO_SAND_LEVEL" x="3696" y="912" name="inst_6596832E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

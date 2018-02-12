@@ -28,7 +28,7 @@
             <string>///Desert BGM 1
 if (!audio_is_playing(snd_desert_bgm_1))
 {
-    audio_play_sound(snd_desert_bgm_1,45,true)
+    audio_play_sound(snd_desert_bgm_1,46,true)
 }
 </string>
           </argument>

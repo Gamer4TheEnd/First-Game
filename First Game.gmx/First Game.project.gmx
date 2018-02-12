@@ -17,11 +17,11 @@
       <sound>sound\snd_fart</sound>
     </sounds>
     <sounds name="Background Music">
-      <sounds name="Desert">
-        <sound>sound\snd_desert_bgm_1</sound>
-      </sounds>
       <sounds name="Grassland">
         <sound>sound\snd_grassland_bgm_1</sound>
+      </sounds>
+      <sounds name="Desert">
+        <sound>sound\snd_desert_bgm_1</sound>
       </sounds>
     </sounds>
   </sounds>
@@ -248,8 +248,6 @@
       <sprite>sprites\spr_boards_rope</sprite>
       <sprite>sprites\spr_bullets_board</sprite>
     </sprites>
-    <sprite>sprites\Desert_sprite</sprite>
-    <sprite>sprites\sprite125</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
@@ -446,7 +444,6 @@
         <object>objects\obj_lava</object>
         <object>objects\obj_lava_bottom</object>
       </objects>
-      <object>objects\GO_TO_SAND_LEVEL</object>
     </objects>
     <objects name="Enemies">
       <objects name="White Butt">
@@ -492,8 +489,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test_room</room>
+    <room>rooms\rm_test_desert_room</room>
     <room>rooms\rm_mainmenu</room>
-    <room>rooms\m_test_desert_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
