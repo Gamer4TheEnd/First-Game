@@ -63,7 +63,7 @@ checkpoints = 0;
             <string>///Player Input
 right_key = keyboard_check(ord("D")) or keyboard_check(vk_right)
 left_key = -(keyboard_check(ord("A")) or keyboard_check(vk_left))
-space_bar = keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_up)
+space_bar = keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_up) or gamepad_button_check_pressed(0,gp_face1)
 
 //Reactions////Movement//
 move = right_key + left_key

@@ -53,7 +53,6 @@
   <instances>
     <instance objName="obj_coins" x="432" y="928" name="inst_EAF178D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="64" y="1024" name="inst_7429D394" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_whitebutt" x="352" y="1024" name="inst_364459A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_whitebutt" x="576" y="1024" name="inst_715E6A85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_whitebutt" x="736" y="992" name="inst_9D255AEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_whitebutt_nofall" x="1024" y="1120" name="inst_F28077F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1214,7 +1213,7 @@
     <instance objName="obj_dirt" x="1024" y="1184" name="inst_FD5FE7FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dirt" x="1056" y="1184" name="inst_0B7A6471" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dirt" x="1088" y="1184" name="inst_3B8A5C28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_checkpoint_position" x="2496" y="1056" name="inst_18C93DD1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint_position" x="2492" y="1056" name="inst_18C93DD1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_music_grassland_bgm_1" x="32" y="754" name="inst_D4ABAB61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dirt" x="1760" y="1344" name="inst_4681CB27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dirt" x="1792" y="1344" name="inst_ED84D8FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

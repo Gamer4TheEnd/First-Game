@@ -192,6 +192,9 @@
       <sprites name="Decorations">
         <sprites name="Grass">
           <sprite>sprites\spr_grass_plant</sprite>
+          <sprite>sprites\spr_grass_plant_leftcornor</sprite>
+          <sprite>sprites\spr_grass_plant_rightcornor</sprite>
+          <sprite>sprites\spr_grass_plant_topcornor</sprite>
           <sprite>sprites\spr_grass_plant_roses</sprite>
           <sprite>sprites\spr_grass_plant_bush</sprite>
           <sprite>sprites\spr_grass_bush</sprite>
@@ -240,6 +243,7 @@
       <sprite>sprites\spr_enemy_blackbutt</sprite>
       <sprite>sprites\spr_enemy_asainbutt</sprite>
       <sprite>sprites\spr_enemy_arabbutt</sprite>
+      <sprite>sprites\spr_enemy_poof</sprite>
     </sprites>
     <sprites name="Signs">
       <sprite>sprites\spr_sign_blank</sprite>
@@ -263,8 +267,9 @@
       <background>background\bac_grassland_grass</background>
     </backgrounds>
     <backgrounds name="Desert">
-      <background>background\Desert_Background</background>
-      <background>background\background6</background>
+      <background>background\bac_desert_sand</background>
+      <background>background\bac_desert_mountains</background>
+      <background>background\bac_desert_sky</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -407,6 +412,9 @@
       <objects name="Decorations">
         <objects name="Grass">
           <object>objects\obj_grass_plant</object>
+          <object>objects\obj_grass_plant_leftcornor</object>
+          <object>objects\obj_grass_plant_rightcornor</object>
+          <object>objects\obj_grass_plant_topcornor</object>
           <object>objects\obj_grass_plant_roses</object>
           <object>objects\obj_grass_plant_bush</object>
           <object>objects\obj_grass_bush</object>
@@ -468,6 +476,7 @@
         <object>objects\obj_enemy_arabbutt</object>
         <object>objects\obj_enemy_arabbutt_nofall</object>
       </objects>
+      <object>objects\obj_enemy_poof</object>
     </objects>
     <objects name="Signs">
       <object>objects\obj_sign_blank</object>
