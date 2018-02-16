@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-6</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -64,32 +64,6 @@ if (instance_exists(obj_player_powerup_gun)) &amp;&amp; (global.bullets = 0)
     instance_create(obj_player_powerup_gun.x,obj_player_powerup_gun.y,obj_player_i_gun)
     instance_destroy(obj_player_powerup_gun)
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Draw Bullets
-draw_set_font(fon_bullets);
-draw_set_colour(c_white);
-draw_text(x + 48,y + 44,"x " + string(global.bullets))
 </string>
           </argument>
         </arguments>

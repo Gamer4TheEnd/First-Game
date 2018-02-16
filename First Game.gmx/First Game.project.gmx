@@ -249,10 +249,10 @@
       <sprite>sprites\spr_sign_blank</sprite>
     </sprites>
     <sprites name="Tracking">
+      <sprite>sprites\spr_boards_rope</sprite>
       <sprite>sprites\spr_hearts_board</sprite>
       <sprite>sprites\spr_coins_board</sprite>
       <sprite>sprites\spr_coins</sprite>
-      <sprite>sprites\spr_boards_rope</sprite>
       <sprite>sprites\spr_bullets_board</sprite>
     </sprites>
   </sprites>
@@ -275,8 +275,7 @@
   <paths name="paths"/>
   <fonts name="fonts">
     <fonts name="Tracking">
-      <font>fonts\fon_coins</font>
-      <font>fonts\fon_bullets</font>
+      <font>fonts\fon_tracking</font>
     </fonts>
   </fonts>
   <objects name="objects">
@@ -482,22 +481,16 @@
       <object>objects\obj_sign_blank</object>
     </objects>
     <objects name="Tracking">
-      <object>objects\obj_boards</object>
       <object>objects\obj_backgrounds</object>
       <objects name="In Game">
+        <object>objects\obj_boards</object>
         <object>objects\obj_boards_rope</object>
-        <objects name="Hearts">
-          <object>objects\obj_hearts_counter</object>
-          <object>objects\obj_hearts_board</object>
-        </objects>
         <objects name="Coins">
           <object>objects\obj_coins_counter</object>
-          <object>objects\obj_coins_board</object>
           <object>objects\obj_coins</object>
         </objects>
         <objects name="Bullet">
           <object>objects\obj_bullets_counter</object>
-          <object>objects\obj_bullets_board</object>
         </objects>
       </objects>
     </objects>

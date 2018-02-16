@@ -32,7 +32,7 @@ image_speed = 5/60;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_player_i_superjump">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,14 +49,40 @@ image_speed = 5/60;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///instance destroy
-instance_destroy()
+            <string>///HeartBoost Player
+
+//2 Hearts//
+if (place_meeting(x,y,obj_player)) &amp;&amp; (lives &lt; 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//2 Hearts Max//
+if (place_meeting(x,y,obj_player)) &amp;&amp; (lives = 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//1 Heart//
+if (place_meeting(x,y,obj_player)) &amp;&amp; (lives = 11)
+{
+    lives += 1
+    global.points += 25
+    instance_destroy()
+}
+
+//0 Heart//
+if (place_meeting(x,y,obj_player)) &amp;&amp; (lives = 12)
+{
+    global.points += 50
+    instance_destroy()
+}
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obj_player_powerup_superjump">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -73,14 +99,40 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///instance destroy
-instance_destroy()
+            <string>///HeartBoost Gun Power Up
+
+//2 Hearts//
+if (place_meeting(x,y,obj_player_powerup_gun)) &amp;&amp; (lives &lt; 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//2 Hearts Max//
+if (place_meeting(x,y,obj_player_powerup_gun)) &amp;&amp; (lives = 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//1 Heart//
+if (place_meeting(x,y,obj_player_powerup_gun)) &amp;&amp; (lives = 11)
+{
+    lives += 1
+    global.points += 25
+    instance_destroy()
+}
+
+//0 Heart//
+if (place_meeting(x,y,obj_player_powerup_gun)) &amp;&amp; (lives = 12)
+{
+    global.points += 50
+    instance_destroy()
+}
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obj_player_i_superjump_limit">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -97,14 +149,40 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///instance destroy
-instance_destroy()
+            <string>///HeartBoost Gun Power Up Invinciblity
+
+//2 Hearts//
+if (place_meeting(x,y,obj_player_i_gun)) &amp;&amp; (lives &lt; 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//2 Hearts Max//
+if (place_meeting(x,y,obj_player_i_gun)) &amp;&amp; (lives = 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//1 Heart//
+if (place_meeting(x,y,obj_player_i_gun)) &amp;&amp; (lives = 11)
+{
+    lives += 1
+    global.points += 25
+    instance_destroy()
+}
+
+//0 Heart//
+if (place_meeting(x,y,obj_player_i_gun)) &amp;&amp; (lives = 12)
+{
+    global.points += 50
+    instance_destroy()
+}
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obj_player_powerup_superjump_limit">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -121,14 +199,40 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///instance destroy
-instance_destroy()
+            <string>///HeartBoost Super Speed Power Up Limit
+
+//2 Hearts//
+if (place_meeting(x,y,obj_player_powerup_superspeed_limit)) &amp;&amp; (lives &lt; 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//2 Hearts Max//
+if (place_meeting(x,y,obj_player_powerup_superspeed_limit)) &amp;&amp; (lives = 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//1 Heart//
+if (place_meeting(x,y,obj_player_powerup_superspeed_limit)) &amp;&amp; (lives = 11)
+{
+    lives += 1
+    global.points += 25
+    instance_destroy()
+}
+
+//0 Heart//
+if (place_meeting(x,y,obj_player_powerup_superspeed_limit)) &amp;&amp; (lives = 12)
+{
+    global.points += 50
+    instance_destroy()
+}
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obj_player_i_superspeed">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -145,14 +249,40 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///instance destroy
-instance_destroy()
+            <string>///HeartBoost Super Speed Invinciblity Limit
+
+//2 Hearts//
+if (place_meeting(x,y,obj_player_i_superspeed_limit)) &amp;&amp; (lives &lt; 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//2 Hearts Max//
+if (place_meeting(x,y,obj_player_i_superspeed_limit)) &amp;&amp; (lives = 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//1 Heart//
+if (place_meeting(x,y,obj_player_i_superspeed_limit)) &amp;&amp; (lives = 11)
+{
+    lives += 1
+    global.points += 25
+    instance_destroy()
+}
+
+//0 Heart//
+if (place_meeting(x,y,obj_player_i_superspeed_limit)) &amp;&amp; (lives = 12)
+{
+    global.points += 50
+    instance_destroy()
+}
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obj_player_powerup_superspeed">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -169,14 +299,40 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///instance destroy
-instance_destroy()
+            <string>///HeartBoost Super Speed Power Up 
+
+//2 Hearts//
+if (place_meeting(x,y,obj_player_powerup_superspeed)) &amp;&amp; (lives &lt; 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//2 Hearts Max//
+if (place_meeting(x,y,obj_player_powerup_superspeed)) &amp;&amp; (lives = 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//1 Heart//
+if (place_meeting(x,y,obj_player_powerup_superspeed)) &amp;&amp; (lives = 11)
+{
+    lives += 1
+    global.points += 25
+    instance_destroy()
+}
+
+//0 Heart//
+if (place_meeting(x,y,obj_player_powerup_superspeed)) &amp;&amp; (lives = 12)
+{
+    global.points += 50
+    instance_destroy()
+}
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obj_player_i_superspeed_limit">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -193,14 +349,40 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///instance destroy
-instance_destroy()
+            <string>///HeartBoost Super Speed Power Up Invinciblity
+
+//2 Hearts//
+if (place_meeting(x,y,obj_player_i_superspeed)) &amp;&amp; (lives &lt; 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//2 Hearts Max//
+if (place_meeting(x,y,obj_player_i_superspeed)) &amp;&amp; (lives = 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//1 Heart//
+if (place_meeting(x,y,obj_player_i_superspeed)) &amp;&amp; (lives = 11)
+{
+    lives += 1
+    global.points += 25
+    instance_destroy()
+}
+
+//0 Heart//
+if (place_meeting(x,y,obj_player_i_superspeed)) &amp;&amp; (lives = 12)
+{
+    global.points += 50
+    instance_destroy()
+}
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obj_player_powerup_superspeed_limit">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -217,14 +399,40 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///instance destroy
-instance_destroy()
+            <string>///HeartBoost Super Jump Power Up Limit
+
+//2 Hearts//
+if (place_meeting(x,y,obj_player_powerup_superjump_limit)) &amp;&amp; (lives &lt; 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//2 Hearts Max//
+if (place_meeting(x,y,obj_player_powerup_superjump_limit)) &amp;&amp; (lives = 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//1 Heart//
+if (place_meeting(x,y,obj_player_powerup_superjump_limit)) &amp;&amp; (lives = 11)
+{
+    lives += 1
+    global.points += 25
+    instance_destroy()
+}
+
+//0 Heart//
+if (place_meeting(x,y,obj_player_powerup_superjump_limit)) &amp;&amp; (lives = 12)
+{
+    global.points += 50
+    instance_destroy()
+}
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obj_player_i_gun">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -241,14 +449,40 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///instance destroy
-instance_destroy()
+            <string>///HeartBoost Super Jump Power Up Invinciblity Limit
+
+//2 Hearts//
+if (place_meeting(x,y,obj_player_i_superjump_limit)) &amp;&amp; (lives &lt; 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//2 Hearts Max//
+if (place_meeting(x,y,obj_player_i_superjump_limit)) &amp;&amp; (lives = 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//1 Heart//
+if (place_meeting(x,y,obj_player_i_superjump_limit)) &amp;&amp; (lives = 11)
+{
+    lives += 1
+    global.points += 25
+    instance_destroy()
+}
+
+//0 Heart//
+if (place_meeting(x,y,obj_player_i_superjump_limit)) &amp;&amp; (lives = 12)
+{
+    global.points += 50
+    instance_destroy()
+}
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obj_player_powerup_gun">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -265,14 +499,40 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///instance destroy
-instance_destroy()
+            <string>///HeartBoost Super Jump Power Up
+
+//2 Hearts//
+if (place_meeting(x,y,obj_player_powerup_superjump)) &amp;&amp; (lives &lt; 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//2 Hearts Max//
+if (place_meeting(x,y,obj_player_powerup_superjump)) &amp;&amp; (lives = 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//1 Heart//
+if (place_meeting(x,y,obj_player_powerup_superjump)) &amp;&amp; (lives = 11)
+{
+    lives += 1
+    global.points += 25
+    instance_destroy()
+}
+
+//0 Heart//
+if (place_meeting(x,y,obj_player_powerup_superjump)) &amp;&amp; (lives = 12)
+{
+    global.points += 50
+    instance_destroy()
+}
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obj_player">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -289,8 +549,36 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///instance destroy
-instance_destroy()
+            <string>///HeartBoost Super Jump Power Up Inviciblity
+
+//2 Hearts//
+if (place_meeting(x,y,obj_player_i_superjump)) &amp;&amp; (lives &lt; 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//2 Hearts Max//
+if (place_meeting(x,y,obj_player_i_superjump)) &amp;&amp; (lives = 10)
+{
+    lives += 2
+    instance_destroy()
+}
+
+//1 Heart//
+if (place_meeting(x,y,obj_player_i_superjump)) &amp;&amp; (lives = 11)
+{
+    lives += 1
+    global.points += 25
+    instance_destroy()
+}
+
+//0 Heart//
+if (place_meeting(x,y,obj_player_i_superjump)) &amp;&amp; (lives = 12)
+{
+    global.points += 50
+    instance_destroy()
+}
 </string>
           </argument>
         </arguments>
