@@ -255,6 +255,12 @@
       <sprite>sprites\spr_coins</sprite>
       <sprite>sprites\spr_bullets_board</sprite>
     </sprites>
+    <sprite>sprites\spr_sand_rightcorner_connector</sprite>
+    <sprite>sprites\spr_sand_leftcorner_connector</sprite>
+    <sprite>sprites\spr_sand_rightcorner_bottomconnector</sprite>
+    <sprite>sprites\spr_sand_leftcorner_bottomconnector</sprite>
+    <sprite>sprites\spr_sand_tree</sprite>
+    <sprite>sprites\spr_sand_plant_shrub</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
@@ -421,6 +427,10 @@
           <object>objects\obj_grass_rock_small</object>
           <object>objects\obj_grass_rock_medium</object>
         </objects>
+        <objects name="Desert">
+          <object>objects\obj_sand_plant_shrub</object>
+          <object>objects\obj_sand_tree</object>
+        </objects>
       </objects>
       <objects name="Grass">
         <object>objects\obj_grass</object>
@@ -446,6 +456,10 @@
         <object>objects\obj_sand</object>
         <object>objects\obj_sand_rightcorner</object>
         <object>objects\obj_sand_leftcorner</object>
+        <object>objects\obj_sand_rightcorner_connector</object>
+        <object>objects\obj_sand_rightcorner_bottomconector</object>
+        <object>objects\obj_sand_leftcorner_bottomconnector</object>
+        <object>objects\obj_sand_leftcorner_connector</object>
       </objects>
       <objects name="Water">
         <object>objects\obj_water_splash</object>
