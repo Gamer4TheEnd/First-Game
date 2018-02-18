@@ -3,9 +3,9 @@
   <spriteName>spr_water</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
-  <parentName>obj_water_top</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Frames
-
+            <string>///Frames &amp; Summon
 image_speed = 0/60;
+instance_create(x,y - 8,obj_water_kill);
 </string>
           </argument>
         </arguments>
@@ -51,7 +51,6 @@ image_speed = 0/60;
           <argument>
             <kind>1</kind>
             <string>///Delete Splash
-
 if (place_meeting(x,y,obj_player))
 {
     instance_destroy(obj_water_splash);

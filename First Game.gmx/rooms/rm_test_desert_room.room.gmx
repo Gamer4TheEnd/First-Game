@@ -60,7 +60,6 @@
     <instance objName="obj_enemy_arabbutt" x="1168" y="1152" name="inst_142DAE6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="64" y="1168" name="inst_A34E3A76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint_position" x="1312" y="1104" name="inst_CB85EE39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="2096" y="1152" name="inst_1623DF9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sand_top" x="16" y="1200" name="inst_290F106C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sand_top" x="32" y="1200" name="inst_9BF12187" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sand_top" x="64" y="1200" name="inst_874B1F70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -526,24 +525,26 @@
     <instance objName="obj_cactus" x="1280" y="1104" name="inst_1BC6C986" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cactus" x="816" y="1168" name="inst_BEFD1AC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cactus" x="224" y="1168" name="inst_25E14556" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sand_tree" x="912" y="1152" name="inst_E845171A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sand_tree" x="352" y="1152" name="inst_04CFBFEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sand_tree" x="1680" y="1152" name="inst_CFCA9CF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sand_tree" x="2208" y="928" name="inst_BAA9DA35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sand_plant_shrub" x="2272" y="944" name="inst_2DC3FE51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sand_plant_shrub" x="2352" y="944" name="inst_B0EA48F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sand_plant_shrub" x="2016" y="1168" name="inst_DEF74D82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sand_plant_shrub" x="1776" y="1168" name="inst_16604266" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sand_plant_shrub" x="1840" y="1168" name="inst_33B33BF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sand_plant_shrub" x="1600" y="1168" name="inst_28DFD36B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sand_plant_shrub" x="1456" y="1168" name="inst_EDCBC5B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sand_plant_shrub" x="1344" y="1104" name="inst_968997DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sand_plant_shrub" x="1040" y="1168" name="inst_1C883634" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sand_plant_shrub" x="1120" y="1168" name="inst_A3B1C0F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sand_plant_shrub" x="928" y="1168" name="inst_DA2E46FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sand_plant_shrub" x="576" y="1168" name="inst_0BBE4735" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sand_plant_shrub" x="112" y="1168" name="inst_3E3BE300" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sand_plant_shrub" x="272" y="1168" name="inst_EAB8D0AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sand_deadtree" x="912" y="1152" name="inst_E845171A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sand_deadtree" x="352" y="1152" name="inst_04CFBFEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sand_deadtree" x="1680" y="1152" name="inst_CFCA9CF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sand_deadtree" x="2208" y="928" name="inst_BAA9DA35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sand_plant_shrub" x="2272" y="952" name="inst_2DC3FE51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sand_plant_shrub" x="2352" y="952" name="inst_B0EA48F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sand_plant_shrub" x="2016" y="1176" name="inst_DEF74D82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sand_plant_shrub" x="1776" y="1176" name="inst_16604266" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sand_plant_shrub" x="1840" y="1176" name="inst_33B33BF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sand_plant_shrub" x="1600" y="1176" name="inst_28DFD36B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sand_plant_shrub" x="1456" y="1176" name="inst_EDCBC5B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sand_plant_shrub" x="1344" y="1112" name="inst_968997DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sand_plant_shrub" x="1040" y="1176" name="inst_1C883634" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sand_plant_shrub" x="1120" y="1176" name="inst_A3B1C0F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sand_plant_shrub" x="928" y="1176" name="inst_DA2E46FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sand_plant_shrub" x="576" y="1176" name="inst_0BBE4735" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sand_plant_shrub" x="112" y="1176" name="inst_3E3BE300" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sand_plant_shrub" x="272" y="1176" name="inst_EAB8D0AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_f1_f2" x="16" y="722" name="inst_FE1C71FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_gameflag" x="2112" y="1168" name="inst_443AFE08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

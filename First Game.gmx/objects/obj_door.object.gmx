@@ -25,10 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Finish Game
+            <string>///Finish
 
 if (place_meeting(x,y,obj_player))
 {
+    audio_stop_all()
     room_goto_next()
 }
 
@@ -36,6 +37,7 @@ if (place_meeting(x,y,obj_player))
 
 if (place_meeting(x,y,obj_player_powerup_gun))
 {
+    audio_stop_all()
     room_goto_next()
 }
 
@@ -43,6 +45,7 @@ if (place_meeting(x,y,obj_player_powerup_gun))
 
 if (place_meeting(x,y,obj_player_i_gun))
 {
+    audio_stop_all()
     room_goto_next()
 }
 
@@ -50,6 +53,7 @@ if (place_meeting(x,y,obj_player_i_gun))
 
 if (place_meeting(x,y,obj_player_powerup_superspeed))
 {
+    audio_stop_all()
     room_goto_next()
 }
 
@@ -57,6 +61,7 @@ if (place_meeting(x,y,obj_player_powerup_superspeed))
 
 if (place_meeting(x,y,obj_player_i_superspeed))
 {
+    audio_stop_all()
     room_goto_next()
 }
 
@@ -64,6 +69,7 @@ if (place_meeting(x,y,obj_player_i_superspeed))
 
 if (place_meeting(x,y,obj_player_powerup_superspeed_limit))
 {
+    audio_stop_all()
     room_goto_next()
 }
 
@@ -71,6 +77,7 @@ if (place_meeting(x,y,obj_player_powerup_superspeed_limit))
 
 if (place_meeting(x,y,obj_player_i_superspeed_limit))
 {
+    audio_stop_all()
     room_goto_next()
 }
 
@@ -78,6 +85,7 @@ if (place_meeting(x,y,obj_player_i_superspeed_limit))
 
 if (place_meeting(x,y,obj_player_powerup_superjump))
 {
+    audio_stop_all()
     room_goto_next()
 }
 
@@ -85,6 +93,7 @@ if (place_meeting(x,y,obj_player_powerup_superjump))
 
 if (place_meeting(x,y,obj_player_i_superjump))
 {
+    audio_stop_all()
     room_goto_next()
 }
 
@@ -92,6 +101,7 @@ if (place_meeting(x,y,obj_player_i_superjump))
 
 if (place_meeting(x,y,obj_player_powerup_superjump_limit))
 {
+    audio_stop_all()
     room_goto_next()
 }
 
@@ -99,6 +109,7 @@ if (place_meeting(x,y,obj_player_powerup_superjump_limit))
 
 if (place_meeting(x,y,obj_player_i_superjump_limit))
 {
+    audio_stop_all()
     room_goto_next()
 }
 </string>

@@ -30,6 +30,11 @@ if window_get_fullscreen()
 {
     obj_fullscreen.sprite_index = spr_checkmark;
 }
+
+if !window_get_fullscreen()
+{
+    obj_fullscreen.sprite_index = spr_fullscreen;
+}
 </string>
           </argument>
         </arguments>

@@ -188,6 +188,7 @@
       <sprite>sprites\spr_barrier</sprite>
       <sprite>sprites\spr_checkpoint</sprite>
       <sprite>sprites\spr_checkpoint_position</sprite>
+      <sprite>sprites\spr_roomflag</sprite>
       <sprite>sprites\spr_door</sprite>
       <sprites name="Decorations">
         <sprites name="Grass">
@@ -201,6 +202,11 @@
           <sprite>sprites\spr_grass_tree</sprite>
           <sprite>sprites\spr_grass_rock_small</sprite>
           <sprite>sprites\spr_grass_rock_medium</sprite>
+        </sprites>
+        <sprites name="Desert">
+          <sprite>sprites\spr_sand_plant_shrub</sprite>
+          <sprite>sprites\spr_cactus</sprite>
+          <sprite>sprites\spr_sand_deadtree</sprite>
         </sprites>
       </sprites>
       <sprites name="Grass">
@@ -222,20 +228,30 @@
         <sprite>sprites\spr_purplebrick_slab</sprite>
       </sprites>
       <sprites name="Sand">
-        <sprite>sprites\spr_cactus</sprite>
         <sprite>sprites\spr_sand_top</sprite>
+        <sprite>sprites\spr_sand</sprite>
         <sprite>sprites\spr_sand_rightcorner</sprite>
         <sprite>sprites\spr_sand_leftcorner</sprite>
-        <sprite>sprites\spr_sand</sprite>
+        <sprite>sprites\spr_sand_rightcorner_connector</sprite>
+        <sprite>sprites\spr_sand_leftcorner_connector</sprite>
+        <sprite>sprites\spr_sand_rightcorner_bottomconnector</sprite>
+        <sprite>sprites\spr_sand_leftcorner_bottomconnector</sprite>
       </sprites>
       <sprites name="Water">
         <sprite>sprites\spr_water_splash</sprite>
         <sprite>sprites\spr_water_top</sprite>
         <sprite>sprites\spr_water</sprite>
+        <sprite>sprites\spr_water_kill</sprite>
       </sprites>
       <sprites name="Lava">
         <sprite>sprites\spr_lava</sprite>
         <sprite>sprites\spr_lava_bottom</sprite>
+      </sprites>
+      <sprites name="Spikes">
+        <sprite>sprites\spr_spike_ground</sprite>
+        <sprite>sprites\spr_spike_ceiling</sprite>
+        <sprite>sprites\spr_spike_wall_right</sprite>
+        <sprite>sprites\spr_spike_wall_left</sprite>
       </sprites>
     </sprites>
     <sprites name="Enemies">
@@ -253,14 +269,9 @@
       <sprite>sprites\spr_hearts_board</sprite>
       <sprite>sprites\spr_coins_board</sprite>
       <sprite>sprites\spr_coins</sprite>
+      <sprite>sprites\spr_coinboost</sprite>
       <sprite>sprites\spr_bullets_board</sprite>
     </sprites>
-    <sprite>sprites\spr_sand_rightcorner_connector</sprite>
-    <sprite>sprites\spr_sand_leftcorner_connector</sprite>
-    <sprite>sprites\spr_sand_rightcorner_bottomconnector</sprite>
-    <sprite>sprites\spr_sand_leftcorner_bottomconnector</sprite>
-    <sprite>sprites\spr_sand_tree</sprite>
-    <sprite>sprites\spr_sand_plant_shrub</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
@@ -277,6 +288,7 @@
       <background>background\bac_desert_mountains</background>
       <background>background\bac_desert_sky</background>
     </backgrounds>
+    <background>background\bac_level</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -413,6 +425,9 @@
       <object>objects\obj_barrier</object>
       <object>objects\obj_checkpoint</object>
       <object>objects\obj_checkpoint_position</object>
+      <object>objects\obj_roomflag</object>
+      <object>objects\obj_levelflag</object>
+      <object>objects\obj_gameflag</object>
       <object>objects\obj_door</object>
       <objects name="Decorations">
         <objects name="Grass">
@@ -429,7 +444,8 @@
         </objects>
         <objects name="Desert">
           <object>objects\obj_sand_plant_shrub</object>
-          <object>objects\obj_sand_tree</object>
+          <object>objects\obj_cactus</object>
+          <object>objects\obj_sand_deadtree</object>
         </objects>
       </objects>
       <objects name="Grass">
@@ -451,7 +467,6 @@
         <object>objects\obj_purplebrick_slab</object>
       </objects>
       <objects name="Sand">
-        <object>objects\obj_cactus</object>
         <object>objects\obj_sand_top</object>
         <object>objects\obj_sand</object>
         <object>objects\obj_sand_rightcorner</object>
@@ -466,10 +481,17 @@
         <object>objects\obj_water_top</object>
         <object>objects\obj_water_2</object>
         <object>objects\obj_water</object>
+        <object>objects\obj_water_kill</object>
       </objects>
       <objects name="Lava">
         <object>objects\obj_lava</object>
         <object>objects\obj_lava_bottom</object>
+      </objects>
+      <objects name="Spikes">
+        <object>objects\obj_spike_ground</object>
+        <object>objects\obj_spike_ceiling</object>
+        <object>objects\obj_spike_wall_right</object>
+        <object>objects\obj_spike_wall_left</object>
       </objects>
     </objects>
     <objects name="Enemies">
@@ -495,6 +517,7 @@
       <object>objects\obj_sign_blank</object>
     </objects>
     <objects name="Tracking">
+      <object>objects\obj_f1_f2</object>
       <object>objects\obj_backgrounds</object>
       <objects name="In Game">
         <object>objects\obj_boards</object>
@@ -502,6 +525,7 @@
         <objects name="Coins">
           <object>objects\obj_coins_counter</object>
           <object>objects\obj_coins</object>
+          <object>objects\obj_coinboost</object>
         </objects>
         <objects name="Bullet">
           <object>objects\obj_bullets_counter</object>
@@ -510,9 +534,10 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_test_room</room>
-    <room>rooms\rm_test_desert_room</room>
     <room>rooms\rm_mainmenu</room>
+    <room>rooms\rm_test_room</room>
+    <room>rooms\rm_alpahlevel_1</room>
+    <room>rooms\rm_test_desert_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
