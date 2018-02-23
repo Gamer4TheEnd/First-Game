@@ -13,7 +13,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>3840</width>
-  <height>2160</height>
+  <width>8000</width>
+  <height>2109</height>
   <data>images\bac_level.png</data>
 </background>

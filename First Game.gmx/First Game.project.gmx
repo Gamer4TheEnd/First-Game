@@ -208,6 +208,9 @@
           <sprite>sprites\spr_cactus</sprite>
           <sprite>sprites\spr_sand_deadtree</sprite>
         </sprites>
+        <sprites name="Sea">
+          <sprite>sprites\spr_sea_plant</sprite>
+        </sprites>
       </sprites>
       <sprites name="Grass">
         <sprite>sprites\spr_grass</sprite>
@@ -446,6 +449,9 @@
           <object>objects\obj_sand_plant_shrub</object>
           <object>objects\obj_cactus</object>
           <object>objects\obj_sand_deadtree</object>
+        </objects>
+        <objects name="Sea">
+          <object>objects\obj_sea_plant</object>
         </objects>
       </objects>
       <objects name="Grass">
