@@ -542,7 +542,9 @@
   <rooms name="rooms">
     <room>rooms\rm_mainmenu</room>
     <room>rooms\rm_test_room</room>
-    <room>rooms\rm_alpahlevel_1</room>
+    <room>rooms\rm_alphalevel_1</room>
+    <room>rooms\rm_alphalevel_2</room>
+    <room>rooms\room6</room>
     <room>rooms\rm_test_desert_room</room>
   </rooms>
   <help>
