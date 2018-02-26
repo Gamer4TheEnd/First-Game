@@ -24,6 +24,9 @@
         <sound>sound\snd_desert_bgm_1</sound>
       </sounds>
     </sounds>
+    <sounds name="Narration">
+      <sound>sound\snd_why</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Menus">
@@ -275,6 +278,16 @@
       <sprite>sprites\spr_coinboost</sprite>
       <sprite>sprites\spr_bullets_board</sprite>
     </sprites>
+    <sprite>sprites\spr_rock</sprite>
+    <sprite>sprites\spr_rock_dirt_transition</sprite>
+    <sprite>sprites\spr_rock_wall</sprite>
+    <sprite>sprites\spr_grass_wall</sprite>
+    <sprite>sprites\spr_dirt_wall</sprite>
+    <sprite>sprites\spr_rock_dirt_transition_wall</sprite>
+    <sprite>sprites\spr_torch</sprite>
+    <sprite>sprites\spr_sign_buttbunker</sprite>
+    <sprite>sprites\spr_sign_danger</sprite>
+    <sprite>sprites\spr_sign_gullible</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
@@ -453,6 +466,14 @@
         <objects name="Sea">
           <object>objects\obj_sea_plant</object>
         </objects>
+        <objects name="Everything">
+          <object>objects\obj_torch</object>
+        </objects>
+        <objects name="Signs">
+          <object>objects\obj_sign_buttbunker</object>
+          <object>objects\obj_sign_danger</object>
+          <object>objects\obj_sign_gullible</object>
+        </objects>
       </objects>
       <objects name="Grass">
         <object>objects\obj_grass</object>
@@ -460,6 +481,12 @@
         <object>objects\obj_grass_rightcornor</object>
         <object>objects\obj_grass_topcornor</object>
         <object>objects\obj_dirt</object>
+        <object>objects\obj_rock_dirt_transition</object>
+        <object>objects\obj_rock</object>
+        <object>objects\obj_grass_wall</object>
+        <object>objects\obj_dirt_wall</object>
+        <object>objects\obj_rock_dirt_transition_wall</object>
+        <object>objects\obj_rock_wall</object>
         <object>objects\obj_dirt_top_rightcorner</object>
         <object>objects\obj_dirt_top_leftcorner</object>
         <object>objects\obj_dirt_bottom</object>
