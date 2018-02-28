@@ -288,6 +288,11 @@
     <sprite>sprites\spr_sign_buttbunker</sprite>
     <sprite>sprites\spr_sign_danger</sprite>
     <sprite>sprites\spr_sign_gullible</sprite>
+    <sprite>sprites\spr_gamer</sprite>
+    <sprite>sprites\spr_hi</sprite>
+    <sprite>sprites\spr_win_1</sprite>
+    <sprite>sprites\spr_win_2</sprite>
+    <sprite>sprites\spr_win_3</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
@@ -468,6 +473,8 @@
         </objects>
         <objects name="Everything">
           <object>objects\obj_torch</object>
+          <object>objects\obj_gamer</object>
+          <object>objects\obj_hi</object>
         </objects>
         <objects name="Signs">
           <object>objects\obj_sign_buttbunker</object>
@@ -526,6 +533,13 @@
         <object>objects\obj_spike_wall_right</object>
         <object>objects\obj_spike_wall_left</object>
       </objects>
+      <objects name="Stuff that gamers gonna be mad about">
+        <object>objects\obj_music_manager</object>
+        <object>objects\obj_room_teleport</object>
+        <object>objects\obj_win_1</object>
+        <object>objects\obj_win_2</object>
+        <object>objects\obj_win_3</object>
+      </objects>
     </objects>
     <objects name="Enemies">
       <objects name="White Butt">
@@ -565,14 +579,16 @@
         </objects>
       </objects>
     </objects>
+    <object>objects\obj_text</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_mainmenu</room>
     <room>rooms\rm_test_room</room>
     <room>rooms\rm_alphalevel_1</room>
     <room>rooms\rm_alphalevel_2</room>
-    <room>rooms\room6</room>
+    <room>rooms\rm_alphalevel_3</room>
     <room>rooms\rm_test_desert_room</room>
+    <room>rooms\rm_win</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

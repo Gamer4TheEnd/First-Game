@@ -3,8 +3,8 @@
   <caption></caption>
   <width>10000</width>
   <height>2160</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -2007,7 +2007,6 @@
     <instance objName="obj_dirt" x="8832" y="1184" name="inst_4F9B5B01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dirt" x="8864" y="1184" name="inst_3183E341" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dirt" x="8928" y="1184" name="inst_F7D963C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_music_mainmenu" x="-160" y="512" name="inst_D2C834BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_leftcornor" x="256" y="1024" name="inst_9F2E9ABE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_leftcornor" x="416" y="992" name="inst_ACC146BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_leftcornor" x="640" y="768" name="inst_414C97A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -7539,6 +7538,8 @@
     <instance objName="obj_dirt_wall" x="9408" y="1504" name="inst_81983D44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dirt_wall" x="9408" y="1536" name="inst_7E04D4F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_levelflag" x="9824" y="1024" name="inst_BA37A242" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_room_teleport" x="0" y="688" name="inst_AFB0C292" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_music_manager" x="16" y="688" name="inst_74A9856F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

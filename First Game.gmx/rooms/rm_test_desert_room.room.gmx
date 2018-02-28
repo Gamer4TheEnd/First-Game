@@ -544,7 +544,9 @@
     <instance objName="obj_sand_plant_shrub" x="112" y="1176" name="inst_3E3BE300" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sand_plant_shrub" x="272" y="1176" name="inst_EAB8D0AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_f1_f2" x="16" y="722" name="inst_FE1C71FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_gameflag" x="2112" y="1168" name="inst_443AFE08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_room_teleport" x="0" y="688" name="inst_BDCD5AE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_music_manager" x="16" y="688" name="inst_2DA11694" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_levelflag" x="2112" y="1168" name="inst_ADB4CD47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
