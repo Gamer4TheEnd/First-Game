@@ -34,7 +34,7 @@ if (left_click)
 {
     audio_play_sound(snd_mainmenu_click,9,false)
     audio_stop_all();
-    room_goto(rm_test_room);
+    room_goto(rm_map);
 }
 </string>
           </argument>

@@ -1783,10 +1783,10 @@
     <instance objName="obj_spike_ground" x="1888" y="1184" name="inst_67D89CDC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike_ground" x="1920" y="1184" name="inst_48634FFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_f1_f2" x="16" y="722" name="inst_D7F84462" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_levelflag" x="3680" y="1088" name="inst_324D5E20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room_teleport" x="0" y="688" name="inst_C216D462" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_music_mainmenu" x="0" y="656" name="inst_A3395034" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_music_manager" x="16" y="656" name="inst_C47BABB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_end" x="3680" y="1088" name="inst_49DE6FCF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

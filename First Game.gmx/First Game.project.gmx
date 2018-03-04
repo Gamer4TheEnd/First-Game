@@ -8,6 +8,7 @@
     <sounds name="Menus">
       <sound>sound\snd_mainmenu_themesong</sound>
       <sound>sound\snd_mainmenu_click</sound>
+      <sound>sound\snd_map_bgm_1</sound>
     </sounds>
     <sounds name="Player">
       <sound>sound\snd_player_powerup_gun_shoot</sound>
@@ -293,6 +294,13 @@
     <sprite>sprites\spr_win_1</sprite>
     <sprite>sprites\spr_win_2</sprite>
     <sprite>sprites\spr_win_3</sprite>
+    <sprite>sprites\spr_pin_boss</sprite>
+    <sprite>sprites\spr_pin_special</sprite>
+    <sprite>sprites\spr_pin_level</sprite>
+    <sprite>sprites\spr_patreon</sprite>
+    <sprite>sprites\spr_sun_map</sprite>
+    <sprite>sprites\spr_twitter</sprite>
+    <sprite>sprites\spr_checkpoint_text</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
@@ -310,6 +318,9 @@
       <background>background\bac_desert_sky</background>
     </backgrounds>
     <background>background\bac_level</background>
+    <backgrounds name="Map">
+      <background>background\bac_map</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -324,6 +335,7 @@
       </objects>
       <objects name="GrassLand">
         <object>objects\obj_music_grassland_bgm_1</object>
+        <object>objects\obj_music_map</object>
       </objects>
       <objects name="Desert">
         <object>objects\obj_music_desert_bgm_1</object>
@@ -352,6 +364,10 @@
             <objects name="Quit Button">
               <object>objects\obj_quitbutton</object>
               <object>objects\obj_quitbutton_click</object>
+            </objects>
+            <objects name="Misc.">
+              <object>objects\obj_patreon</object>
+              <object>objects\obj_twitter</object>
             </objects>
           </objects>
         </objects>
@@ -447,6 +463,7 @@
       <object>objects\obj_checkpoint</object>
       <object>objects\obj_checkpoint_position</object>
       <object>objects\obj_roomflag</object>
+      <object>objects\obj_level_end</object>
       <object>objects\obj_levelflag</object>
       <object>objects\obj_gameflag</object>
       <object>objects\obj_door</object>
@@ -540,6 +557,7 @@
         <object>objects\obj_win_2</object>
         <object>objects\obj_win_3</object>
       </objects>
+      <object>objects\obj_sun_map</object>
     </objects>
     <objects name="Enemies">
       <objects name="White Butt">
@@ -580,9 +598,20 @@
       </objects>
     </objects>
     <object>objects\obj_text</object>
+    <objects name="Pins">
+      <object>objects\obj_pin_special</object>
+      <object>objects\obj_pin_special_tutorial</object>
+      <object>objects\obj_pin_boss_1</object>
+      <object>objects\obj_pin_level</object>
+      <object>objects\obj_pin_level_1</object>
+      <object>objects\obj_pin_level_2</object>
+      <object>objects\obj_pin_level_4</object>
+    </objects>
+    <object>objects\obj_checkpoint_text</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_mainmenu</room>
+    <room>rooms\rm_map</room>
     <room>rooms\rm_test_room</room>
     <room>rooms\rm_alphalevel_1</room>
     <room>rooms\rm_alphalevel_2</room>
