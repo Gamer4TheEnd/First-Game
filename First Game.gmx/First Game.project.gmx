@@ -28,6 +28,7 @@
     <sounds name="Narration">
       <sound>sound\snd_why</sound>
     </sounds>
+    <sound>sound\snd_checkpoint</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Menus">
@@ -301,6 +302,8 @@
     <sprite>sprites\spr_sun_map</sprite>
     <sprite>sprites\spr_twitter</sprite>
     <sprite>sprites\spr_checkpoint_text</sprite>
+    <sprite>sprites\spr_eagle</sprite>
+    <sprite>sprites\spr_sparkle</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
@@ -558,6 +561,10 @@
         <object>objects\obj_win_3</object>
       </objects>
       <object>objects\obj_sun_map</object>
+      <object>objects\obj_view_activation</object>
+      <object>objects\obj_player_death</object>
+      <object>objects\obj_sparkle</object>
+      <object>objects\obj_coin_sparkle_spawner</object>
     </objects>
     <objects name="Enemies">
       <objects name="White Butt">

@@ -26,8 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>///Frames &amp; variables
-image_speed = 5/60
-flagcollision = false
+image_speed = 5/60;
+flagcollision = 0;
+flagcollision2 = 1;
 </string>
           </argument>
         </arguments>
@@ -51,11 +52,16 @@ flagcollision = false
           <argument>
             <kind>1</kind>
             <string>///checkpoint code
-if position_meeting(x, y, obj_player) &amp;&amp; flagcollision = false
+if flagcollision != flagcollision2
 {
-instance_create(x, y-5, obj_checkpoint_text)
-flagcollison = true
+if position_meeting(x, y, obj_player)
+    {
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
+    flagcollision2 = flagcollision
+    }
 }
+
 
 
 </string>

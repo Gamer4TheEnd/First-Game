@@ -8215,6 +8215,8 @@
     <instance objName="obj_dirt" x="6272" y="1408" name="inst_55A12499" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dirt" x="6240" y="1408" name="inst_9B40CB01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dirt" x="6208" y="1408" name="inst_4EFB1CB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player_death" x="32" y="704" name="inst_D75BB9B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_coin_sparkle_spawner" x="64" y="704" name="inst_B72FAFA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

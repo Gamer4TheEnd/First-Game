@@ -25,9 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-flagcollision = false
-
+            <string>image_speed = 8/60
 </string>
           </argument>
         </arguments>
@@ -50,13 +48,11 @@ flagcollision = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if position_meeting(x, y, obj_player) &amp;&amp; flagcollision = false
+            <string>///Kill Self
+if (image_index = 6)
 {
-instance_create(x, y-5, obj_checkpoint_text)
-flagcollison = true
+    instance_destroy();
 }
-
-
 </string>
           </argument>
         </arguments>

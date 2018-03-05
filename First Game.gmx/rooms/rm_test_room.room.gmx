@@ -1787,6 +1787,8 @@
     <instance objName="obj_music_mainmenu" x="0" y="656" name="inst_A3395034" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_music_manager" x="16" y="656" name="inst_C47BABB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_end" x="3680" y="1088" name="inst_49DE6FCF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player_death" x="16" y="688" name="inst_A4EB8B05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_coin_sparkle_spawner" x="32" y="688" name="inst_9B05833E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
