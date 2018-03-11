@@ -54,6 +54,8 @@ image_speed = 5/60;
 //2 Hearts//
 if (place_meeting(x,y,obj_player)) &amp;&amp; (lives &lt; 10)
 {
+    audio_play_sound(snd_coin,9,false)
+    instance_create(x, y, obj_collect_heart);
     lives += 2
     instance_destroy()
 }
@@ -61,6 +63,8 @@ if (place_meeting(x,y,obj_player)) &amp;&amp; (lives &lt; 10)
 //2 Hearts Max//
 if (place_meeting(x,y,obj_player)) &amp;&amp; (lives = 10)
 {
+    audio_play_sound(snd_coin,9,false)
+    instance_create(x, y, obj_collect_heart);
     lives += 2
     instance_destroy()
 }
@@ -68,6 +72,8 @@ if (place_meeting(x,y,obj_player)) &amp;&amp; (lives = 10)
 //1 Heart//
 if (place_meeting(x,y,obj_player)) &amp;&amp; (lives = 11)
 {
+    audio_play_sound(snd_coin,9,false)
+    instance_create(x, y, obj_collect_heart);
     lives += 1
     global.points += 25
     instance_destroy()
@@ -76,6 +82,8 @@ if (place_meeting(x,y,obj_player)) &amp;&amp; (lives = 11)
 //0 Heart//
 if (place_meeting(x,y,obj_player)) &amp;&amp; (lives = 12)
 {
+    audio_play_sound(snd_coin,9,false)
+    instance_create(x, y, obj_collect_heart);
     global.points += 50
     instance_destroy()
 }

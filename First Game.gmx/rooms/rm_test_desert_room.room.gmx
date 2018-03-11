@@ -548,7 +548,7 @@
     <instance objName="obj_music_manager" x="16" y="688" name="inst_2DA11694" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_levelflag" x="2112" y="1168" name="inst_ADB4CD47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_death" x="32" y="688" name="inst_AA5444F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_coin_sparkle_spawner" x="32" y="720" name="inst_56EF5CD8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_coins" x="3824" y="304" name="inst_B3BD37DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

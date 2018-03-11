@@ -3452,7 +3452,7 @@
     <instance objName="obj_gamer" x="2464" y="1019" name="inst_A7E44F2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_end" x="9920" y="1024" name="inst_3F4B8B58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_death" x="32" y="672" name="inst_548E15B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_coin_sparkle_spawner" x="32" y="704" name="inst_124737C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_coins" x="9984" y="416" name="inst_19D73AE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
