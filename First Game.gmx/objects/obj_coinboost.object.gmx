@@ -54,6 +54,8 @@ image_speed = 5/60;
 //Player//
 if (place_meeting(x,y,obj_player))
 {
+    audio_play_sound(snd_coin,9,false)
+    instance_create(x, y, obj_sparkle);
     global.points += 10
     instance_destroy();
 }
