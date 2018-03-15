@@ -332,6 +332,7 @@
     <fonts name="Tracking">
       <font>fonts\fon_tracking</font>
     </fonts>
+    <font>fonts\fon_menu</font>
   </fonts>
   <objects name="objects">
     <objects name="Music">
@@ -617,6 +618,7 @@
       <object>objects\obj_pin_level_4</object>
     </objects>
     <object>objects\obj_checkpoint_text</object>
+    <object>objects\obj_pause</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_mainmenu</room>
