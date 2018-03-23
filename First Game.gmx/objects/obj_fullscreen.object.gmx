@@ -25,14 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Frames
-image_speed = 0.0000000001/60
+            <string>///Frames &amp; Veriables
+image_speed = 0/60
+number = -1
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="11">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,50 +50,29 @@ image_speed = 0.0000000001/60
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Destroy Instance &amp; Image Index
-if obj_fullscreen.sprite_index = spr_fullscreen
+            <string>///Turn FullScreen On/Off
+//Veriables//
+left_click = mouse_check_button_pressed(mb_left)
+mouse_position = instance_position(mouse_x,mouse_y,obj_fullscreen)
+
+//Actions//
+if (mouse_position) &amp;&amp; (left_click)
 {
-    instance_destroy(obj_fullscreen_click);
-    if (sprite_index = spr_fullscreen) image_index = 0;
-}
-else
-{
-    instance_destroy(obj_fullscreen_click2);
+    audio_play_sound(snd_mainmenu_click,9,false)
+    number = number * -1;
+    window_set_fullscreen(number);
 }
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="10">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Summon Instance &amp; Image Index
-if obj_fullscreen.sprite_index = spr_fullscreen
+///Full Screen Glitch Fix Actions
+if window_get_fullscreen()
 {
-    instance_create(x,y,obj_fullscreen_click);
-    if (sprite_index = spr_fullscreen) image_index = 1;
-}
-else
-{
-    instance_create(x,y,obj_fullscreen_click2);
+    obj_fullscreen.image_index = 1;
 }
 
+if !window_get_fullscreen()
+{
+    obj_fullscreen.image_index = 0;
+}
 </string>
           </argument>
         </arguments>

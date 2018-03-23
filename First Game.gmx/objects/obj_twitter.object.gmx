@@ -3,12 +3,12 @@
   <spriteName>spr_twitter</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1000</depth>
+  <depth>-50</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="3" enumb="0">
+    <event eventtype="6" enumb="4">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,13 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if ( mouse_check_button_pressed( mb_left ) )
-    {
-    with ( instance_position( mouse_x, mouse_y, obj_twitter ) )
-        {
-        url_open_full('https://twitter.com/BBGamesTeam', '_blank', 'options');
-        }
-    }
+            <string>///Open Twitter
+//Veriables//
+mouse_position = instance_position(mouse_x,mouse_y,obj_twitter)
+
+//Actions//
+if (mouse_position)
+{
+    audio_play_sound(snd_mainmenu_click,9,false)
+    url_open_full('https://twitter.com/BBGamesTeam','_self','options')
+}
 </string>
           </argument>
         </arguments>

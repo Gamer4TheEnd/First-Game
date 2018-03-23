@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="6" enumb="11">
+    <event eventtype="6" enumb="4">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,32 +25,29 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Destroy Instance
-instance_destroy(obj_medium_click);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="10">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Summon Instance
-instance_create(x,y,obj_medium_click);
+            <string>///Medium Volume
+//Veriables//
+mouse_position = instance_position(mouse_x,mouse_y,obj_medium)
+
+//Actions//
+if (mouse_position) &amp;&amp; (global.vol &gt; 0.6)
+{
+    global.vol = 0.6
+    audio_master_gain(global.vol)
+    audio_play_sound(snd_mainmenu_click,9,false)
+}
+
+if (mouse_position) &amp;&amp; (global.vol &lt; 0.6)
+{
+    global.vol = 0.6
+    audio_master_gain(global.vol)
+    audio_play_sound(snd_mainmenu_click,9,false)
+}
+
+if (mouse_position) &amp;&amp; (global.vol = 0.6)
+{
+    audio_play_sound(snd_mainmenu_click,9,false)
+}
 </string>
           </argument>
         </arguments>

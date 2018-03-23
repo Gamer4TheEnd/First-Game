@@ -8,7 +8,7 @@
     <sounds name="Menus">
       <sound>sound\snd_mainmenu_themesong</sound>
       <sound>sound\snd_mainmenu_click</sound>
-      <sound>sound\snd_map_bgm_1</sound>
+      <sound>sound\snd_map_soundtrack</sound>
     </sounds>
     <sounds name="Player">
       <sound>sound\snd_player_powerup_gun_shoot</sound>
@@ -25,14 +25,15 @@
         <sound>sound\snd_desert_bgm_1</sound>
       </sounds>
     </sounds>
+    <sounds name="Tracking">
+      <sound>sound\snd_checkpoint</sound>
+      <sound>sound\snd_coin</sound>
+    </sounds>
     <sounds name="Narration">
       <sound>sound\snd_why</sound>
     </sounds>
-    <sound>sound\snd_checkpoint</sound>
-    <sound>sound\snd_coin</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_patreon</sprite>
     <sprites name="Menus">
       <sprites name="background">
         <sprite>sprites\spr_sky</sprite>
@@ -52,7 +53,6 @@
       <sprites name="Options Menu">
         <sprite>sprites\spr_optionsmenu</sprite>
         <sprites name="Buttons">
-          <sprite>sprites\spr_checkmark</sprite>
           <sprite>sprites\spr_fullscreen</sprite>
           <sprite>sprites\spr_volume</sprite>
           <sprite>sprites\spr_back</sprite>
@@ -67,6 +67,16 @@
           <sprite>sprites\spr_back_optionsmenu</sprite>
         </sprites>
       </sprites>
+      <sprites name="Media">
+        <sprite>sprites\spr_patreon</sprite>
+        <sprite>sprites\spr_twitter</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Map">
+      <sprite>sprites\spr_pin_level</sprite>
+      <sprite>sprites\spr_pin_special</sprite>
+      <sprite>sprites\spr_pin_boss</sprite>
+      <sprite>sprites\spr_sun_map</sprite>
     </sprites>
     <sprites name="Player">
       <sprites name="Movement">
@@ -189,15 +199,28 @@
     </sprites>
     <sprites name="Boosts">
       <sprite>sprites\spr_heartboost</sprite>
+      <sprite>sprites\spr_collect_heart</sprite>
     </sprites>
     <sprites name="Blocks">
       <sprite>sprites\spr_wall</sprite>
       <sprite>sprites\spr_barrier</sprite>
+      <sprite>sprites\spr_checkpoint_text</sprite>
       <sprite>sprites\spr_checkpoint</sprite>
       <sprite>sprites\spr_checkpoint_position</sprite>
       <sprite>sprites\spr_roomflag</sprite>
       <sprite>sprites\spr_door</sprite>
       <sprites name="Decorations">
+        <sprites name="Shadows">
+          <sprite>sprites\spr_torch</sprite>
+          <sprite>sprites\spr_shadow_transition</sprite>
+          <sprite>sprites\spr_shadow</sprite>
+        </sprites>
+        <sprites name="Signs">
+          <sprite>sprites\spr_sign_blank</sprite>
+          <sprite>sprites\spr_sign_buttbunker</sprite>
+          <sprite>sprites\spr_sign_danger</sprite>
+          <sprite>sprites\spr_sign_gullible</sprite>
+        </sprites>
         <sprites name="Grass">
           <sprite>sprites\spr_grass_plant</sprite>
           <sprite>sprites\spr_grass_plant_leftcornor</sprite>
@@ -230,6 +253,10 @@
         <sprite>sprites\spr_dirt_bottom</sprite>
         <sprite>sprites\spr_dirt_bottom_right</sprite>
         <sprite>sprites\spr_dirt_bottom_left</sprite>
+      </sprites>
+      <sprites name="Rock">
+        <sprite>sprites\spr_dirt_rock_transition</sprite>
+        <sprite>sprites\spr_rock</sprite>
       </sprites>
       <sprites name="Bricks">
         <sprite>sprites\spr_brick</sprite>
@@ -271,45 +298,35 @@
       <sprite>sprites\spr_enemy_arabbutt</sprite>
       <sprite>sprites\spr_enemy_poof</sprite>
     </sprites>
-    <sprites name="Signs">
-      <sprite>sprites\spr_sign_blank</sprite>
-    </sprites>
     <sprites name="Tracking">
-      <sprite>sprites\spr_boards_rope</sprite>
-      <sprite>sprites\spr_hearts_board</sprite>
-      <sprite>sprites\spr_coins_board</sprite>
+      <sprites name="Boards">
+        <sprite>sprites\spr_boards_rope</sprite>
+        <sprite>sprites\spr_hearts_board</sprite>
+        <sprite>sprites\spr_coins_board</sprite>
+        <sprite>sprites\spr_bullets_board</sprite>
+      </sprites>
       <sprite>sprites\spr_coins</sprite>
       <sprite>sprites\spr_coinboost</sprite>
-      <sprite>sprites\spr_bullets_board</sprite>
+      <sprite>sprites\spr_sparkle</sprite>
     </sprites>
-    <sprite>sprites\spr_rock</sprite>
-    <sprite>sprites\spr_rock_dirt_transition</sprite>
-    <sprite>sprites\spr_rock_wall</sprite>
-    <sprite>sprites\spr_grass_wall</sprite>
-    <sprite>sprites\spr_dirt_wall</sprite>
-    <sprite>sprites\spr_rock_dirt_transition_wall</sprite>
-    <sprite>sprites\spr_torch</sprite>
-    <sprite>sprites\spr_sign_buttbunker</sprite>
-    <sprite>sprites\spr_sign_danger</sprite>
-    <sprite>sprites\spr_sign_gullible</sprite>
-    <sprite>sprites\spr_gamer</sprite>
-    <sprite>sprites\spr_hi</sprite>
-    <sprite>sprites\spr_win_1</sprite>
-    <sprite>sprites\spr_win_2</sprite>
-    <sprite>sprites\spr_win_3</sprite>
-    <sprite>sprites\spr_pin_boss</sprite>
-    <sprite>sprites\spr_pin_special</sprite>
-    <sprite>sprites\spr_pin_level</sprite>
-    <sprite>sprites\spr_sun_map</sprite>
-    <sprite>sprites\spr_twitter</sprite>
-    <sprite>sprites\spr_checkpoint_text</sprite>
-    <sprite>sprites\spr_eagle</sprite>
-    <sprite>sprites\spr_sparkle</sprite>
-    <sprite>sprites\spr_collect_heart</sprite>
+    <sprites name="Levels">
+      <sprites name="Level 1 parts">
+        <sprite>sprites\spr_level1_bg</sprite>
+        <sprite>sprites\spr_level1_sh</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Win Screen">
+      <sprite>sprites\spr_win_1</sprite>
+      <sprite>sprites\spr_win_2</sprite>
+      <sprite>sprites\spr_win_3</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
       <background>background\bac_mainmenu</background>
+    </backgrounds>
+    <backgrounds name="Map">
+      <background>background\bac_map</background>
     </backgrounds>
     <backgrounds name="GrassLand">
       <background>background\bac_grassland_sky</background>
@@ -322,9 +339,8 @@
       <background>background\bac_desert_mountains</background>
       <background>background\bac_desert_sky</background>
     </backgrounds>
-    <background>background\bac_level</background>
-    <backgrounds name="Map">
-      <background>background\bac_map</background>
+    <backgrounds name="Levels">
+      <background>background\bac_level</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -332,16 +348,15 @@
     <fonts name="Tracking">
       <font>fonts\fon_tracking</font>
     </fonts>
-    <font>fonts\fon_menu</font>
   </fonts>
   <objects name="objects">
     <objects name="Music">
       <objects name="Menus">
         <object>objects\obj_music_mainmenu</object>
+        <object>objects\obj_music_map</object>
       </objects>
       <objects name="GrassLand">
         <object>objects\obj_music_grassland_bgm_1</object>
-        <object>objects\obj_music_map</object>
       </objects>
       <objects name="Desert">
         <object>objects\obj_music_desert_bgm_1</object>
@@ -357,65 +372,38 @@
           <object>objects\obj_cloud_small</object>
           <object>objects\obj_buttbashers</object>
         </objects>
-        <objects name="Main Menu">
-          <objects name="Buttons">
-            <objects name="Play Button">
-              <object>objects\obj_playbutton</object>
-              <object>objects\obj_playbutton_click</object>
-            </objects>
-            <objects name="Options Button">
-              <object>objects\obj_optionsbutton</object>
-              <object>objects\obj_optionsbutton_click</object>
-            </objects>
-            <objects name="Quit Button">
-              <object>objects\obj_quitbutton</object>
-              <object>objects\obj_quitbutton_click</object>
-            </objects>
-            <objects name="Misc.">
-              <object>objects\obj_patreon</object>
-              <object>objects\obj_twitter</object>
-            </objects>
-          </objects>
+        <objects name="Main Buttons">
+          <object>objects\obj_playbutton</object>
+          <object>objects\obj_optionsbutton</object>
+          <object>objects\obj_quitbutton</object>
         </objects>
         <objects name="Options Menu">
           <object>objects\obj_optionsmenu</object>
           <objects name="Buttons">
-            <objects name="Full Screen">
-              <object>objects\obj_fullscreen</object>
-              <object>objects\obj_fullscreen_click</object>
-              <object>objects\obj_fullscreen_click2</object>
-            </objects>
-            <objects name="Volume Button">
-              <object>objects\obj_volume</object>
-              <object>objects\obj_volume_click</object>
-            </objects>
-            <objects name="Back Button">
-              <object>objects\obj_back</object>
-              <object>objects\obj_back_click</object>
-            </objects>
+            <object>objects\obj_fullscreen</object>
+            <object>objects\obj_volume</object>
+            <object>objects\obj_back</object>
           </objects>
         </objects>
         <objects name="Volume Menu">
           <object>objects\obj_volumemenu</object>
           <objects name="Buttons">
-            <objects name="Low Volume">
-              <object>objects\obj_low</object>
-              <object>objects\obj_low_click</object>
-            </objects>
-            <objects name="Medium Volume">
-              <object>objects\obj_medium</object>
-              <object>objects\obj_medium_click</object>
-            </objects>
-            <objects name="High Volume">
-              <object>objects\obj_high</object>
-              <object>objects\obj_high_click</object>
-            </objects>
-            <objects name="Back Button">
-              <object>objects\obj_back_optionsmenu</object>
-              <object>objects\obj_back_optionsmenu_click</object>
-            </objects>
+            <object>objects\obj_low</object>
+            <object>objects\obj_medium</object>
+            <object>objects\obj_high</object>
+            <object>objects\obj_back_optionsmenu</object>
           </objects>
         </objects>
+        <objects name="Misc.">
+          <object>objects\obj_patreon</object>
+          <object>objects\obj_twitter</object>
+        </objects>
+      </objects>
+      <object>objects\obj_sun_map</object>
+      <objects name="Pins">
+        <object>objects\obj_specialpin_tutorial</object>
+        <object>objects\obj_levelpin_testroom</object>
+        <object>objects\obj_levelpin_desert</object>
       </objects>
     </objects>
     <objects name="Player">
@@ -445,8 +433,10 @@
         </objects>
       </objects>
     </objects>
-    <objects name="Boosts">
+    <objects name="Boosts &amp; Effects">
       <object>objects\obj_heartboost</object>
+      <object>objects\obj_collect_heart</object>
+      <object>objects\obj_sparkle</object>
     </objects>
     <objects name="Power Ups">
       <objects name="Gun">
@@ -466,14 +456,19 @@
     <objects name="Blocks">
       <object>objects\obj_wall</object>
       <object>objects\obj_barrier</object>
+      <object>objects\obj_checkpoint_text</object>
       <object>objects\obj_checkpoint</object>
       <object>objects\obj_checkpoint_position</object>
       <object>objects\obj_roomflag</object>
-      <object>objects\obj_level_end</object>
       <object>objects\obj_levelflag</object>
       <object>objects\obj_gameflag</object>
       <object>objects\obj_door</object>
       <objects name="Decorations">
+        <objects name="Shadows">
+          <object>objects\obj_torch</object>
+          <object>objects\obj_shadow_transition</object>
+          <object>objects\obj_shadow</object>
+        </objects>
         <objects name="Grass">
           <object>objects\obj_grass_plant</object>
           <object>objects\obj_grass_plant_leftcornor</object>
@@ -494,11 +489,6 @@
         <objects name="Sea">
           <object>objects\obj_sea_plant</object>
         </objects>
-        <objects name="Everything">
-          <object>objects\obj_torch</object>
-          <object>objects\obj_gamer</object>
-          <object>objects\obj_hi</object>
-        </objects>
         <objects name="Signs">
           <object>objects\obj_sign_buttbunker</object>
           <object>objects\obj_sign_danger</object>
@@ -511,17 +501,15 @@
         <object>objects\obj_grass_rightcornor</object>
         <object>objects\obj_grass_topcornor</object>
         <object>objects\obj_dirt</object>
-        <object>objects\obj_rock_dirt_transition</object>
-        <object>objects\obj_rock</object>
-        <object>objects\obj_grass_wall</object>
-        <object>objects\obj_dirt_wall</object>
-        <object>objects\obj_rock_dirt_transition_wall</object>
-        <object>objects\obj_rock_wall</object>
         <object>objects\obj_dirt_top_rightcorner</object>
         <object>objects\obj_dirt_top_leftcorner</object>
         <object>objects\obj_dirt_bottom</object>
         <object>objects\obj_dirt_bottom_right</object>
         <object>objects\obj_dirt_bottom_left</object>
+      </objects>
+      <objects name="Rock">
+        <object>objects\obj_dirt_rock_transition</object>
+        <object>objects\obj_rock</object>
       </objects>
       <objects name="Bricks">
         <object>objects\obj_brick</object>
@@ -556,18 +544,6 @@
         <object>objects\obj_spike_wall_right</object>
         <object>objects\obj_spike_wall_left</object>
       </objects>
-      <objects name="Stuff that gamers gonna be mad about">
-        <object>objects\obj_music_manager</object>
-        <object>objects\obj_room_teleport</object>
-        <object>objects\obj_win_1</object>
-        <object>objects\obj_win_2</object>
-        <object>objects\obj_win_3</object>
-      </objects>
-      <object>objects\obj_sun_map</object>
-      <object>objects\obj_view_activation</object>
-      <object>objects\obj_player_death</object>
-      <object>objects\obj_sparkle</object>
-      <object>objects\obj_collect_heart</object>
     </objects>
     <objects name="Enemies">
       <objects name="White Butt">
@@ -592,10 +568,11 @@
       <object>objects\obj_sign_blank</object>
     </objects>
     <objects name="Tracking">
+      <object>objects\obj_r</object>
       <object>objects\obj_f1_f2</object>
-      <object>objects\obj_backgrounds</object>
       <objects name="In Game">
         <object>objects\obj_boards</object>
+        <object>objects\obj_backgrounds</object>
         <object>objects\obj_boards_rope</object>
         <objects name="Coins">
           <object>objects\obj_coins_counter</object>
@@ -606,19 +583,28 @@
           <object>objects\obj_bullets_counter</object>
         </objects>
       </objects>
+      <object>objects\obj_room_teleport</object>
     </objects>
-    <object>objects\obj_text</object>
-    <objects name="Pins">
-      <object>objects\obj_pin_special</object>
-      <object>objects\obj_pin_special_tutorial</object>
-      <object>objects\obj_pin_boss_1</object>
-      <object>objects\obj_pin_level</object>
-      <object>objects\obj_pin_level_1</object>
-      <object>objects\obj_pin_level_2</object>
-      <object>objects\obj_pin_level_4</object>
+    <objects name="Levels">
+      <objects name="Level 1 Parts">
+        <objects name="Level 1 BG">
+          <object>objects\obj_level1_bg_1</object>
+          <object>objects\obj_level1_bg_2</object>
+          <object>objects\obj_level1_bg_3</object>
+          <object>objects\obj_level1_bg_4</object>
+        </objects>
+        <objects name="Level 1 SH">
+          <object>objects\obj_level1_sh_3</object>
+          <object>objects\obj_level1_sh_4</object>
+        </objects>
+      </objects>
     </objects>
-    <object>objects\obj_checkpoint_text</object>
-    <object>objects\obj_pause</object>
+    <objects name="Win Screen">
+      <object>objects\obj_win_1</object>
+      <object>objects\obj_win_2</object>
+      <object>objects\obj_win_3</object>
+      <object>objects\obj_text</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_mainmenu</room>

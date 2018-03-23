@@ -54,7 +54,7 @@ image_speed = 5/60
 if (place_meeting(x,y,obj_player))
 {
     audio_stop_all()
-    room_goto_next()
+    room_goto(rm_map);
 }
 
 //Gun Power Up Finish
@@ -62,7 +62,7 @@ if (place_meeting(x,y,obj_player))
 if (place_meeting(x,y,obj_player_powerup_gun))
 {
     audio_stop_all()
-    room_goto_next()
+    room_goto(rm_map);
 }
 
 //Invinciblity Gun Power Up Finish
@@ -70,7 +70,7 @@ if (place_meeting(x,y,obj_player_powerup_gun))
 if (place_meeting(x,y,obj_player_i_gun))
 {
     audio_stop_all()
-    room_goto_next()
+    room_goto(rm_map);
 }
 
 //Super Speed Power Up Finish
@@ -78,7 +78,7 @@ if (place_meeting(x,y,obj_player_i_gun))
 if (place_meeting(x,y,obj_player_powerup_superspeed))
 {
     audio_stop_all()
-    room_goto_next()
+    room_goto(rm_map);
 }
 
 //Invinciblity Super Speed Power Up Finish
@@ -86,7 +86,7 @@ if (place_meeting(x,y,obj_player_powerup_superspeed))
 if (place_meeting(x,y,obj_player_i_superspeed))
 {
     audio_stop_all()
-    room_goto_next()
+    room_goto(rm_map);
 }
 
 //Super Speed Limit Power Up Finish
@@ -94,7 +94,7 @@ if (place_meeting(x,y,obj_player_i_superspeed))
 if (place_meeting(x,y,obj_player_powerup_superspeed_limit))
 {
     audio_stop_all()
-    room_goto_next()
+    room_goto(rm_map);
 }
 
 //Invinciblity Super Speed Limit Power Up Finish
@@ -102,7 +102,7 @@ if (place_meeting(x,y,obj_player_powerup_superspeed_limit))
 if (place_meeting(x,y,obj_player_i_superspeed_limit))
 {
     audio_stop_all()
-    room_goto_next()
+    room_goto(rm_map);
 }
 
 //Super Jump Power Up Finish
@@ -110,7 +110,7 @@ if (place_meeting(x,y,obj_player_i_superspeed_limit))
 if (place_meeting(x,y,obj_player_powerup_superjump))
 {
     audio_stop_all()
-    room_goto_next()
+    room_goto(rm_map);
 }
 
 //Invinciblity Super Speed Power Up Finish
@@ -118,7 +118,7 @@ if (place_meeting(x,y,obj_player_powerup_superjump))
 if (place_meeting(x,y,obj_player_i_superjump))
 {
     audio_stop_all()
-    room_goto_next()
+    room_goto(rm_map);
 }
 
 //Super Speed Limit Power Up Finish
@@ -126,7 +126,7 @@ if (place_meeting(x,y,obj_player_i_superjump))
 if (place_meeting(x,y,obj_player_powerup_superjump_limit))
 {
     audio_stop_all()
-    room_goto_next()
+    room_goto(rm_map);
 }
 
 //Invinciblity Super Speed Limit Power Up Finish
@@ -134,7 +134,7 @@ if (place_meeting(x,y,obj_player_powerup_superjump_limit))
 if (place_meeting(x,y,obj_player_i_superjump_limit))
 {
     audio_stop_all()
-    room_goto_next()
+    room_goto(rm_map);
 }
 </string>
           </argument>

@@ -563,7 +563,7 @@ if (lives = 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Restart Game
+            <string>///Restart Room
 room_restart();
 </string>
           </argument>

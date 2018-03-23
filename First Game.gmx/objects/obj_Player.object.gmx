@@ -332,6 +332,8 @@ if (place_meeting(x,y,checkpoint1)) &amp;&amp; checkpoints &lt; 1
 {
     obj_checkpoint.x = checkpoint1.x
     obj_checkpoint.y = checkpoint1.y
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
     checkpoints = 1
 }
 
@@ -340,6 +342,8 @@ if (place_meeting(x,y,checkpoint2)) &amp;&amp; checkpoints &lt; 2
 {
     obj_checkpoint.x = checkpoint2.x
     obj_checkpoint.y = checkpoint2.y
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
     checkpoints = 2
 }
 
@@ -348,6 +352,8 @@ if (place_meeting(x,y,checkpoint3)) &amp;&amp; checkpoints &lt; 3
 {
     obj_checkpoint.x = checkpoint3.x
     obj_checkpoint.y = checkpoint3.y
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
     checkpoints = 3
 }
 
@@ -356,6 +362,8 @@ if (place_meeting(x,y,checkpoint4)) &amp;&amp; checkpoints &lt; 4
 {
     obj_checkpoint.x = checkpoint4.x
     obj_checkpoint.y = checkpoint4.y
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
     checkpoints = 4
 }
 
@@ -364,6 +372,8 @@ if (place_meeting(x,y,checkpoint5)) &amp;&amp; checkpoints &lt; 5
 {
     obj_checkpoint.x = checkpoint5.x
     obj_checkpoint.y = checkpoint5.y
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
     checkpoints = 5
 }
 
@@ -372,6 +382,8 @@ if (place_meeting(x,y,checkpoint6)) &amp;&amp; checkpoints &lt; 6
 {
     obj_checkpoint.x = checkpoint6.x
     obj_checkpoint.y = checkpoint6.y
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
     checkpoints = 6
 }
 
@@ -380,6 +392,8 @@ if (place_meeting(x,y,checkpoint7)) &amp;&amp; checkpoints &lt; 7
 {
     obj_checkpoint.x = checkpoint1.x
     obj_checkpoint.y = checkpoint1.y
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
     checkpoints = 7
 }
 
@@ -388,6 +402,8 @@ if (place_meeting(x,y,checkpoint8)) &amp;&amp; checkpoints &lt; 8
 {
     obj_checkpoint.x = checkpoint8.x
     obj_checkpoint.y = checkpoint8.y
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
     checkpoints = 8
 }
 
@@ -396,6 +412,8 @@ if (place_meeting(x,y,checkpoint9)) &amp;&amp; checkpoints &lt; 9
 {
     obj_checkpoint.x = checkpoint9.x
     obj_checkpoint.y = checkpoint9.y
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
     checkpoints = 9
 }
 
@@ -404,6 +422,8 @@ if (place_meeting(x,y,checkpoint10)) &amp;&amp; checkpoints &lt; 10
 {
     obj_checkpoint.x = checkpoint10.x
     obj_checkpoint.y = checkpoint10.y
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
     checkpoints = 10
 }
 
@@ -412,6 +432,8 @@ if (place_meeting(x,y,checkpoint11)) &amp;&amp; checkpoints &lt; 11
 {
     obj_checkpoint.x = checkpoint11.x
     obj_checkpoint.y = checkpoint11.y
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
     checkpoints = 11
 }
 
@@ -420,6 +442,8 @@ if (place_meeting(x,y,checkpoint12)) &amp;&amp; checkpoints &lt; 12
 {
     obj_checkpoint.x = checkpoint12.x
     obj_checkpoint.y = checkpoint12.y
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
     checkpoints = 12
 }
 
@@ -428,6 +452,8 @@ if (place_meeting(x,y,checkpoint13)) &amp;&amp; checkpoints &lt; 13
 {
     obj_checkpoint.x = checkpoint13.x
     obj_checkpoint.y = checkpoint13.y
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
     checkpoints = 13
 }
 
@@ -436,6 +462,8 @@ if (place_meeting(x,y,checkpoint14)) &amp;&amp; checkpoints &lt; 14
 {
     obj_checkpoint.x = checkpoint14.x
     obj_checkpoint.y = checkpoint14.y
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
     checkpoints = 14
 }
 
@@ -444,6 +472,8 @@ if (place_meeting(x,y,checkpoint15)) &amp;&amp; checkpoints &lt; 15
 {
     obj_checkpoint.x = checkpoint15.x
     obj_checkpoint.y = checkpoint15.y
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
     checkpoints = 15
 }
 
@@ -452,6 +482,8 @@ if (place_meeting(x,y,checkpoint16)) &amp;&amp; checkpoints &lt; 16
 {
     obj_checkpoint.x = checkpoint16.x
     obj_checkpoint.y = checkpoint16.y
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
     checkpoints = 16
 }
 
@@ -460,6 +492,8 @@ if (place_meeting(x,y,checkpoint17)) &amp;&amp; checkpoints &lt; 17
 {
     obj_checkpoint.x = checkpoint17.x
     obj_checkpoint.y = checkpoint17.y
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
     checkpoints = 17
 }
 
@@ -468,6 +502,8 @@ if (place_meeting(x,y,checkpoint18)) &amp;&amp; checkpoints &lt; 18
 {
     obj_checkpoint.x = checkpoint18.x
     obj_checkpoint.y = checkpoint18.y
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
     checkpoints = 18
 }
 
@@ -476,6 +512,8 @@ if (place_meeting(x,y,checkpoint19)) &amp;&amp; checkpoints &lt; 19
 {
     obj_checkpoint.x = checkpoint19.x
     obj_checkpoint.y = checkpoint19.y
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
     checkpoints = 19
 }
 
@@ -484,30 +522,10 @@ if (place_meeting(x,y,checkpoint20)) &amp;&amp; checkpoints &lt; 20
 {
     obj_checkpoint.x = checkpoint20.x
     obj_checkpoint.y = checkpoint20.y
+    instance_create(x, y-40, obj_checkpoint_text)
+    audio_play_sound(snd_checkpoint,8,false)
     checkpoints = 20
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if place_meeting(obj_player.x, obj_player.y, obj_coins)
-audio_play_sound(snd_coin,9,false);
 </string>
           </argument>
         </arguments>
@@ -563,7 +581,7 @@ if (lives = 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Reset Game
+            <string>///Restart Room
 room_restart();
 </string>
           </argument>

@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Map BGM 1
-if (!audio_is_playing(snd_map_bgm_1))
+            <string>///Map Sound Track
+if (!audio_is_playing(snd_map_soundtrack))
 {
-    audio_play_sound(snd_map_bgm_1,45,true)
+    audio_play_sound(snd_map_soundtrack,45,true)
 }
 
 alarm_set(11,4)
@@ -54,39 +54,11 @@ alarm_set(11,4)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Map BGM 1 Not Playing Fix
-if (!audio_is_playing(snd_map_bgm_1))
+            <string>///Map Sound Track Not Playing Fix
+if (!audio_is_playing(snd_map_soundtrack))
 {
-    audio_play_sound(snd_map_bgm_1,45,true)
+    audio_play_sound(snd_map_soundtrack,45,true)
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if !sound_play(snd_map_bgm_1)
-sound_play (snd_map_bgm_1);
-
-if sound_play(snd_map_bgm_1)
-sound_volume(snd_map_bgm_1, 0.1);
-
 </string>
           </argument>
         </arguments>
@@ -109,10 +81,10 @@ sound_volume(snd_map_bgm_1, 0.1);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Stop The Song
-if (audio_is_playing(snd_map_bgm_1))
+            <string>///Stop The Sound Track
+if (audio_is_playing(snd_map_soundtrack))
 {
-    audio_stop_sound(snd_map_bgm_1)
+    audio_stop_sound(snd_map_soundtrack)
 }
 
 </string>

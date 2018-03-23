@@ -53,7 +53,7 @@
     draw_set_color(c_black);
     draw_rectangle(0, 0, room_width, room_height, 0);
     draw_set_halign(fa_center);
-    draw_set_font(fon_menu);
+    draw_set_font(fon_tracking)
     draw_set_color(c_white);
     draw_text(view_wview[0]/2, view_hview[0]/2, "Game Paused");
 }

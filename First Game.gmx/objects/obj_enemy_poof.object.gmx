@@ -49,7 +49,7 @@ image_speed = 18/60
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Kill Self
+            <string>///instance destroy
 if (image_index = 6)
 {
     instance_destroy();

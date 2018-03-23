@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 5/60
+            <string>///Frames
+image_speed = 5/60
 </string>
           </argument>
         </arguments>
@@ -48,7 +49,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Kill Self
+            <string>///Instance Destroy
 if (image_index = 4)
 {
     instance_destroy();
