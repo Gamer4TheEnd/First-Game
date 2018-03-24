@@ -308,6 +308,7 @@
       <sprite>sprites\spr_coins</sprite>
       <sprite>sprites\spr_coinboost</sprite>
       <sprite>sprites\spr_sparkle</sprite>
+      <sprite>sprites\spr_mouse_texture</sprite>
     </sprites>
     <sprites name="Levels">
       <sprites name="Level 1 parts">
@@ -320,6 +321,7 @@
       <sprite>sprites\spr_win_2</sprite>
       <sprite>sprites\spr_win_3</sprite>
     </sprites>
+    <sprite>sprites\sprite169</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
@@ -392,6 +394,7 @@
             <object>objects\obj_medium</object>
             <object>objects\obj_high</object>
             <object>objects\obj_back_optionsmenu</object>
+            <object>objects\obj_back_mainmenu</object>
           </objects>
         </objects>
         <objects name="Misc.">
@@ -605,6 +608,7 @@
       <object>objects\obj_win_3</object>
       <object>objects\obj_text</object>
     </objects>
+    <object>objects\obj_cursor</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_mainmenu</room>

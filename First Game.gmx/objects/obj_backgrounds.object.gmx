@@ -8,6 +8,47 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Parallax Tracking
+
+//Variables\\
+globalvar parallax_tracking;
+parallax_tracking = 0;
+
+grassland = (rm_test_room = 1) or (rm_alphalevel_1) or (rm_alphalevel_2) or (rm_alphalevel_3)
+desert = (rm_test_desert_room = 1)
+ 
+//Actions\\
+if (grassland = 1)
+{
+    parallax_tracking = 1
+}
+
+if (desert = 1)
+{
+    parallax_tracking = 2
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,9 +66,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Parallax GrassLand
+            <string>///Parallax Grassland
           //Backgrounds//
-if (instance_exists(obj_player)) &amp;&amp; (room = rm_test_room)
+if (instance_exists(obj_player)) &amp;&amp; (parallax_tracking = 1)
 {
         //Standing Still//
     if (view_xview[0] = 0) &amp;&amp; (obj_player.x = obj_player.xprevious)
@@ -71,8 +112,8 @@ if (instance_exists(obj_player)) &amp;&amp; (room = rm_test_room)
     {
         background_hspeed[0] = -0
         background_hspeed[1] = -4.5
-        background_hspeed[2] = -4
-        background_hspeed[3] = -3.5
+        background_hspeed[2] = -4.4
+        background_hspeed[3] = -3.6
     }
     if (obj_player.x + 500 &gt; room_width) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
     {
@@ -101,8 +142,8 @@ if (instance_exists(obj_player)) &amp;&amp; (room = rm_test_room)
     {
         background_hspeed[0] = 0
         background_hspeed[1] = 4.5
-        background_hspeed[2] = 4
-        background_hspeed[3] = 3.5
+        background_hspeed[2] = 4.4
+        background_hspeed[3] = 3.6
     }
     if (obj_player.x + 500 &gt; room_width) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
     {
@@ -246,7 +287,7 @@ if (instance_exists(obj_player)) &amp;&amp; (room = rm_test_room)
             <kind>1</kind>
             <string>///Parallax Desert
           //Backgrounds//
-if (instance_exists(obj_player)) &amp;&amp; (room = rm_test_desert_room)
+if (instance_exists(obj_player)) &amp;&amp; (parallax_tracking = 2)
 {
         //Standing Still//
     if (view_xview[0] = 0) &amp;&amp; (obj_player.x = obj_player.xprevious)
@@ -291,7 +332,7 @@ if (instance_exists(obj_player)) &amp;&amp; (room = rm_test_desert_room)
         background_hspeed[0] = -0
         background_hspeed[1] = -4.5
         background_hspeed[2] = -4
-        background_hspeed[3] = -3.5
+        background_hspeed[3] = -3.6
     }
     if (obj_player.x + 500 &gt; room_width) &amp;&amp; (obj_player.x &lt; obj_player.xprevious)
     {
@@ -321,7 +362,7 @@ if (instance_exists(obj_player)) &amp;&amp; (room = rm_test_desert_room)
         background_hspeed[0] = 0
         background_hspeed[1] = 4.5
         background_hspeed[2] = 4
-        background_hspeed[3] = 3.5
+        background_hspeed[3] = 3.6
     }
     if (obj_player.x + 500 &gt; room_width) &amp;&amp; (obj_player.x &gt; obj_player.xprevious)
     {
