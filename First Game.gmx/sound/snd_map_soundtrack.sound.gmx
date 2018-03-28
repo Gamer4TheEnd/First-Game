@@ -5,11 +5,11 @@
   <origname>sound\audio\snd_map_soundtrack.wav</origname>
   <effects>0</effects>
   <volume>
-    <volume>0.1</volume>
+    <volume>0.34</volume>
   </volume>
   <pan>0</pan>
   <bitRates>
-    <bitRate>256</bitRate>
+    <bitRate>192</bitRate>
   </bitRates>
   <sampleRates>
     <sampleRate>44100</sampleRate>

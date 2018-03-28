@@ -30,11 +30,15 @@
 mouse_position = instance_position(mouse_x,mouse_y,obj_specialpin_tutorial)
 
 //Actions//
-if (mouse_position)
+if (mouse_position) &amp;&amp; global.levelunlock &gt;= 0
 {
     audio_play_sound(snd_mainmenu_click,9,false)
     audio_stop_all();
     room_goto(rm_test_room);
+}
+else
+{
+
 }
 </string>
           </argument>

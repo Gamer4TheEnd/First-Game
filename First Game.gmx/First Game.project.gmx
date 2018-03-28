@@ -32,6 +32,8 @@
     <sounds name="Narration">
       <sound>sound\snd_why</sound>
     </sounds>
+    <sound>sound\snd_heart</sound>
+    <sound>sound\snd_map_click</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Menus">
@@ -322,6 +324,9 @@
       <sprite>sprites\spr_win_3</sprite>
     </sprites>
     <sprite>sprites\sprite169</sprite>
+    <sprite>sprites\spr_dev</sprite>
+    <sprite>sprites\sprite170</sprite>
+    <sprite>sprites\spr_pin_locked</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
@@ -407,6 +412,7 @@
         <object>objects\obj_specialpin_tutorial</object>
         <object>objects\obj_levelpin_testroom</object>
         <object>objects\obj_levelpin_desert</object>
+        <object>objects\obj_pin_locked</object>
       </objects>
     </objects>
     <objects name="Player">
@@ -587,6 +593,7 @@
         </objects>
       </objects>
       <object>objects\obj_room_teleport</object>
+      <object>objects\obj_dev</object>
     </objects>
     <objects name="Levels">
       <objects name="Level 1 Parts">

@@ -48,8 +48,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = mouse_x
-y = mouse_y
+            <string>x = mouse_x;
+y = mouse_y;
+
+//Mouse Click Sound
+if (room = rm_map)
+{
+    if mouse_check_button_pressed(mb_left)
+    audio_play_sound(snd_map_click,10,false);
+    
+    //Change sprite to click sprite
+    if mouse_check_button(mb_left)
+    image_index = 2;
+    if mouse_check_button_released(mb_left)
+    image_index = 0;
+}
 </string>
           </argument>
         </arguments>

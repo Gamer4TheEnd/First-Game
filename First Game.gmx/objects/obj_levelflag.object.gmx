@@ -55,6 +55,15 @@ if (place_meeting(x,y,obj_player))
 {
     audio_stop_all()
     room_goto(rm_map);
+   
+    if room = rm_test_room &amp;&amp; global.levelunlock &lt; 1
+    global.levelunlock = 1; 
+    
+    if room = rm_alphalevel_3 &amp;&amp; global.levelunlock &lt; 2
+    global.levelunlock = 2; 
+    
+    if room = rm_test_desert_room &amp;&amp; global.levelunlock &lt; 3
+    global.levelunlock = 3; 
 }
 
 //Gun Power Up Finish
