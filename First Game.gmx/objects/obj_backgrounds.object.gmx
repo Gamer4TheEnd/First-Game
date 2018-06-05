@@ -66,7 +66,7 @@ if (desert = 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Parallax Grassland
+            <string>/*///Parallax Grassland
           //Backgrounds//
 if (instance_exists(obj_player)) &amp;&amp; (parallax_tracking = 1)
 {
@@ -285,7 +285,7 @@ if (instance_exists(obj_player)) &amp;&amp; (parallax_tracking = 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Parallax Desert
+            <string>/*///Parallax Desert
           //Backgrounds//
 if (instance_exists(obj_player)) &amp;&amp; (parallax_tracking = 2)
 {
@@ -484,6 +484,36 @@ if (instance_exists(obj_player)) &amp;&amp; (parallax_tracking = 2)
         background_vspeed[3] = 0
     }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///New parallax grassland
+
+/*background_x[1] = view_xview[0]
+background_y[1] = view_yview[0]
+
+background_x[2] = view_xview[0]
+background_y[2] = view_yview[0]
+
+background_x[3] = view_xview[0]
+background_y[3] = view_yview[0]
 </string>
           </argument>
         </arguments>

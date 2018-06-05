@@ -351,9 +351,14 @@
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_camera.gml</script>
+    <script>scripts\scr_render.gml</script>
+  </scripts>
   <fonts name="fonts">
     <fonts name="Tracking">
       <font>fonts\fon_tracking</font>
+      <font>fonts\fon_pause</font>
     </fonts>
   </fonts>
   <objects name="objects">
@@ -616,6 +621,7 @@
       <object>objects\obj_text</object>
     </objects>
     <object>objects\obj_cursor</object>
+    <object>objects\obj_pause</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_mainmenu</room>

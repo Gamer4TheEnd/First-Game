@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -50,12 +50,21 @@
             <kind>1</kind>
             <string>if (pause)
 {
+draw_sprite(spr_pause, 0, view_xview[0], view_yview[0])
+    {
     draw_set_color(c_black);
-    draw_rectangle(0, 0, room_width, room_height, 0);
-    draw_set_halign(fa_center);
-    draw_set_font(fon_tracking)
+    draw_set_alpha(0.2);
+    draw_rectangle(-1000, -1000, room_width + 1000, room_height + 1000, false);
+    }
+    
+    {
+    draw_set_alpha(1);
+    draw_set_font(fon_pause);   
     draw_set_color(c_white);
-    draw_text(view_wview[0]/2, view_hview[0]/2, "Game Paused");
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_text(view_xview[0] + (view_wview[0]/2), view_yview[0] + (view_hview[0]/2), "PAUSED");
+    }
 }
 </string>
           </argument>
@@ -79,13 +88,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!pause)
+            <string>var width = surface_get_width(application_surface);
+height = surface_get_height(application_surface);
+
+spr_pause = sprite_create_from_surface(application_surface, 0, 0, width, height, false, false, 0, 0);
+
+if (!pause)
 {
     pause = 1;
     instance_deactivate_all(true);
 }
 else
 {
+    sprite_delete(spr_pause);
     pause = 0;
     instance_activate_all();
 }
