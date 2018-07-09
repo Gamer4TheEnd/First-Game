@@ -41,7 +41,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="" xview="0" yview="730" wview="960" hview="540" xport="0" yport="0" wport="960" hport="540" hborder="500" vborder="250" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="730" wview="960" hview="540" xport="0" yport="0" wport="1920" hport="1080" hborder="500" vborder="250" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="620" wview="960" hview="540" xport="0" yport="0" wport="960" hport="540" hborder="500" vborder="250" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="716" wview="960" hview="540" xport="0" yport="0" wport="960" hport="540" hborder="500" vborder="250" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="716" wview="960" hview="540" xport="0" yport="0" wport="960" hport="540" hborder="500" vborder="250" hspeed="-1" vspeed="-1"/>
@@ -257,7 +257,6 @@
     <instance objName="obj_barrier" x="-16" y="672" name="inst_0F0B2743" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrier" x="-16" y="736" name="inst_9777B7A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrier" x="-16" y="704" name="inst_F3EF2876" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_backgrounds" x="16" y="752" name="inst_3B252B99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dirt" x="0" y="1344" name="inst_1DEFD9DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dirt" x="32" y="1376" name="inst_8E71337F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dirt" x="64" y="1376" name="inst_45BF00E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -6354,7 +6353,6 @@
     <instance objName="obj_dirt" x="9536" y="1056" name="inst_9853F905" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dirt" x="9504" y="1056" name="inst_43387279" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sign_gullible" x="9472" y="1520" name="inst_EBE7AEF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_room_teleport" x="0" y="704" name="inst_AFB0C292" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_leftcornor" x="7168" y="1024" name="inst_1F46A7E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_leftcornor" x="7200" y="960" name="inst_BF9DF59B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_leftcornor" x="7232" y="896" name="inst_63BB9095" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

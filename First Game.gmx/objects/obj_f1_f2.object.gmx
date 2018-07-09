@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>///Cursor
+global.levelunlock = 0
+
 if (room = rm_mainmenu)
 {
     instance_create(mouse_x, mouse_y, obj_cursor)
@@ -38,6 +40,114 @@ if (room = rm_map)
     obj_cursor.image_index = 0
 }
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Room teleport input
+
+if global.devmode = 2
+{
+    if keyboard_check(ord('1'))
+    room_goto(rm_mainmenu);
+    
+    if keyboard_check(ord('2'))
+    room_goto(rm_map);
+
+    if keyboard_check(ord('3'))
+    room_goto(rm_test_room);
+
+    if keyboard_check(ord('4'))
+    room_goto(rm_alphalevel_1);
+
+    if keyboard_check(ord('5'))
+    room_goto(rm_alphalevel_2);
+
+    if keyboard_check(ord('6'))
+    room_goto(rm_alphalevel_3);
+
+    if keyboard_check(ord('7'))
+    room_goto(rm_test_desert_room);
+    
+    if keyboard_check(ord('8'))
+    room_goto(rm_win);
+    
+    if keyboard_check(ord('9'))
+    room_goto(rm_r4_test);
+    
+    if keyboard_check(ord('0'))
+    room_goto(rm_wins);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///LET ME EXPLAIN WHY I DID THIS GAMER
+
+//k look, because of the teleport thing, the music of the main menu will continue playing
+//when you teleport, so i did this so it didnt happen.
+//i know you said the music mangager thing was usless, but apparently not!
+//so dont get all triggered i did this. I did this so that the mainmenu music
+// wouldn't play in other levels when you teleported
+
+if !room = rm_mainmenu
+audio_stop_sound(snd_mainmenu_themesong);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>

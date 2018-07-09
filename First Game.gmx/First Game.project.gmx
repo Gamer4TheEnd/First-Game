@@ -24,6 +24,9 @@
       <sounds name="Desert">
         <sound>sound\snd_desert_bgm_1</sound>
       </sounds>
+      <sounds name="Cemetery">
+        <sound>sound\snd_cemetery_bgm_1</sound>
+      </sounds>
     </sounds>
     <sounds name="Tracking">
       <sound>sound\snd_checkpoint</sound>
@@ -34,6 +37,10 @@
     </sounds>
     <sound>sound\snd_heart</sound>
     <sound>sound\snd_map_click</sound>
+    <sounds name="Win">
+      <sound>sound\snd_victory</sound>
+      <sound>sound\snd_win_bgm</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Menus">
@@ -327,6 +334,41 @@
     <sprite>sprites\spr_dev</sprite>
     <sprite>sprites\sprite170</sprite>
     <sprite>sprites\spr_pin_locked</sprite>
+    <sprite>sprites\spr_rotate</sprite>
+    <sprite>sprites\spr_sawblade</sprite>
+    <sprite>sprites\spr_grass_cemetery</sprite>
+    <sprite>sprites\spr_grave2</sprite>
+    <sprite>sprites\spr_grave1</sprite>
+    <sprite>sprites\spr_grass_plant_cemetery</sprite>
+    <sprite>sprites\spr_grass_rightcorner_cemetery</sprite>
+    <sprite>sprites\spr_grass_leftcorner_cemetery</sprite>
+    <sprite>sprites\spr_grass_topcorner_cemetery</sprite>
+    <sprite>sprites\spr_palmtree1</sprite>
+    <sprite>sprites\spr_palmtree1_coconuts</sprite>
+    <sprite>sprites\spr_trk</sprite>
+    <sprite>sprites\spr_wreckingball</sprite>
+    <sprite>sprites\spr_jacksball</sprite>
+    <sprite>sprites\spr_coming</sprite>
+    <sprite>sprites\spr_controls</sprite>
+    <sprite>sprites\spr_butts</sprite>
+    <sprite>sprites\spr_mario</sprite>
+    <sprite>sprites\spr_hearts</sprite>
+    <sprite>sprites\spr_coinsboard</sprite>
+    <sprite>sprites\spr_spikessaws</sprite>
+    <sprite>sprites\spr_checkpointboard</sprite>
+    <sprite>sprites\spr_checkered</sprite>
+    <sprite>sprites\spr_liquid</sprite>
+    <sprite>sprites\spr_grave3</sprite>
+    <sprite>sprites\spr_spotlight</sprite>
+    <sprite>sprites\spr_thanks</sprite>
+    <sprite>sprites\spr_thanksblk</sprite>
+    <sprite>sprites\spr_winbrick</sprite>
+    <sprite>sprites\spr_dark</sprite>
+    <sprite>sprites\spr_gray</sprite>
+    <sprite>sprites\spr_contact</sprite>
+    <sprite>sprites\spr_arrow</sprite>
+    <sprite>sprites\spr_information</sprite>
+    <sprite>sprites\spr_credits</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
@@ -338,8 +380,11 @@
     <backgrounds name="GrassLand">
       <background>background\bac_grassland_sky</background>
       <background>background\bac_grassland_clouds</background>
+      <background>background\bac_cemetery_clouds</background>
       <background>background\bac_grassland_mountain</background>
+      <background>background\bac_cemetery_mountain</background>
       <background>background\bac_grassland_grass</background>
+      <background>background\bac_cemetery_grass</background>
     </backgrounds>
     <backgrounds name="Desert">
       <background>background\bac_desert_sand</background>
@@ -349,6 +394,8 @@
     <backgrounds name="Levels">
       <background>background\bac_level</background>
     </backgrounds>
+    <background>background\bac_night</background>
+    <background>background\bac_clouds_big</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -372,6 +419,9 @@
       </objects>
       <objects name="Desert">
         <object>objects\obj_music_desert_bgm_1</object>
+      </objects>
+      <objects name="Cemetery">
+        <object>objects\obj_music_cemetery_bgm_1</object>
       </objects>
     </objects>
     <objects name="Menus">
@@ -417,6 +467,7 @@
         <object>objects\obj_specialpin_tutorial</object>
         <object>objects\obj_levelpin_testroom</object>
         <object>objects\obj_levelpin_desert</object>
+        <object>objects\obj_levelpin_cemetery1</object>
         <object>objects\obj_pin_locked</object>
       </objects>
     </objects>
@@ -483,7 +534,7 @@
           <object>objects\obj_shadow_transition</object>
           <object>objects\obj_shadow</object>
         </objects>
-        <objects name="Grass">
+        <objects name="Grassland">
           <object>objects\obj_grass_plant</object>
           <object>objects\obj_grass_plant_leftcornor</object>
           <object>objects\obj_grass_plant_rightcornor</object>
@@ -499,27 +550,38 @@
           <object>objects\obj_sand_plant_shrub</object>
           <object>objects\obj_cactus</object>
           <object>objects\obj_sand_deadtree</object>
+          <object>objects\obj_palmtree1</object>
+          <object>objects\obj_palmtree1_coconuts</object>
         </objects>
         <objects name="Sea">
           <object>objects\obj_sea_plant</object>
         </objects>
-        <objects name="Signs">
-          <object>objects\obj_sign_buttbunker</object>
-          <object>objects\obj_sign_danger</object>
-          <object>objects\obj_sign_gullible</object>
+        <objects name="Cemetery">
+          <object>objects\obj_grave1</object>
+          <object>objects\obj_grave2</object>
+          <object>objects\obj_grass_plant_cemetery</object>
+          <object>objects\obj_grave3</object>
         </objects>
       </objects>
-      <objects name="Grass">
-        <object>objects\obj_grass</object>
-        <object>objects\obj_grass_leftcornor</object>
-        <object>objects\obj_grass_rightcornor</object>
-        <object>objects\obj_grass_topcornor</object>
+      <objects name="Grass/Dirt">
         <object>objects\obj_dirt</object>
         <object>objects\obj_dirt_top_rightcorner</object>
         <object>objects\obj_dirt_top_leftcorner</object>
         <object>objects\obj_dirt_bottom</object>
         <object>objects\obj_dirt_bottom_right</object>
         <object>objects\obj_dirt_bottom_left</object>
+        <objects name="Grassland">
+          <object>objects\obj_grass_rightcornor</object>
+          <object>objects\obj_grass_topcornor</object>
+          <object>objects\obj_grass_leftcornor</object>
+          <object>objects\obj_grass</object>
+        </objects>
+        <objects name="Cemetery">
+          <object>objects\obj_grass_cemetery</object>
+          <object>objects\obj_grass_rightcorner_cemetery</object>
+          <object>objects\obj_grass_leftcorner_cemetery</object>
+          <object>objects\obj_grass_topcorner_cemetery</object>
+        </objects>
       </objects>
       <objects name="Rock">
         <object>objects\obj_dirt_rock_transition</object>
@@ -558,6 +620,38 @@
         <object>objects\obj_spike_wall_right</object>
         <object>objects\obj_spike_wall_left</object>
       </objects>
+      <objects name="Saw Blades">
+        <object>objects\obj_sawblade</object>
+        <object>objects\obj_sawblade_custom</object>
+        <objects name="Sawblade Tracks">
+          <object>objects\obj_trk_horz</object>
+          <object>objects\obj_trk_vert</object>
+          <object>objects\obj_trk_topr</object>
+          <object>objects\obj_trk_botr</object>
+          <object>objects\obj_trk_topl</object>
+          <object>objects\obj_trk_botl</object>
+        </objects>
+        <objects name="Horizontal">
+          <object>objects\obj_sawblade_3blk</object>
+          <object>objects\obj_sawblade_5blk</object>
+          <object>objects\obj_sawblade_7blk</object>
+          <object>objects\obj_sawblade_9blk</object>
+        </objects>
+        <objects name="Vertical">
+          <object>objects\obj_sawblade_3blk_vertical</object>
+          <object>objects\obj_sawblade_5blk_vertical</object>
+          <object>objects\obj_sawblade_7blk_vertical</object>
+          <object>objects\obj_sawblade_9blk_vertical</object>
+        </objects>
+      </objects>
+      <objects name="Wrecking Balls">
+        <object>objects\obj_wreckingball</object>
+        <object>objects\obj_jacksball</object>
+      </objects>
+      <object>objects\obj_spotlight</object>
+      <object>objects\obj_thanksblk</object>
+      <object>objects\obj_gray</object>
+      <object>objects\obj_fade</object>
     </objects>
     <objects name="Enemies">
       <objects name="White Butt">
@@ -580,13 +674,24 @@
     </objects>
     <objects name="Signs">
       <object>objects\obj_sign_blank</object>
+      <object>objects\obj_sign_buttbunker</object>
+      <object>objects\obj_sign_danger</object>
+      <object>objects\obj_sign_gullible</object>
+      <object>objects\obj_controls</object>
+      <object>objects\obj_butts</object>
+      <object>objects\obj_mario</object>
+      <object>objects\obj_hearts</object>
+      <object>objects\obj_coinsboard</object>
+      <object>objects\obj_spikessaws</object>
+      <object>objects\obj_checkpointboard</object>
+      <object>objects\obj_checkered</object>
+      <object>objects\obj_liquid</object>
     </objects>
     <objects name="Tracking">
       <object>objects\obj_r</object>
       <object>objects\obj_f1_f2</object>
       <objects name="In Game">
         <object>objects\obj_boards</object>
-        <object>objects\obj_backgrounds</object>
         <object>objects\obj_boards_rope</object>
         <objects name="Coins">
           <object>objects\obj_coins_counter</object>
@@ -597,7 +702,6 @@
           <object>objects\obj_bullets_counter</object>
         </objects>
       </objects>
-      <object>objects\obj_room_teleport</object>
       <object>objects\obj_dev</object>
     </objects>
     <objects name="Levels">
@@ -622,15 +726,27 @@
     </objects>
     <object>objects\obj_cursor</object>
     <object>objects\obj_pause</object>
+    <object>objects\rotate_thing</object>
+    <object>objects\obj_coming</object>
+    <object>objects\obj_thanks</object>
+    <object>objects\obj_winbrick</object>
+    <object>objects\obj_dark</object>
+    <object>objects\obj_contact</object>
+    <object>objects\obj_arrow</object>
+    <object>objects\obj_information</object>
+    <object>objects\obj_credits</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_mainmenu</room>
     <room>rooms\rm_map</room>
-    <room>rooms\rm_test_room</room>
+    <room>rooms\rm_tutorial</room>
     <room>rooms\rm_alphalevel_1</room>
     <room>rooms\rm_alphalevel_2</room>
     <room>rooms\rm_alphalevel_3</room>
+    <room>rooms\rm_alphalevel_4</room>
     <room>rooms\rm_test_desert_room</room>
+    <room>rooms\rm_wins</room>
+    <room>rooms\rm_r4_test</room>
     <room>rooms\rm_win</room>
   </rooms>
   <help>
