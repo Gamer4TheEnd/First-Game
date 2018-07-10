@@ -3,8 +3,8 @@
   <caption></caption>
   <width>10000</width>
   <height>2160</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>32</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -5982,31 +5982,17 @@
     <instance objName="obj_sign_buttbunker" x="6656" y="1040" name="inst_E78FE632" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_whitebutt_nofall" x="5792" y="1056" name="inst_7DBD7317" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_whitebutt_nofall" x="5824" y="1088" name="inst_862A26B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_whitebutt_nofall" x="5856" y="1088" name="inst_82AA4896" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_whitebutt_nofall" x="5888" y="1088" name="inst_067FED8D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_whitebutt_nofall" x="5920" y="1120" name="inst_779CCD7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_whitebutt_nofall" x="5952" y="1120" name="inst_6645289F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_whitebutt_nofall" x="5984" y="1152" name="inst_A67C237D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_whitebutt_nofall" x="6016" y="1152" name="inst_E84CB6F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_whitebutt_nofall" x="6048" y="1152" name="inst_B02FCE2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_whitebutt_nofall" x="6080" y="1152" name="inst_4FE3CD33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_whitebutt_nofall" x="6112" y="1152" name="inst_AD6B7C82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_whitebutt_nofall" x="6144" y="1152" name="inst_E7122ECD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_whitebutt_nofall" x="6432" y="1152" name="inst_87AFCEF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_whitebutt_nofall" x="6400" y="1152" name="inst_AEE025EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_whitebutt_nofall" x="6368" y="1152" name="inst_75CF2AFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_whitebutt_nofall" x="6336" y="1152" name="inst_427E6191" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_whitebutt_nofall" x="6304" y="1152" name="inst_9272599E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_whitebutt_nofall" x="6272" y="1152" name="inst_439407FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_whitebutt_nofall" x="6208" y="1152" name="inst_AFB3F1D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_whitebutt_nofall" x="6240" y="1152" name="inst_E1ECEAA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_whitebutt_nofall" x="6176" y="1152" name="inst_4575E65D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_whitebutt_nofall" x="6560" y="1120" name="inst_8C4A3D3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_whitebutt_nofall" x="6528" y="1120" name="inst_DD37E058" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_whitebutt_nofall" x="6496" y="1120" name="inst_AEAF97E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_whitebutt_nofall" x="6464" y="1120" name="inst_F62F8738" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_whitebutt_nofall" x="6592" y="1088" name="inst_5F988928" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_whitebutt_nofall" x="6624" y="1088" name="inst_490BE98B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="6432" y="896" name="inst_CCB499F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="6176" y="896" name="inst_1FF52B9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="5952" y="896" name="inst_EF203FCB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

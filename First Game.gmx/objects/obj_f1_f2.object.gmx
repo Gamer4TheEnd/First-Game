@@ -72,7 +72,7 @@ if global.devmode = 2
     room_goto(rm_map);
 
     if keyboard_check(ord('3'))
-    room_goto(rm_test_room);
+    room_goto(rm_tutorial);
 
     if keyboard_check(ord('4'))
     room_goto(rm_alphalevel_1);
@@ -84,10 +84,10 @@ if global.devmode = 2
     room_goto(rm_alphalevel_3);
 
     if keyboard_check(ord('7'))
-    room_goto(rm_test_desert_room);
+    room_goto(rm_alphalevel_4);
     
     if keyboard_check(ord('8'))
-    room_goto(rm_win);
+    room_goto(rm_test_desert_room);
     
     if keyboard_check(ord('9'))
     room_goto(rm_r4_test);

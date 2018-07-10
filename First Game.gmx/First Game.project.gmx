@@ -369,6 +369,12 @@
     <sprite>sprites\spr_arrow</sprite>
     <sprite>sprites\spr_information</sprite>
     <sprite>sprites\spr_credits</sprite>
+    <sprite>sprites\spr_slope</sprite>
+    <sprite>sprites\spr_slope_right</sprite>
+    <sprite>sprites\spr_grass_leftslope</sprite>
+    <sprite>sprites\spr_grass_rightslope</sprite>
+    <sprite>sprites\spr_grass_connectorleft</sprite>
+    <sprite>sprites\spr_grass_connectorright</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
@@ -575,6 +581,10 @@
           <object>objects\obj_grass_topcornor</object>
           <object>objects\obj_grass_leftcornor</object>
           <object>objects\obj_grass</object>
+          <object>objects\obj_grass_leftslope</object>
+          <object>objects\obj_grass_connectorleft</object>
+          <object>objects\obj_grass_rightslope</object>
+          <object>objects\obj_grass_connectorright</object>
         </objects>
         <objects name="Cemetery">
           <object>objects\obj_grass_cemetery</object>
@@ -652,6 +662,8 @@
       <object>objects\obj_thanksblk</object>
       <object>objects\obj_gray</object>
       <object>objects\obj_fade</object>
+      <object>objects\obj_slope</object>
+      <object>objects\obj_slope_right</object>
     </objects>
     <objects name="Enemies">
       <objects name="White Butt">
