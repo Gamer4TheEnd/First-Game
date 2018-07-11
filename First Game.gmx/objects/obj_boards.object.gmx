@@ -8,6 +8,28 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
@@ -36,8 +58,8 @@ if (window_get_fullscreen() = 0)
         //Score//
     draw_set_font(fon_tracking);
     draw_set_colour(c_white);
-    draw_text(38,14,"x")
-    draw_text(52,14,string(global.points))
+    draw_text(38,12,"x")
+    draw_text(52,12,string(global.points))
 }
 
 //Full Screen//
@@ -49,55 +71,8 @@ if (window_get_fullscreen() = 1)
         //Score//
     draw_set_font(fon_tracking);
     draw_set_colour(c_white);
-    draw_text_ext_transformed(76,28,"x",0,100,2,2,0)
-    draw_text_ext_transformed(104,28,string(global.points),0,250,2,2,0)
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Drawing Bullets &amp; Bullet Board
-
-//Non Full Screen//
-if (window_get_fullscreen() = 0)
-{
-        //Board//
-    draw_sprite(spr_bullets_board,0,140,22)
-
-        //Score//
-    draw_set_font(fon_tracking);
-    draw_set_colour(c_white);
-    draw_text(146,14,"x")
-    draw_text(160,14,string(global.bullets))
-}
-
-//Full Screen//
-if (window_get_fullscreen() = 1)
-{
-        //Board//
-    draw_sprite_stretched(spr_bullets_board,0,188,8,184,72)
-
-        //Score//
-    draw_set_font(fon_tracking);
-    draw_set_colour(c_white);
-    draw_text_ext_transformed(292,28,"x",0,100,2,2,0)
-    draw_text_ext_transformed(320,28,string(global.bullets),0,250,2,2,0)
+    draw_text_ext_transformed(76,24,"x",0,100,2,2,0)
+    draw_text_ext_transformed(104,24,string(global.points),0,250,2,2,0)
 }
 </string>
           </argument>
@@ -135,6 +110,102 @@ if (window_get_fullscreen() = 1)
         //Board//
     draw_sprite_stretched(spr_hearts_board,index,378,24,308,40)
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Drawing Bullets &amp; Bullet Board
+
+//Non Full Screen//
+if (window_get_fullscreen() = 0)
+{
+        //Board//
+    draw_sprite(spr_bullets_board,0,140,22)
+
+        //Score//
+    draw_set_font(fon_tracking);
+    draw_set_colour(c_white);
+    draw_text(146,12,"x")
+    draw_text(160,12,string(global.bullets))
+}
+
+//Full Screen//
+if (window_get_fullscreen() = 1)
+{
+        //Board//
+    draw_sprite_stretched(spr_bullets_board,0,188,8,184,72)
+
+        //Score//
+    draw_set_font(fon_tracking);
+    draw_set_colour(c_white);
+    draw_text_ext_transformed(292,24,"x",0,100,2,2,0)
+    draw_text_ext_transformed(320,24,string(global.bullets),0,250,2,2,0)
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Drawing Level Counter
+draw_set_font(fon_tracking);
+draw_set_colour(c_white);
+
+if room = rm_tutorial
+{
+draw_sprite(spr_counter, 0, 16, 80);
+}
+
+if room = rm_alphalevel_1
+{
+draw_sprite(spr_counter, 1, 16, 80);
+}
+
+if room = rm_alphalevel_2
+{
+draw_sprite(spr_counter, 2, 16, 80);
+}
+
+if room = rm_alphalevel_3
+{
+draw_sprite(spr_counter, 3, 16, 80);
+}
+
+if room = rm_alphalevel_4
+{
+draw_sprite(spr_counter, 4, 16, 80);
+}
+
 </string>
           </argument>
         </arguments>

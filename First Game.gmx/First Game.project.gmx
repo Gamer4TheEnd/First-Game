@@ -375,6 +375,7 @@
     <sprite>sprites\spr_grass_rightslope</sprite>
     <sprite>sprites\spr_grass_connectorleft</sprite>
     <sprite>sprites\spr_grass_connectorright</sprite>
+    <sprite>sprites\spr_counter</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
@@ -411,6 +412,7 @@
   <fonts name="fonts">
     <fonts name="Tracking">
       <font>fonts\fon_tracking</font>
+      <font>fonts\fon_counter</font>
       <font>fonts\fon_pause</font>
     </fonts>
   </fonts>
@@ -602,6 +604,7 @@
         <object>objects\obj_brick_slab</object>
         <object>objects\obj_purplebrick</object>
         <object>objects\obj_purplebrick_slab</object>
+        <object>objects\obj_winbrick</object>
       </objects>
       <objects name="Sand">
         <object>objects\obj_sand_top</object>
@@ -698,6 +701,10 @@
       <object>objects\obj_checkpointboard</object>
       <object>objects\obj_checkered</object>
       <object>objects\obj_liquid</object>
+      <object>objects\obj_credits</object>
+      <object>objects\obj_information</object>
+      <object>objects\obj_contact</object>
+      <object>objects\obj_arrow</object>
     </objects>
     <objects name="Tracking">
       <object>objects\obj_r</object>
@@ -741,12 +748,7 @@
     <object>objects\rotate_thing</object>
     <object>objects\obj_coming</object>
     <object>objects\obj_thanks</object>
-    <object>objects\obj_winbrick</object>
     <object>objects\obj_dark</object>
-    <object>objects\obj_contact</object>
-    <object>objects\obj_arrow</object>
-    <object>objects\obj_information</object>
-    <object>objects\obj_credits</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_mainmenu</room>

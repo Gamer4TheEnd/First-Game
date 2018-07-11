@@ -221,7 +221,7 @@
     <option_freeze>false</option_freeze>
     <option_frequency>0</option_frequency>
     <option_frontimage>nil</option_frontimage>
-    <option_fullscreen>False</option_fullscreen>
+    <option_fullscreen>True</option_fullscreen>
     <option_gameguid>{BEE67F59-8B38-41F8-B110-EEAF0DFC127A}</option_gameguid>
     <option_gameid>605674860</option_gameid>
     <option_hasloadimage>false</option_hasloadimage>
@@ -451,7 +451,7 @@
     <option_shortcircuit>True</option_shortcircuit>
     <option_showcursor>False</option_showcursor>
     <option_showprogress>1</option_showprogress>
-    <option_sizeable>True</option_sizeable>
+    <option_sizeable>False</option_sizeable>
     <option_stayontop>false</option_stayontop>
     <option_sync_vertex>1</option_sync_vertex>
     <option_textureGroup0_border>2</option_textureGroup0_border>
