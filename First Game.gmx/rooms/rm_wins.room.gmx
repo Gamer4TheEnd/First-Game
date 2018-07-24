@@ -1268,7 +1268,6 @@
     <instance objName="obj_arrow" x="2608" y="1072" name="inst_7E332A4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_information" x="3088" y="960" name="inst_7FCA2D9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_credits" x="3632" y="960" name="inst_53B6A1A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_levelflag" x="4256" y="992" name="inst_C08BB291" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_winbrick" x="4256" y="1088" name="inst_E2BF5997" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_winbrick" x="4224" y="1088" name="inst_BC18DD54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_winbrick" x="4288" y="1088" name="inst_1BB3F3B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1290,6 +1289,7 @@
     <instance objName="obj_winbrick" x="4256" y="1024" name="inst_637C1FE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_winbrick" x="4224" y="1024" name="inst_9FCC3F3C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_winbrick" x="4192" y="1024" name="inst_DE91AC08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_levelflag" x="4256" y="992" name="inst_F15F13E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

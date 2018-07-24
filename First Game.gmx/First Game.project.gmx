@@ -13,6 +13,11 @@
     <sounds name="Player">
       <sound>sound\snd_player_powerup_gun_shoot</sound>
       <sound>sound\snd_player_jump</sound>
+      <sound>sound\snd_pop</sound>
+      <sound>sound\snd_saw</sound>
+      <sound>sound\snd_spike</sound>
+      <sound>sound\snd_fire</sound>
+      <sound>sound\snd_drown</sound>
     </sounds>
     <sounds name="Enemies">
       <sound>sound\snd_fart</sound>
@@ -217,6 +222,7 @@
       <sprite>sprites\spr_checkpoint</sprite>
       <sprite>sprites\spr_checkpoint_position</sprite>
       <sprite>sprites\spr_roomflag</sprite>
+      <sprite>sprites\spr_gameflag</sprite>
       <sprite>sprites\spr_door</sprite>
       <sprites name="Decorations">
         <sprites name="Shadows">
@@ -302,9 +308,10 @@
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_enemy_whitebutt</sprite>
-      <sprite>sprites\spr_enemy_blackbutt</sprite>
       <sprite>sprites\spr_enemy_asainbutt</sprite>
       <sprite>sprites\spr_enemy_arabbutt</sprite>
+      <sprite>sprites\spr_enemy_mexicanbutt</sprite>
+      <sprite>sprites\spr_enemy_blackbutt</sprite>
       <sprite>sprites\spr_enemy_poof</sprite>
     </sprites>
     <sprites name="Tracking">
@@ -376,6 +383,8 @@
     <sprite>sprites\spr_grass_connectorleft</sprite>
     <sprite>sprites\spr_grass_connectorright</sprite>
     <sprite>sprites\spr_counter</sprite>
+    <sprite>sprites\spr_fire_poof</sprite>
+    <sprite>sprites\spr_buttbashers2</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
@@ -673,10 +682,6 @@
         <object>objects\obj_enemy_whitebutt</object>
         <object>objects\obj_enemy_whitebutt_nofall</object>
       </objects>
-      <objects name="Black Butt">
-        <object>objects\obj_enemy_blackbutt</object>
-        <object>objects\obj_enemy_blackbutt_nofall</object>
-      </objects>
       <objects name="Asain Butt">
         <object>objects\obj_enemy_asainbutt</object>
         <object>objects\obj_enemy_asainbutt_nofall</object>
@@ -685,7 +690,12 @@
         <object>objects\obj_enemy_arabbutt</object>
         <object>objects\obj_enemy_arabbutt_nofall</object>
       </objects>
+      <objects name="Black Butt">
+        <object>objects\obj_enemy_blackbutt</object>
+        <object>objects\obj_enemy_blackbutt_nofall</object>
+      </objects>
       <object>objects\obj_enemy_poof</object>
+      <object>objects\obj_fire_poof</object>
     </objects>
     <objects name="Signs">
       <object>objects\obj_sign_blank</object>
@@ -749,6 +759,8 @@
     <object>objects\obj_coming</object>
     <object>objects\obj_thanks</object>
     <object>objects\obj_dark</object>
+    <object>objects\obj_fadein</object>
+    <object>objects\obj_fadeout</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_mainmenu</room>
