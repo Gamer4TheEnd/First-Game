@@ -88,7 +88,9 @@ draw_sprite(spr_pause, 0, view_xview[0], view_yview[0])
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var width = surface_get_width(application_surface);
+            <string>if room != rm_map &amp;&amp; room != rm_mainmenu
+{
+var width = surface_get_width(application_surface);
 height = surface_get_height(application_surface);
 
 spr_pause = sprite_create_from_surface(application_surface, 0, 0, width, height, false, false, 0, 0);
@@ -103,6 +105,7 @@ else
     sprite_delete(spr_pause);
     pause = 0;
     instance_activate_all();
+}
 }
 </string>
           </argument>
