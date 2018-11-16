@@ -33,7 +33,7 @@ audio_play_sound(snd_player_powerup_gun_shoot,10,false)
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_coinboost">
+    <event eventtype="4" ename="obj_gem">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -58,7 +58,7 @@ instance_destroy();
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_coins">
+    <event eventtype="4" ename="obj_goldcoin">
       <action>
         <libid>1</libid>
         <id>603</id>

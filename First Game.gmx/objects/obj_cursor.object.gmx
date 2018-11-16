@@ -66,6 +66,15 @@ if (room = rm_map)
     if mouse_check_button_released(mb_left)
     image_index = 0;
 }
+else
+{
+if (room != rm_mainmenu)
+{
+image_index = 1;
+image_xscale = 0.5;
+image_yscale = 0.5;
+}
+}
 </string>
           </argument>
         </arguments>

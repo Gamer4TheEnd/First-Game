@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>///Frames
 image_speed = 5/60
+win = false;
+global.levelmap = false;
+global.nextlevel = false;
 </string>
           </argument>
         </arguments>
@@ -53,10 +56,47 @@ image_speed = 5/60
 
 if (place_meeting(x,y,obj_player))
 {
-    audio_stop_all()
+spr_pause = sprite_create_from_surface(application_surface, 0, 0, view_wport, view_hport, false, false, 0, 0);
+    {
+    audio_stop_all();
+    audio_play_sound(snd_levelwin, 7, false);
+    instance_deactivate_all(true);
+    win = true;
+    instance_create(view_xview[0] + (view_wview[0]/2), view_yview[0] + (view_hview[0]/2), obj_levelcomplete);
+    instance_create(view_xview[0] + (view_wview[0]/2), view_yview[0] + (view_hview[0]/2 + 24), obj_continue);
+    instance_create(view_xview[0] + (view_wview[0]/2), view_yview[0] + (view_hview[0]/2 + 120), obj_pausemap_win);
+    instance_create(view_xview[0] + (view_wview[0]/2), view_yview[0] + (view_hview[0]/2), obj_cursor);
+    }
+}
+
+if global.levelmap = true
+{
+    instance_destroy(obj_levelcomplete);
+    instance_destroy(obj_pausemap_win);
+    instance_destroy(obj_cursor);
+    instance_destroy(obj_continue);
+    sprite_delete(spr_pause);
+    instance_activate_all();
+    global.levelmap = false;
     room_goto(rm_map);
 }
 
+if global.nextlevel = true
+{
+    instance_destroy(obj_levelcomplete);
+    instance_destroy(obj_pausemap_win);
+    instance_destroy(obj_cursor);
+    instance_destroy(obj_continue);
+    sprite_delete(spr_pause);
+    instance_activate_all();
+    global.nextlevel = false;
+    room_goto_next();
+}
+
+//NOTE: lets just disable powerups until we switch to unity
+//it simplifies everthing because we dont have to duplicate code like 10 times
+
+/*
 //Gun Power Up Finish
 
 if (place_meeting(x,y,obj_player_powerup_gun))
@@ -135,6 +175,44 @@ if (place_meeting(x,y,obj_player_i_superjump_limit))
 {
     audio_stop_all()
     room_goto(rm_map);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self();
+
+if win = true
+{
+    {
+    draw_set_alpha(1);
+    draw_sprite_stretched(spr_pause, 0, view_xview[0], view_yview[0], 960, 540)
+    }  
+     
+    {
+    draw_set_color(c_black);
+    draw_set_alpha(0.2);
+    draw_rectangle(-1000, -1000, room_width + 1000, room_height + 1000, false);
+    }
+    draw_set_alpha(1);  
 }
 </string>
           </argument>

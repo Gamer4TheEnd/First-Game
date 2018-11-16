@@ -30,8 +30,8 @@ grav = 0.3;
 vsp = 0;
 hsp = 0;
 jumpspeed = 8;
-movespeed = 5
-image_speed = 8/60
+movespeed = 5;
+image_speed = 8/60;
 globalvar player_dir;
 player_dir = 1;
 
@@ -39,8 +39,11 @@ globalvar checkpoints;
 checkpoints = 0;
 yplus = 0;
 prs = false;
-global.enbnc = false
-walljumps = 0
+global.enbnc = false;
+walljumps = 0;
+walksnd = false;
+inair = false;
+act = false;
 
 //for squish
 draw_xscale = 1;
@@ -627,12 +630,14 @@ scr_render();
 background_x[0] = view_xview
 background_x[1] = view_xview/1
 background_x[2] = view_xview/1.05
-background_x[3] = view_xview/3
+background_x[3] = view_xview/1.6
+background_x[4] = view_xview/3
 
 background_y[0] = view_yview
-background_y[1] = view_yview
-background_y[2] = view_yview/1.05 + 100
-background_y[3] = view_yview/1.5 + 200
+background_y[1] = view_yview - 100
+background_y[2] = view_yview/1.05 - 60
+background_y[3] = view_yview/1.4 + 40
+background_y[4] = view_yview/1.8 + 140
 </string>
           </argument>
         </arguments>
@@ -653,19 +658,118 @@ background_y[3] = view_yview/1.5 + 200
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if space_bar
+            <string>///SQUISH EFFECT
+
+if global.squish = 2
 {
-draw_yscale = 1.2;
-draw_xscale = .85;
+    if space_bar
+    {
+        draw_yscale = 1.2;
+        draw_xscale = .85;
+    }
+
+    draw_xscale = lerp(draw_xscale, 1, .1);
+    draw_yscale = lerp(draw_yscale, 1, .1);
+
+    if (place_meeting(x, y+1, obj_wall) &amp;&amp; !place_meeting(x, yprevious+1, obj_wall))
+    {
+        draw_yscale = .75
+        draw_xscale = 1.25
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Walk sound effect
+
+    if walksnd = false
+    {
+    if x &gt; xprevious
+        {
+        walksnd = true;
+        audio_play_sound(snd_walk, 7, true);
+        }
+    }
+
+    if walksnd = false
+    {
+    if x &lt; xprevious
+        {
+        walksnd = true;
+        audio_play_sound(snd_walk, 7, true);
+        }
+    }
+    if x = xprevious
+    {
+    walksnd = false;
+    audio_stop_sound(snd_walk);
+    }
+
+if !place_meeting(x, y + 1, obj_wall)
+{
+    inair = true;
+    audio_stop_sound(snd_walk);
+    walksnd = false;
+}
+    
+if place_meeting(x, y + 1, obj_wall) &amp;&amp; inair = true
+{
+    inair = false;
+    audio_play_sound(snd_land, 7, false);
 }
 
-draw_xscale = lerp(draw_xscale, 1, .1);
-draw_yscale = lerp(draw_yscale, 1, .1);
-
-if (place_meeting(x, y+1, obj_wall) &amp;&amp; !place_meeting(x, yprevious+1, obj_wall))
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Water Slow Down
+if place_meeting(x, y, obj_water_top) || place_meeting(x, y, obj_water) || place_meeting(x, y, obj_water_2)
 {
-    draw_yscale = .75
-    draw_xscale = 1.25
+    act = true;
+    movespeed = 2;
+    jumpspeed = 5;
+}
+else
+{
+    if act = true
+    {
+    movespeed = 5;
+    jumpspeed = 8;
+    act = false;
+    }
 }
 </string>
           </argument>

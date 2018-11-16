@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Frames
 
-image_speed = 2/60;
+image_speed = 4/60;
 </string>
           </argument>
         </arguments>
@@ -60,8 +60,22 @@ if (place_meeting(x,y,obj_player)) &amp;&amp; (!instance_exists(obj_water_splash
     }
     else
     {
-        ;
+    
     }
+}
+
+
+if distance_to_object(obj_player)&lt;250
+{
+if !audio_is_playing(snd_water)
+{
+    audio_play_sound(snd_water, 7, true);
+}
+audio_sound_gain(snd_water,(250-distance_to_object(obj_player))/250,0)
+}
+else
+{
+    audio_stop_sound(snd_water);
 }
 </string>
           </argument>

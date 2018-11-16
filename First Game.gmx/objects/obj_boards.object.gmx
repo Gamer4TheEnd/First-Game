@@ -178,34 +178,40 @@ if (window_get_fullscreen() = 1)
           <argument>
             <kind>1</kind>
             <string>///Drawing Level Counter
-draw_set_font(fon_tracking);
+draw_set_font(fon_bbpixel);
 draw_set_colour(c_white);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
 
 if room = rm_tutorial
 {
-draw_sprite(spr_counter, 0, 16, 80);
+draw_text(14, 70, "TUTORIAL");
 }
 
 if room = rm_alphalevel_1
 {
-draw_sprite(spr_counter, 1, 16, 80);
+draw_text(14, 70, "1-1-1");
 }
 
 if room = rm_alphalevel_2
 {
-draw_sprite(spr_counter, 2, 16, 80);
+draw_text(14, 70, "1-1-2");
 }
 
 if room = rm_alphalevel_3
 {
-draw_sprite(spr_counter, 3, 16, 80);
+draw_text(14, 70, "1-1-3");
 }
 
 if room = rm_alphalevel_4
 {
-draw_sprite(spr_counter, 4, 16, 80);
+draw_text(14, 70, "1-1-4");
 }
 
+if room = rm_alphalevel_5
+{
+draw_text(14, 70, "1-2-1");
+}
 </string>
           </argument>
         </arguments>

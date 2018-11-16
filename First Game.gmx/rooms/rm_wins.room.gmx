@@ -53,7 +53,7 @@
   <instances>
     <instance objName="obj_checkpoint" x="1920" y="1088" name="inst_7429D394" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_f1_f2" x="0" y="576" name="inst_D7F84462" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_coins" x="3808" y="32" name="inst_0AE82C28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goldcoin" x="3808" y="32" name="inst_0AE82C28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spotlight" x="2400" y="960" name="inst_DE17E559" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_thanks" x="2400" y="1056" name="inst_45C92042" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_winbrick" x="1088" y="1120" name="inst_F8E9ABCB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

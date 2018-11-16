@@ -28,7 +28,7 @@
             <string>///Grass And Stuff
 instance_create(x,y-32,obj_grass_plant)
 dirt_scan = (!place_meeting(x,y-96,obj_dirt)) or (!place_meeting(x,y-96,obj_dirt_bottom)) or (!place_meeting(x,y-96,obj_dirt_bottom_right)) or (!place_meeting(x,y-96,obj_dirt_bottom_left))
-decorations = choose(0,1,0,2,0,3,0,4,0,5,0,6,0,1,2,2,5,6,1,2,4,2,1,5,6)
+decorations = choose(0,1,0,2,0,3,0,4,0,5,0,6,7,0,1,2,2,5,6,1,2,4,2,1,5,6)
 
 //Nothing//
 if (decorations = 0)
@@ -68,6 +68,12 @@ if (decorations = 5)
 if (decorations = 6)
 {
     instance_create(x,y-16,obj_grass_rock_medium)
+}
+
+//Grass Tree 2//
+if (decorations = 7) &amp;&amp; (dirt_scan = 1)
+{
+    instance_create(x,y-64,obj_grass_tree2)
 }
 </string>
           </argument>

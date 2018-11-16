@@ -91,6 +91,24 @@ if(place_meeting(x,y,obj_player))
     }
 }
 
+if distance_to_object(obj_player)&lt;250
+{
+if !audio_is_playing(snd_lava)
+{
+    audio_play_sound(snd_lava, 7, true);
+}
+audio_sound_gain(snd_lava,(250-distance_to_object(obj_player))/250,0)
+}
+else
+{
+    audio_stop_sound(snd_lava);
+}
+
+
+
+
+
+/*
 //Gun Power Up//
 if(place_meeting(x,y,obj_player_powerup_gun))
 {

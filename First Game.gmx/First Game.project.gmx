@@ -36,6 +36,7 @@
     <sounds name="Tracking">
       <sound>sound\snd_checkpoint</sound>
       <sound>sound\snd_coin</sound>
+      <sound>sound\snd_gem</sound>
     </sounds>
     <sounds name="Narration">
       <sound>sound\snd_why</sound>
@@ -46,6 +47,13 @@
       <sound>sound\snd_victory</sound>
       <sound>sound\snd_win_bgm</sound>
     </sounds>
+    <sound>sound\snd_pff</sound>
+    <sound>sound\snd_levelwin</sound>
+    <sound>sound\snd_walk</sound>
+    <sound>sound\snd_land</sound>
+    <sound>sound\snd_rumble</sound>
+    <sound>sound\snd_lava</sound>
+    <sound>sound\snd_water</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Menus">
@@ -321,8 +329,8 @@
         <sprite>sprites\spr_coins_board</sprite>
         <sprite>sprites\spr_bullets_board</sprite>
       </sprites>
-      <sprite>sprites\spr_coins</sprite>
-      <sprite>sprites\spr_coinboost</sprite>
+      <sprite>sprites\sprites_spr_goldcoin</sprite>
+      <sprite>sprites\spr_gem</sprite>
       <sprite>sprites\spr_sparkle</sprite>
       <sprite>sprites\spr_mouse_texture</sprite>
     </sprites>
@@ -385,6 +393,20 @@
     <sprite>sprites\spr_counter</sprite>
     <sprite>sprites\spr_fire_poof</sprite>
     <sprite>sprites\spr_buttbashers2</sprite>
+    <sprite>sprites\spr_squish</sprite>
+    <sprite>sprites\spr_pausemenu</sprite>
+    <sprite>sprites\spr_pausemap</sprite>
+    <sprite>sprites\spr_pausemenuback</sprite>
+    <sprite>sprites\spr_pausex</sprite>
+    <sprite>sprites\spr_fallingplatform</sprite>
+    <sprite>sprites\spr_levelcomplete</sprite>
+    <sprite>sprites\spr_continue</sprite>
+    <sprite>sprites\spr_enemy_skeletonbutt</sprite>
+    <sprite>sprites\spr_platinumcoin</sprite>
+    <sprite>sprites\spr_grass_tree2</sprite>
+    <sprite>sprites\spr_rocktop</sprite>
+    <sprite>sprites\spr_rock_rightcorner</sprite>
+    <sprite>sprites\spr_rock_leftcorner</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Main Menu">
@@ -400,6 +422,7 @@
       <background>background\bac_grassland_mountain</background>
       <background>background\bac_cemetery_mountain</background>
       <background>background\bac_grassland_grass</background>
+      <background>background\bac_grassland_grass_2</background>
       <background>background\bac_cemetery_grass</background>
     </backgrounds>
     <backgrounds name="Desert">
@@ -424,6 +447,7 @@
       <font>fonts\fon_counter</font>
       <font>fonts\fon_pause</font>
     </fonts>
+    <font>fonts\fon_bbpixel</font>
   </fonts>
   <objects name="objects">
     <objects name="Music">
@@ -482,7 +506,8 @@
       <object>objects\obj_sun_map</object>
       <objects name="Pins">
         <object>objects\obj_specialpin_tutorial</object>
-        <object>objects\obj_levelpin_testroom</object>
+        <object>objects\obj_levelpin_1_1</object>
+        <object>objects\obj_levelpin_1_2</object>
         <object>objects\obj_levelpin_desert</object>
         <object>objects\obj_levelpin_cemetery1</object>
         <object>objects\obj_pin_locked</object>
@@ -560,6 +585,7 @@
           <object>objects\obj_grass_plant_bush</object>
           <object>objects\obj_grass_bush</object>
           <object>objects\obj_grass_tree</object>
+          <object>objects\obj_grass_tree2</object>
           <object>objects\obj_grass_rock_small</object>
           <object>objects\obj_grass_rock_medium</object>
         </objects>
@@ -607,6 +633,9 @@
       <objects name="Rock">
         <object>objects\obj_dirt_rock_transition</object>
         <object>objects\obj_rock</object>
+        <object>objects\obj_rocktop</object>
+        <object>objects\obj_rock_rightcorner</object>
+        <object>objects\obj_rock_leftcorner</object>
       </objects>
       <objects name="Bricks">
         <object>objects\obj_brick</object>
@@ -696,6 +725,9 @@
       </objects>
       <object>objects\obj_enemy_poof</object>
       <object>objects\obj_fire_poof</object>
+      <objects name="Skeleton Butt">
+        <object>objects\obj_enemy_skeletonbutt</object>
+      </objects>
     </objects>
     <objects name="Signs">
       <object>objects\obj_sign_blank</object>
@@ -717,21 +749,21 @@
       <object>objects\obj_arrow</object>
     </objects>
     <objects name="Tracking">
-      <object>objects\obj_r</object>
       <object>objects\obj_f1_f2</object>
       <objects name="In Game">
         <object>objects\obj_boards</object>
         <object>objects\obj_boards_rope</object>
         <objects name="Coins">
           <object>objects\obj_coins_counter</object>
-          <object>objects\obj_coins</object>
-          <object>objects\obj_coinboost</object>
+          <object>objects\obj_goldcoin</object>
+          <object>objects\obj_gem</object>
         </objects>
         <objects name="Bullet">
           <object>objects\obj_bullets_counter</object>
         </objects>
       </objects>
       <object>objects\obj_dev</object>
+      <object>objects\obj_squish</object>
     </objects>
     <objects name="Levels">
       <objects name="Level 1 Parts">
@@ -761,6 +793,15 @@
     <object>objects\obj_dark</object>
     <object>objects\obj_fadein</object>
     <object>objects\obj_fadeout</object>
+    <object>objects\obj_pausemenu</object>
+    <object>objects\obj_pausemap</object>
+    <object>objects\obj_pausemap_win</object>
+    <object>objects\obj_pausemenuback</object>
+    <object>objects\obj_pausex</object>
+    <object>objects\obj_fallingplatform</object>
+    <object>objects\obj_levelcomplete</object>
+    <object>objects\obj_continue</object>
+    <object>objects\obj_replaceplatform</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_mainmenu</room>
@@ -770,6 +811,7 @@
     <room>rooms\rm_alphalevel_2</room>
     <room>rooms\rm_alphalevel_3</room>
     <room>rooms\rm_alphalevel_4</room>
+    <room>rooms\rm_alphalevel_5</room>
     <room>rooms\rm_test_desert_room</room>
     <room>rooms\rm_wins</room>
     <room>rooms\rm_r4_test</room>

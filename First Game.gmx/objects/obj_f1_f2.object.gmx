@@ -65,35 +65,77 @@ if (room = rm_map)
 
 if global.devmode = 2
 {
-    if keyboard_check(ord('1'))
+    if keyboard_check(ord('1')) &amp;&amp; !keyboard_check(vk_shift)
+    {
+    audio_stop_all();
     room_goto(rm_mainmenu);
+    }
     
-    if keyboard_check(ord('2'))
+    if keyboard_check(ord('2')) &amp;&amp; !keyboard_check(vk_shift)
+    {
+    audio_stop_all();
     room_goto(rm_map);
+    }
 
-    if keyboard_check(ord('3'))
+    if keyboard_check(ord('3')) &amp;&amp; !keyboard_check(vk_shift)
+    {
+    audio_stop_all();
     room_goto(rm_tutorial);
+    }
 
-    if keyboard_check(ord('4'))
+    if keyboard_check(ord('4')) &amp;&amp; !keyboard_check(vk_shift)
+    {
+    audio_stop_all();
     room_goto(rm_alphalevel_1);
+    }
 
-    if keyboard_check(ord('5'))
+    if keyboard_check(ord('5')) &amp;&amp; !keyboard_check(vk_shift)
+    {
+    audio_stop_all();
     room_goto(rm_alphalevel_2);
+    }
 
-    if keyboard_check(ord('6'))
+    if keyboard_check(ord('6')) &amp;&amp; !keyboard_check(vk_shift)
+    {
+    audio_stop_all();
     room_goto(rm_alphalevel_3);
+    }
 
-    if keyboard_check(ord('7'))
+    if keyboard_check(ord('7')) &amp;&amp; !keyboard_check(vk_shift)
+    {
+    audio_stop_all();
     room_goto(rm_alphalevel_4);
+    }
     
-    if keyboard_check(ord('8'))
+    if keyboard_check(ord('8')) &amp;&amp; !keyboard_check(vk_shift)
+    {
+    audio_stop_all();
+    room_goto(rm_alphalevel_5);
+    }
+    
+    if keyboard_check(ord('9')) &amp;&amp; !keyboard_check(vk_shift)
+    {
+    audio_stop_all();
     room_goto(rm_test_desert_room);
+    }
     
-    if keyboard_check(ord('9'))
-    room_goto(rm_r4_test);
-    
-    if keyboard_check(ord('0'))
+    if keyboard_check(ord('0')) &amp;&amp; !keyboard_check(vk_shift)
+    {
+    audio_stop_all();
     room_goto(rm_wins);
+    }
+    
+    if keyboard_check(vk_shift) &amp;&amp; keyboard_check(ord('1'))
+    {
+    audio_stop_all();
+    room_goto(rm_r4_test);
+    }
+    
+    if keyboard_check(vk_shift) &amp;&amp; keyboard_check(ord('2'))
+    {
+    audio_stop_all();
+    room_goto(rm_win);
+    }
 }
 </string>
           </argument>
@@ -128,6 +170,22 @@ audio_stop_sound(snd_mainmenu_themesong);
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="82">
+      <action>
+        <libid>1</libid>
+        <id>223</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_current_room</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="7" enumb="4">
