@@ -32,7 +32,7 @@
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bac_grassland_sky" x="0" y="0" htiled="-1" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="-1" foreground="0" name="bac_clouds_big" x="0" y="690" htiled="-1" vtiled="0" hspeed="10" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bac_clouds_big" x="0" y="690" htiled="-1" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="bac_grassland_mountain" x="0" y="690" htiled="-1" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="bac_grassland_grass" x="0" y="720" htiled="-1" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>

@@ -91,6 +91,7 @@ if(place_meeting(x,y,obj_player))
     }
 }
 
+/* DISABLED ITS ALSO BROKEN
 if distance_to_object(obj_player)&lt;250
 {
 if !audio_is_playing(snd_lava)

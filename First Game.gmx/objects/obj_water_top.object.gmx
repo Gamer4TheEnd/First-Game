@@ -65,6 +65,7 @@ if (place_meeting(x,y,obj_player)) &amp;&amp; (!instance_exists(obj_water_splash
 }
 
 
+/* DISABLED BECAUSE IT'S BROKEN
 if distance_to_object(obj_player)&lt;250
 {
 if !audio_is_playing(snd_water)
