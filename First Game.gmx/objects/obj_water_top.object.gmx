@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Frames
 
-image_speed = 4/60;
+image_speed = 32/60;
 </string>
           </argument>
         </arguments>

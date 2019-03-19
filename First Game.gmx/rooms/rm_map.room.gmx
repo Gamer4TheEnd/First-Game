@@ -3,8 +3,8 @@
   <caption></caption>
   <width>960</width>
   <height>540</height>
-  <vsnap>1</vsnap>
-  <hsnap>1</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -55,9 +55,10 @@
     <instance objName="obj_music_map" x="48" y="-16" name="inst_455D78ED" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_levelpin_1_1" x="272" y="199" name="inst_8420CDD2" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_f1_f2" x="16" y="-16" name="inst_20A03B2A" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_back_mainmenu" x="40" y="35" name="inst_2E0811FD" locked="-1" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_back_mainmenu" x="40" y="40" name="inst_2E0811FD" locked="-1" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_coming" x="480" y="270" name="inst_2F84F794" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_levelpin_1_2" x="326" y="217" name="inst_4654FA1F" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shop" x="844" y="48" name="inst_711F5D36" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

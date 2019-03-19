@@ -26,7 +26,15 @@
           <argument>
             <kind>1</kind>
             <string>///Creation Defaults
+if room = rm_alphalevel_moon
+{
+    grav = 0.15
+}
+else
+{
 grav = 0.3;
+}
+
 vsp = 0;
 hsp = 0;
 jumpspeed = 8;
@@ -44,10 +52,85 @@ walljumps = 0;
 walksnd = false;
 inair = false;
 act = false;
+maxvsp = 10;
+roll = false;
+roll2 = false;
+canroll = true;
 
 //for squish
 draw_xscale = 1;
 draw_yscale = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>roll2 = false;
+alarm[1] = 1 * 60
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>canroll = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>roll = false;
+alarm[1] = 1 * 60
 </string>
           </argument>
         </arguments>
@@ -70,19 +153,52 @@ draw_yscale = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Player Input
+            <string>///Player Movement
+
+//Input\\
 right_key = keyboard_check(ord("D")) or keyboard_check(vk_right)
 left_key = -(keyboard_check(ord("A")) or keyboard_check(vk_left))
 space_bar = keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_up) or gamepad_button_check_pressed(0,gp_face1)
 space_bar_held = keyboard_check(vk_space) or keyboard_check(vk_up) or gamepad_button_check(0,gp_face1)
-//Reactions////Movement//
+
+//Movement (momentum)\\
+
+if right_key
+{
+    if hsp &lt; 5
+    {
+        hsp += 0.5
+    }
+}
+
+if -left_key
+{
+    if hsp &gt; -5
+    {
+        hsp -= 0.5
+    }
+}
+
+if hsp &gt; 0 &amp;&amp; !right_key
+{
+    hsp -= 0.5;
+}
+
+if hsp &lt; 0 &amp;&amp; !-left_key
+{
+    hsp += 0.5;
+}
+
+//Movement (old)\\
+/*
 move = right_key + left_key
 hsp = move * movespeed
+*/
 
-//Gravity//
-if (vsp &lt; 10) vsp += grav;
+//Gravity\\
+if (vsp &lt; maxvsp) vsp += grav;
 
-//Jumping//
+//Jumping\\
 
 if(place_meeting(x,y+1,obj_wall))
 {
@@ -94,49 +210,21 @@ if global.enbnc = false
 if (vsp &lt; 0) &amp;&amp; (!space_bar_held) vsp = max(vsp, -jumpspeed/4)
 }
 
-//deactivated for now
+//Wall Jumps\\
 /*
 if(place_meeting(x,y+1,obj_wall))
 walljumps = 0;
 
 if !(place_meeting(x,y+1,obj_wall))
-walljumps = 1;
-*/
+walljumps = 1;*/
 
-//deactivated for now because we dont use momentum in the game
-//Wall Jumping\\
-/*
-if(place_meeting(x-1,y,obj_wall)) &amp;&amp; space_bar &amp;&amp; walljumps = 1
-    {
-    vsp -= 15;
-    hsp += 10
-    }
-    
-if(place_meeting(x+1,y,obj_wall)) &amp;&amp; space_bar &amp;&amp; walljumps = 1
-    {
-    vsp -= 15;
-    hsp -= 10;
-    }
-*/
 //Jump Sound Effect//
 if(place_meeting(x,y+1,obj_wall)) &amp;&amp; (space_bar = 1)
 {
     audio_play_sound(snd_player_jump,15,false);
 }
 
-//Horizontal Collision//
-/*if (place_meeting(x+hsp,y,obj_wall))
-{
-    while(!place_meeting(x+sign(hsp),y,obj_wall))
-    {
-        x += sign(hsp);
-    }
-    hsp = 0;
-}
-
-x += hsp;*/
-
-//Slope Collision//
+//Horizontal Collision\\
 if (place_meeting(x+hsp,y,obj_wall))
 {
     yplus = 0;
@@ -153,7 +241,7 @@ if (place_meeting(x+hsp,y,obj_wall))
 }
 x += hsp;
 
-//Vertical Collision//
+//Vertical Collision\\
 if (place_meeting(x,y+vsp,obj_wall))
 {
     while(!place_meeting(x,y+sign(vsp),obj_wall))
@@ -195,6 +283,7 @@ if (x &gt; xprevious)
         sprite_index = spr_player_running_right
     }
     player_dir = 1
+    image_speed = 16/60
 }
 
 //Running Left//
@@ -205,10 +294,11 @@ else if (x &lt; xprevious)
         sprite_index = spr_player_running_left
     }
     player_dir = -1
+    image_speed = 16/60
 }
 
 //Jumping Still Right//
-else if !place_meeting(x, y + 2, obj_wall) &amp;&amp; (player_dir = 1)
+else if !place_meeting(x, y + 2, obj_wall) &amp;&amp; (player_dir = 1) &amp;&amp; y &lt; yprevious
 {
     if(sprite_index != spr_player_jumping_still_right)
     {
@@ -217,7 +307,7 @@ else if !place_meeting(x, y + 2, obj_wall) &amp;&amp; (player_dir = 1)
 }
 
 //Jumping Still Left//
-else if !place_meeting(x, y + 2, obj_wall) &amp;&amp; (player_dir = -1)
+else if !place_meeting(x, y + 2, obj_wall) &amp;&amp; (player_dir = -1) &amp;&amp; y &lt; yprevious
 {
     if(sprite_index != spr_player_jumping_still_left)
     {
@@ -249,11 +339,13 @@ else
     if (player_dir = 1)
     {
         sprite_index = spr_player_still_right
+        image_speed = 8/60
     }
         //Left//
     if (player_dir = -1)
     {
         sprite_index = spr_player_still_left
+        image_speed = 8/60
     }
 }
 </string>
@@ -697,7 +789,7 @@ if global.squish = 2
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Walk sound effect
+            <string>///Walk sound effect &amp; land sound effect
 
     if walksnd = false
     {
@@ -733,8 +825,8 @@ if place_meeting(x, y + 1, obj_wall) &amp;&amp; inair = true
 {
     inair = false;
     audio_play_sound(snd_land, 7, false);
+    instance_create(x, y, obj_dust);
 }
-
 </string>
           </argument>
         </arguments>
@@ -756,7 +848,7 @@ if place_meeting(x, y + 1, obj_wall) &amp;&amp; inair = true
           <argument>
             <kind>1</kind>
             <string>///Water Slow Down
-if place_meeting(x, y, obj_water_top) || place_meeting(x, y, obj_water) || place_meeting(x, y, obj_water_2)
+if place_meeting(x, y, obj_water_top) || place_meeting(x, y, obj_water_mid) || place_meeting(x, y, obj_water_death)
 {
     act = true;
     movespeed = 2;
@@ -772,6 +864,98 @@ else
     }
 }
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Rolling
+
+if keyboard_check_pressed(ord('E')) &amp;&amp; canroll = true
+{
+    if player_dir = 1
+    {
+    roll = true;
+    alarm[0] = 0.3*60;
+    canroll = false;
+    audio_play_sound(snd_dash, 8, false);
+    }
+    
+    if player_dir = -1
+    {
+    roll2 = true;
+    alarm[2] = 0.3*60
+    canroll = false;
+    audio_play_sound(snd_dash, 8, false);
+    }
+}
+
+//right roll
+if roll = true
+{
+    if hsp &lt; 8
+    {
+    hsp += 2;
+    }
+}
+else
+{
+    if hsp &gt; 5
+    {
+        hsp -= 1
+    }
+}
+
+//left roll
+if roll2 = true
+{
+    if hsp &gt; -8
+    {
+    hsp -= 2;
+    }
+}
+else
+{
+    if hsp &lt; -5
+    {
+        hsp += 1
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -851,6 +1035,76 @@ if (lives = 0)
             <kind>1</kind>
             <string>///Restart Room
 room_restart();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="18">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if view_hview &gt; 67.5
+{
+    view_hview = view_hview - 36  
+    view_yview = view_yview + 18
+    global.camspd += 0.01
+}
+
+if view_wview &gt; 120
+{
+    view_wview = view_wview - 64
+    view_xview = view_xview + 32
+    global.camspd += 0.01
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="17">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if view_hview &lt; 540
+{
+    view_hview = view_hview + 36  
+    view_yview = view_yview - 18
+    global.camspd -= 0.01
+}
+
+if view_wview &lt; 960
+{
+    view_wview = view_wview + 64
+    view_xview = view_xview - 32
+    global.camspd -= 0.01
+}
 </string>
           </argument>
         </arguments>

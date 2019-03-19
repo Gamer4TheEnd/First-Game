@@ -159,7 +159,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if room != rm_map &amp;&amp; room != rm_mainmenu
+            <string>if room != rm_map &amp;&amp; room != rm_mainmenu &amp;&amp; room != rm_shop
 {
 spr_pause = sprite_create_from_surface(application_surface, 0, 0, view_wport, view_hport, false, false, 0, 0);
 

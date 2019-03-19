@@ -1289,7 +1289,7 @@
     <instance objName="obj_winbrick" x="4256" y="1024" name="inst_637C1FE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_winbrick" x="4224" y="1024" name="inst_9FCC3F3C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_winbrick" x="4192" y="1024" name="inst_DE91AC08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_levelflag" x="4256" y="992" name="inst_F15F13E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_levelflag" x="4256" y="992" name="inst_F9A853A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

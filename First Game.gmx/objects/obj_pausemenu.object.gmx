@@ -30,7 +30,7 @@
 if (mouse_position)
 {
     audio_play_sound(snd_mainmenu_click,9,false);
-    global.menugoto = true;
+    instance_create(x, y, obj_fadeout_mapback);
 }
 </string>
           </argument>

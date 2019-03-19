@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Cursor
+            <string>global.shake = 0;
+makedeath = true;
+
+//Cursor stuff
 global.levelunlock = 0
 
 if (room = rm_mainmenu)
@@ -38,6 +41,18 @@ if (room = rm_map)
 {
     instance_create(mouse_x, mouse_y, obj_cursor)
     obj_cursor.image_index = 0
+}
+
+if (room = rm_shop)
+{
+    instance_create(mouse_x, mouse_y, obj_cursor)
+    obj_cursor.image_index = 1
+}
+
+enum e_state
+{
+    idle,
+    chase
 }
 </string>
           </argument>
@@ -113,28 +128,46 @@ if global.devmode = 2
     room_goto(rm_alphalevel_5);
     }
     
-    if keyboard_check(ord('9')) &amp;&amp; !keyboard_check(vk_shift)
+        if keyboard_check(ord('9')) &amp;&amp; !keyboard_check(vk_shift)
     {
     audio_stop_all();
-    room_goto(rm_test_desert_room);
+    room_goto(rm_alphalevel_6);
     }
     
     if keyboard_check(ord('0')) &amp;&amp; !keyboard_check(vk_shift)
     {
     audio_stop_all();
-    room_goto(rm_wins);
+    room_goto(rm_alphalevel_moon);
     }
     
     if keyboard_check(vk_shift) &amp;&amp; keyboard_check(ord('1'))
     {
     audio_stop_all();
-    room_goto(rm_r4_test);
+    room_goto(rm_test_desert_room);
     }
     
     if keyboard_check(vk_shift) &amp;&amp; keyboard_check(ord('2'))
     {
     audio_stop_all();
+    room_goto(rm_wins);
+    }
+    
+    if keyboard_check(vk_shift) &amp;&amp; keyboard_check(ord('3'))
+    {
+    audio_stop_all();
+    room_goto(rm_r4_test);
+    }
+    
+    if keyboard_check(vk_shift) &amp;&amp; keyboard_check(ord('4'))
+    {
+    audio_stop_all();
     room_goto(rm_win);
+    }
+    
+    if keyboard_check(vk_shift) &amp;&amp; keyboard_check(ord('5'))
+    {
+    audio_stop_all();
+    room_goto(rm_dead);
     }
 }
 </string>
@@ -168,6 +201,79 @@ if global.devmode = 2
 if !room = rm_mainmenu
 audio_stop_sound(snd_mainmenu_themesong);
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Camera Stuff
+
+view_xview += random_range(-global.shake, global.shake);
+view_yview += random_range(-global.shake, global.shake);
+global.shake *= 0.9;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///check for death
+
+if lives = 0 &amp;&amp; makedeath = true
+{
+    instance_create(x, y, obj_fadeout_white);
+    lives += 6
+    makedeath = false
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -205,9 +311,30 @@ audio_stop_sound(snd_mainmenu_themesong);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if room != rm_mainmenu &amp;&amp; room != rm_map
+            <string>if room != rm_mainmenu &amp;&amp; room != rm_map &amp;&amp; room != rm_shop
 {
 instance_create(x, y, obj_fadein);
+}
+
+//death fade
+if global.mapfadein = true &amp;&amp; room = rm_map
+{
+    instance_create(x, y, obj_fadein_white_2);
+    global.mapfadein = false;
+}
+
+//mainmenu play fade
+if room = rm_map &amp;&amp; global.playfade = true
+{
+    instance_create(x,y, obj_fadein_play);
+    global.playfade = false;
+}
+
+//mapfade
+if room = rm_mainmenu &amp;&amp; global.mapfade = true
+{
+    instance_create(x,y, obj_fadein_mapback);
+    global.mapfade = false;
 }
 </string>
           </argument>
@@ -231,7 +358,14 @@ instance_create(x, y, obj_fadein);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>global.points = 0;
+string(global.points);
+lives = 6;
+global.camspd = 0.1;
+global.mapfadein = false;
+global.playfade = false;
+global.mapfade = false;
+</string>
           </argument>
         </arguments>
       </action>
@@ -284,6 +418,32 @@ if window_get_fullscreen()
 if !window_get_fullscreen()
 {
     window_set_fullscreen(true)
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="107">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if global.devmode = 2
+{
+    global.points += 50
 }
 </string>
           </argument>

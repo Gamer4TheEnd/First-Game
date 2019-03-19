@@ -83,12 +83,6 @@ audio_stop_sound(snd_rumble);
     image_speed = 8 / 60;
     alarm[0] = 1 * 60;
 }
-
-if distance_to_object(obj_player)&lt;250
-{
-audio_sound_gain(snd_rumble,(250-distance_to_object(obj_player))/250,0);
-audio_sound_gain(snd_pff,(250-distance_to_object(obj_player))/250,0);
-}
 </string>
           </argument>
         </arguments>

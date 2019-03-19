@@ -52,14 +52,12 @@
   </views>
   <instances>
     <instance objName="obj_buttbashers" x="990" y="181" name="inst_4E6F31C9" locked="0" code="" scaleX="0.839667439460754" scaleY="0.766277134418488" colour="4294967295" rotation="0"/>
-    <instance objName="obj_playbutton" x="960" y="487" name="inst_627B2ED2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_optionsbutton" x="960" y="667" name="inst_2A30D17A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_quitbutton" x="960" y="847" name="inst_13E10743" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_playbutton" x="939" y="418" name="inst_627B2ED2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_optionsbutton" x="939" y="602" name="inst_2A30D17A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_quitbutton" x="939" y="786" name="inst_13E10743" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_board" x="960" y="540" name="inst_D22F6CA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_buttbashers" x="2910" y="181" name="inst_9854EFCD" locked="0" code="" scaleX="0.839999973773956" scaleY="0.769999980926514" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fullscreen" x="3165" y="690" name="inst_05392F08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_volume" x="2925" y="892" name="inst_102CC26F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_back" x="2580" y="892" name="inst_10451E20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_back" x="2320" y="376" name="inst_10451E20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_optionsmenu" x="2880" y="540" name="inst_4B5CAE1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_buttbashers" x="4830" y="181" name="inst_530B5E34" locked="0" code="" scaleX="0.839999973773956" scaleY="0.769999980926514" colour="4294967295" rotation="0"/>
     <instance objName="obj_back_optionsmenu" x="4500" y="892" name="inst_6ECB0110" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -85,9 +83,12 @@
     <instance objName="obj_twitter" x="3641" y="1020" name="inst_0917BA31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_patreon" x="5436" y="1015" name="inst_748368A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_twitter" x="5561" y="1020" name="inst_1E44883D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dev" x="3648" y="160" name="inst_048BAC2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dev" x="2880" y="680" name="inst_048BAC2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pause" x="32" y="-32" name="inst_93CBEA63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_squish" x="3520" y="64" name="inst_8140D284" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_squish" x="2880" y="528" name="inst_8140D284" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bar" x="2880" y="832" name="inst_7FC7B0D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fullscreen" x="2880" y="376" name="inst_B6CAE4A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_version" x="64" y="-32" name="inst_0D0F7788" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

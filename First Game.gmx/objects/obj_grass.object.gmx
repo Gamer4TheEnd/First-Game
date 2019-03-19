@@ -25,16 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Grass And Stuff
+            <string>if !place_meeting(x, y - 32, obj_water_top) &amp;&amp; !place_meeting(x, y - 32, obj_water_mid) &amp;&amp; !place_meeting(x, y - 32, obj_water_death)
+{
+randomize();
+///Grass And Stuff
 instance_create(x,y-32,obj_grass_plant)
 dirt_scan = (!place_meeting(x,y-96,obj_dirt)) or (!place_meeting(x,y-96,obj_dirt_bottom)) or (!place_meeting(x,y-96,obj_dirt_bottom_right)) or (!place_meeting(x,y-96,obj_dirt_bottom_left))
-decorations = choose(0,1,0,2,0,3,0,4,0,5,0,6,7,0,1,2,2,5,6,1,2,4,2,1,5,6)
+decorations = choose(0,1,0,0,3,0,4,0,5,0,6,7,7,0,2,5,6,1,2,4,2,1,5,6,8,8,8,9,9,9)
 
 //Nothing//
 if (decorations = 0)
 {}
 
-//Grass Plant Roses//
+//Flower 1//
 if (decorations = 1)
 {
     instance_create(x,y-32,obj_grass_plant_roses)
@@ -74,6 +77,20 @@ if (decorations = 6)
 if (decorations = 7) &amp;&amp; (dirt_scan = 1)
 {
     instance_create(x,y-64,obj_grass_tree2)
+}
+
+//Flower 2//
+if (decorations = 8)
+{
+    instance_create(x,y-32,obj_grass_flower_2)
+}
+
+//Flower 3//
+if (decorations = 9)
+{
+    instance_create(x,y-32,obj_grass_flower_3)
+}
+
 }
 </string>
           </argument>

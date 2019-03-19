@@ -82,10 +82,6 @@ if (lives &gt; 0) &amp;&amp; (place_meeting(x,y,obj_player))
     audio_play_sound(snd_saw, 7, false);
     alarm[5] = 1 * room_speed;
 }
-if (lives = 0)
-{
-    game_restart();
-}
 </string>
           </argument>
         </arguments>

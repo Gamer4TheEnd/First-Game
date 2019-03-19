@@ -68,7 +68,6 @@
     <instance objName="obj_grass_cemetery" x="2112" y="1024" name="inst_78477B39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_cemetery" x="2080" y="1024" name="inst_8BD98846" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_cemetery" x="3168" y="1056" name="inst_05FC5FA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="128" y="1024" name="inst_9ADEB0B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_cemetery" x="448" y="1088" name="inst_D2B4FCE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_cemetery" x="480" y="1088" name="inst_0F9D1E49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_cemetery" x="480" y="1120" name="inst_1DC8ABDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -267,6 +266,7 @@
     <instance objName="obj_barrier" x="3712" y="32" name="inst_48F1A993" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrier" x="3712" y="0" name="inst_61F0E7C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_cemetery" x="448" y="1056" name="inst_09E7B09B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="160" y="1024" name="inst_EDA1FBE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
